@@ -641,10 +641,10 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &1053811542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -657,7 +657,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b8086da018ff2f4f95d328623c6262b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  rb2D: {fileID: 1053811541}
   moveSpeed: 5
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

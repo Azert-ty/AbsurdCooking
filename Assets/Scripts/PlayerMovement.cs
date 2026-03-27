@@ -9,11 +9,11 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector2 moveDirection;
 
-    [SerializeField]
+
     private Rigidbody2D rb2D;
 
     [SerializeField]
-    private int moveSpeed=5;
+    private float moveSpeed=5;
 
 
     void Awake()
@@ -37,8 +37,8 @@ public class PlayerMovement : MonoBehaviour
     }
     private void onMove()
     {
-        
-        rb2D.AddForce(moveDirection*moveSpeed);
+        moveDirection=moveDirection.normalized;
+        rb2D.linearVelocity=moveDirection*moveSpeed;
           
     }
 
