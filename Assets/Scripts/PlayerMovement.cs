@@ -7,22 +7,18 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private PlayerControls controls;
+    public  PlayerControls controls;
 
-    private Vector2 moveDirection;
+    public Vector2 moveDirection;
     private Vector2 dashDirection;
 
     private bool candash=true;
 
-   
-
-
-
     private Rigidbody2D rb2D;
 
-    private enum PlayerState {Idle,Move,Dashing}
+    public enum PlayerState {Idle,Move,Dashing}
 
-    private PlayerState _currentState;
+    public PlayerState _currentState;
 
     [SerializeField]
     private float moveSpeed=5;
@@ -60,10 +56,10 @@ public class PlayerMovement : MonoBehaviour
     {
             candash=false;
             _currentState=PlayerState.Dashing;
-        if (dashDirection == Vector2.zero)
-        {
-            dashDirection=Vector2.left;
-        }
+            if (dashDirection == Vector2.zero)
+            {
+                dashDirection=Vector2.left;
+            }
             rb2D.linearVelocity=_dashForce*dashDirection;
             yield return new WaitForSeconds(_dashDuration);
             rb2D.linearVelocity=Vector2.zero;
@@ -111,7 +107,7 @@ public class PlayerMovement : MonoBehaviour
     
     
 
-    void FixedUpdate()
+     void FixedUpdate()
     {
 
 
