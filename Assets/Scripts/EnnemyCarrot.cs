@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -8,6 +9,18 @@ public class EnnemyCarrot : MonoBehaviour
 
     [SerializeField]
     private  float _detectionRange=5f;
+
+    [SerializeField]
+    private float _firerate=1.5f;
+
+    private bool canShoot=true;
+    private enum EnnemyState
+    {
+        Idle,Shooting
+    }
+
+    private EnnemyState _currentEnnemyState;
+
 
     public GameObject player;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -26,8 +39,28 @@ public class EnnemyCarrot : MonoBehaviour
     {
         if ((player.transform.position - transform.position).sqrMagnitude <_detectionRange *_detectionRange)
         {
-            Debug.Log("Missiles");
+            _currentEnnemyState=EnnemyState.Shooting;
+            
         }
+        else
+        {
+            _currentEnnemyState=EnnemyState.Idle;
+        }
+
+        if (_currentEnnemyState == EnnemyState.Shooting && canShoot==true)
+        {
+            StartCoroutine(Shoot());
+        }
+    }
+
+    IEnumerator Shoot()
+    {
+        
+        canShoot=false;
+        Debug.Log("Shoot");
+        yield return new WaitForSeconds(_firerate);
+        canShoot=true;
+
     }
 
     void OnDrawGizmosSelected()
