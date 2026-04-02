@@ -44,58 +44,36 @@ public class EnnemyCarrot : MonoBehaviour
     void FixedUpdate()
     {
        
-        // else
-        // {
-        //     _currentEnnemyState=EnnemyState.Idle;
-        // }
-
-        if(_currentEnnemyState==EnnemyState.Alert && canShoot)
+        float sqrtRange=(player.transform.position-transform.position).sqrMagnitude;
+        bool Range=sqrtRange<_detectionRange*_detectionRange;
+        if (Range && canShoot)
         {
             StartCoroutine(Attack());
         }
-
+        if (!Range)
+        {   
+            _isfirsttime=true;
+            _currentEnnemyState=EnnemyState.Idle;
+        }
         
     }
 
-    // IEnumerator Shoot()
-    // {
-        
-    //     canShoot=false;
-
-    //     Debug.Log("Shoot");
-    //     yield return new WaitForSeconds(_firerate);
-    //     canShoot=true;
-
-    // }
-
-    // IEnumerator AlertShoot()
-    // {
-    //     yield return new WaitForSeconds(_fireanticipation);
-        
-    // }
-
     IEnumerator Attack()
     {
-        canShoot=false;
-         if ((player.transform.position - transform.position).sqrMagnitude <_detectionRange *_detectionRange)
+       canShoot=false;
+        if (_isfirsttime)
         {
             _currentEnnemyState=EnnemyState.Alert;
-            yield return new WaitForSeconds(_fireanticipation); 
-            _isfirsttime=true;
-            _currentEnnemyState=EnnemyState.Shooting;
-        }
-        if (_currentEnnemyState==EnnemyState.Shooting)
-        {
-            Debug.Log("shoot");
-            yield return new WaitForSeconds(_firerate); 
-            canShoot=true;
-             _currentEnnemyState=EnnemyState.Shooting;
-        }
-        else
-        {
+            Debug.Log("L'IA t'a vu ! Elle prépare son tir...");
+            yield return new WaitForSeconds(_fireanticipation);
             _isfirsttime=false;
-            _currentEnnemyState=EnnemyState.Idle;
+            
         }
+        _currentEnnemyState=EnnemyState.Shooting;
+        Debug.Log("PAN");
+        yield return new WaitForSeconds(_firerate);        
+        canShoot=true;
+
     }
 
     void OnDrawGizmosSelected()
