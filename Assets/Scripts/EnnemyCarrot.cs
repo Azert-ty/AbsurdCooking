@@ -1,7 +1,5 @@
-using System;
+
 using System.Collections;
-using System.Threading;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnnemyCarrot : MonoBehaviour
@@ -16,7 +14,11 @@ public class EnnemyCarrot : MonoBehaviour
 
 
     [SerializeField]
-    private int  _fireanticipation=3;
+    private float  _fireanticipation=3;
+
+
+    [SerializeField]
+    private float  _ballspeed=5;
 
     private bool canShoot=true;
     private bool _isfirsttime;
@@ -26,8 +28,11 @@ public class EnnemyCarrot : MonoBehaviour
     }
 
     private EnnemyState _currentEnnemyState;
+    public  GameObject _projectilePrefab;
 
+    
 
+    private GameObject _ball;
     public GameObject player;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -71,6 +76,9 @@ public class EnnemyCarrot : MonoBehaviour
         }
         _currentEnnemyState=EnnemyState.Shooting;
         Debug.Log("PAN");
+        _ball=Instantiate(_projectilePrefab,transform.position,transform.rotation);
+        var rb2=_ball.GetComponent<Rigidbody2D>();
+        rb2.linearVelocity=(player.transform.position-transform.position)*_ballspeed;
         yield return new WaitForSeconds(_firerate);        
         canShoot=true;
 
