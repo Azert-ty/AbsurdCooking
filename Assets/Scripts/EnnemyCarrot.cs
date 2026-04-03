@@ -32,7 +32,7 @@ public class EnnemyCarrot : MonoBehaviour
 
     
 
-    private GameObject _ball;
+  
     public GameObject player;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -76,9 +76,10 @@ public class EnnemyCarrot : MonoBehaviour
         }
         _currentEnnemyState=EnnemyState.Shooting;
         Debug.Log("PAN");
-        _ball=Instantiate(_projectilePrefab,transform.position,transform.rotation);
-        var rb2=_ball.GetComponent<Rigidbody2D>();
-        rb2.linearVelocity=(player.transform.position-transform.position)*_ballspeed;
+        GameObject ball=Instantiate(_projectilePrefab,transform.position,transform.rotation);
+        var rb2=ball.GetComponent<Rigidbody2D>();
+        rb2.linearVelocity=(player.transform.position-transform.position).normalized*_ballspeed;
+        Destroy(ball,5);
         yield return new WaitForSeconds(_firerate);        
         canShoot=true;
 
