@@ -24,7 +24,7 @@ public class Projectile : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision)
     {
 
-        if (collision.CompareTag("Enemy")) return;
+        // if (collision.CompareTag("Enemy")) return; Usage de collision matrix desormais
         if (collision.CompareTag("Player"))
         {
             
