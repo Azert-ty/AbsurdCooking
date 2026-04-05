@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3932091103651131804}
   - component: {fileID: 115402515005024085}
   - component: {fileID: 7161926113137778107}
+  - component: {fileID: 4318442568537316757}
   m_Layer: 0
   m_Name: projectile
   m_TagString: Untagged
@@ -156,3 +157,16 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.49999997
+--- !u!114 &4318442568537316757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3293875954055319704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28a440f688adf98429da40f29b2df95e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Projectile
+  lifetime: 5

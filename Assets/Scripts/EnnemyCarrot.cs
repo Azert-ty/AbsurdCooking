@@ -79,7 +79,7 @@ public class EnnemyCarrot : MonoBehaviour
         GameObject ball=Instantiate(_projectilePrefab,transform.position,transform.rotation);
         var rb2=ball.GetComponent<Rigidbody2D>();
         rb2.linearVelocity=(player.transform.position-transform.position).normalized*_ballspeed;
-        Destroy(ball,5);
+        
         yield return new WaitForSeconds(_firerate);        
         canShoot=true;
 
