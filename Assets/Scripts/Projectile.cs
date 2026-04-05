@@ -7,7 +7,7 @@ public class Projectile : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        Destroy(gameObject,lifetime);
     }
 
     // Update is called once per frame
@@ -18,16 +18,18 @@ public class Projectile : MonoBehaviour
 
     void FixedUpdate()
     {
-        Destroy(gameObject,lifetime);
+        
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
 
-        Destroy(gameObject);
-        if (collision.tag == "Player")
+        if (collision.CompareTag("Enemy")) return;
+        if (collision.CompareTag("Player"))
         {
+            
             Debug.Log("AIE !");
         }
+        Destroy(gameObject);
     }
 }
