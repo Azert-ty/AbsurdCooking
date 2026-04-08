@@ -60,6 +60,10 @@ public class EnnemyCarrot : MonoBehaviour
             _isfirsttime=true;
             _currentEnnemyState=EnnemyState.Idle;
         }
+        if (_currentEnnemyState == EnnemyState.Alert ||  _currentEnnemyState == EnnemyState.Shooting)
+        {
+            LookAtPlayer();
+        }
         
     }
 
@@ -90,4 +94,12 @@ public class EnnemyCarrot : MonoBehaviour
         Gizmos.color=Color.red;
         Gizmos.DrawWireSphere(transform.position,_detectionRange);
     }
+
+    void LookAtPlayer()
+    {
+        var directionball=player.transform.position-transform.position;
+        var carrotangle=Mathf.Atan2(directionball.y,directionball.x)*Mathf.Rad2Deg;
+        transform.rotation=Quaternion.Euler(0,0,carrotangle);
+    }
 }
+

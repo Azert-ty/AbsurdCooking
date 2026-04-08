@@ -26,8 +26,7 @@ public class Projectile : MonoBehaviour
 
         // if (collision.CompareTag("Enemy")) return; Usage de collision matrix desormais
         if (collision.CompareTag("Player"))
-        {
-            
+        {        
             Debug.Log("AIE !");
         }
         Destroy(gameObject);
