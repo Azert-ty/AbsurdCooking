@@ -273,6 +273,7 @@ MonoBehaviour:
   _detectionRange: 5
   _firerate: 1.5
   _fireanticipation: 3
+  _speedRotation: 180
   _ballspeed: 3
   _projectilePrefab: {fileID: 3293875954055319704, guid: eaf75ee91bf347241a7def4e8ded0e58, type: 3}
   player: {fileID: 1053811537}

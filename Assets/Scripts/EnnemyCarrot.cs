@@ -16,6 +16,9 @@ public class EnnemyCarrot : MonoBehaviour
     [SerializeField]
     private float  _fireanticipation=3;
 
+    [SerializeField]
+    private float  _speedRotation=180;
+
 
     [SerializeField]
     private float  _ballspeed=5;
@@ -99,7 +102,9 @@ public class EnnemyCarrot : MonoBehaviour
     {
         var directionball=player.transform.position-transform.position;
         var carrotangle=Mathf.Atan2(directionball.y,directionball.x)*Mathf.Rad2Deg;
-        transform.rotation=Quaternion.Euler(0,0,carrotangle);
+        Quaternion targetRotation=Quaternion.Euler(0,0,carrotangle);
+
+        transform.rotation=Quaternion.RotateTowards(transform.rotation,targetRotation,Time.fixedDeltaTime*_speedRotation);
     }
 }
 
