@@ -83,10 +83,14 @@ public class EnnemyCarrot : MonoBehaviour
         }
         _currentEnnemyState=EnnemyState.Shooting;
         Debug.Log("PAN");
-        GameObject ball=Instantiate(_projectilePrefab,transform.position,transform.rotation);
-        var rb2=ball.GetComponent<Rigidbody2D>();
-        rb2.linearVelocity=(player.transform.position-transform.position).normalized*_ballspeed;
-        
+        Vector2 centerdir=(player.transform.position-transform.position).normalized;
+        float [] angles={-15,0,+15} ;
+        foreach (float angle in angles)
+        {
+            Vector2 finaldir=Quaternion.Euler(0,0,angle)*centerdir;
+            Spreadball(finaldir);
+        }
+    
         yield return new WaitForSeconds(_firerate);        
         canShoot=true;
 
@@ -101,10 +105,21 @@ public class EnnemyCarrot : MonoBehaviour
     void LookAtPlayer()
     {
         var directionball=player.transform.position-transform.position;
-        var carrotangle=Mathf.Atan2(directionball.y,directionball.x)*Mathf.Rad2Deg;
-        Quaternion targetRotation=Quaternion.Euler(0,0,carrotangle);
+        var carrotanglewithDeg=Mathf.Atan2(directionball.y,directionball.x)*Mathf.Rad2Deg;
+        Quaternion targetRotation=Quaternion.Euler(0,0,carrotanglewithDeg);
 
         transform.rotation=Quaternion.RotateTowards(transform.rotation,targetRotation,Time.fixedDeltaTime*_speedRotation);
+    }
+
+    void Spreadball(Vector2 vector2)
+    {
+            GameObject ball=Instantiate(_projectilePrefab,transform.position,Quaternion.identity);
+            Debug.Log("Spawn projectile");
+            Debug.Log(ball);
+            var rb2=ball.GetComponent<Rigidbody2D>();
+            rb2.linearVelocity=vector2*_ballspeed;
+
+        
     }
 }
 

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3932091103651131804}
   - component: {fileID: 115402515005024085}
   - component: {fileID: 7161926113137778107}
-  - component: {fileID: 4318442568537316757}
+  - component: {fileID: -6513450485577656546}
   m_Layer: 8
   m_Name: projectile
   m_TagString: Untagged
@@ -82,7 +82,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 101
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 0.8867924, g: 0.42798403, b: 0, a: 1}
@@ -157,7 +157,7 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.49999997
---- !u!114 &4318442568537316757
+--- !u!114 &-6513450485577656546
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
