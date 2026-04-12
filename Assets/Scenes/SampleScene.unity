@@ -271,10 +271,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnnemyCarrot
   _detectionRange: 5
-  _firerate: 1.5
-  _fireanticipation: 3
-  _speedRotation: 180
-  _ballspeed: 3
+  _firerate: 0.82
+  _fireanticipation: 0.6
+  _speedRotation: 240.6
+  _ballspeed: 6.75
   _burstDelay: 0.1
   _projectilePrefab: {fileID: 3293875954055319704, guid: eaf75ee91bf347241a7def4e8ded0e58, type: 3}
   V: {x: 0, y: 0}

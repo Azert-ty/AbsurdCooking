@@ -37,13 +37,15 @@ public class EnnemyCarrot : MonoBehaviour
     public  GameObject _projectilePrefab;
 
     public Vector2 V;
-
+    private Vector2 predictedPosition;
   
     public GameObject player;
+    private Rigidbody2D rbr2;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-       
+       rbr2=player.GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -54,6 +56,7 @@ public class EnnemyCarrot : MonoBehaviour
 
     void FixedUpdate()
     {
+        predictedPosition=GetPredictedPosition();
        
         float sqrtRange=(player.transform.position-transform.position).sqrMagnitude;
         bool Range=sqrtRange<_detectionRange*_detectionRange;
@@ -68,7 +71,7 @@ public class EnnemyCarrot : MonoBehaviour
         }
         if (_currentEnnemyState == EnnemyState.Alert ||  _currentEnnemyState == EnnemyState.Shooting)
         {
-            LookAtPlayer();
+            RotateTowardsPrediction();
         }
         
     }
@@ -86,7 +89,9 @@ public class EnnemyCarrot : MonoBehaviour
         }
         _currentEnnemyState=EnnemyState.Shooting;
         Debug.Log("PAN");
-        Vector2 centerdir=((Vector3)GetPredictedPosition()-transform.position).normalized;
+        Vector2 centerdir=((Vector3)predictedPosition-transform.position).normalized;
+        Debug.DrawLine(transform.position, predictedPosition, Color.green, 1f);
+        Debug.DrawRay(predictedPosition, Vector2.up, Color.red, 1f); // Une croix sur la cible
         float [] angles={-15,0,+15} ;
         foreach (float angle in angles)
         {
@@ -106,10 +111,10 @@ public class EnnemyCarrot : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position,_detectionRange);
     }
 
-    void LookAtPlayer()
+    void RotateTowardsPrediction()
     {
-        var directionball=player.transform.position-transform.position;
-        var carrotanglewithDeg=Mathf.Atan2(directionball.y,directionball.x)*Mathf.Rad2Deg;
+        Vector2 centerdir=((Vector3)predictedPosition-transform.position).normalized;
+        var carrotanglewithDeg=Mathf.Atan2(centerdir.y,centerdir.x)*Mathf.Rad2Deg;
         Quaternion targetRotation=Quaternion.Euler(0,0,carrotanglewithDeg);
         transform.rotation=Quaternion.RotateTowards(transform.rotation,targetRotation,Time.fixedDeltaTime*_speedRotation);
     }
@@ -125,32 +130,50 @@ public class EnnemyCarrot : MonoBehaviour
 
     Vector2 GetPredictedPosition()
     {
-        var  V=player.GetComponent<Rigidbody2D>().linearVelocity;
+        var  V=rbr2.linearVelocity;
         var D= player.transform.position-transform.position;
         var b= 2*Vector2.Dot(D,V);
         var a= Vector2.Dot(V,V)-_ballspeed*_ballspeed;
         var c=Vector2.Dot(D,D);
         var delta=b*b-4*a*c;
+        if (Mathf.Abs(a) < 0.0001f)
+        {
+            return player.transform.position;
+        }
         if (delta > 0)
         {
             var t1=(-b+Mathf.Sqrt(delta))/(2*a);
             var t2=(-b-Mathf.Sqrt(delta))/(2*a);
 
-            if (0 < t1  && t1< t2)
+            var tmp=-1f;
+            if (t1 > 0)
             {
-                return (Vector2)player.transform.position+V*t1;
+                tmp=t1;
             }
-            else if (0 < t2  && t2< t1)
+            if (0 < t2)
             {
-                return (Vector2)player.transform.position+V*t2;
+                if (tmp < 0)
+                {
+                    tmp=t2;
+                }
+                else
+                {
+                    tmp= tmp<t2? tmp : t2;
+                }
+            }
+            if (tmp < 0)
+            {
+                return player.transform.position;
             }
             else
             {
-               return player.transform.position;
+                return (Vector2)player.transform.position+rbr2.linearVelocity*tmp;
             }
+
+            
             
         }
-        else if (delta == 0)
+        else if (Mathf.Abs(delta) < 0.0001f)
         {
             var t0=-b/(2*a);
 
