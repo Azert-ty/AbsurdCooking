@@ -9,11 +9,11 @@ public class PlayerAttack : MonoBehaviour
     public PlayerMovement playerMovement;
     public GameObject attackPoint;
 
+    public EnnemyCarrot ennemyCarrot;
+
     public LayerMask layerMask;
 
     private bool canAttack=true;
-
-
     private Vector2 attackorientation;
     private float attackduration;
     [SerializeField]
@@ -39,7 +39,12 @@ public class PlayerAttack : MonoBehaviour
         Collider2D [] collider2Ds=Physics2D.OverlapCircleAll(attackPoint.transform.position,attackRange,layerMask);
         foreach (var collider2D in collider2Ds)
         {
-            Debug.Log("BOnjour");
+            if (collider2D.CompareTag("Enemy"))
+            {
+                ennemyCarrot=collider2D.GetComponent<EnnemyCarrot>();
+                ennemyCarrot.OntriggerHit();
+
+            }   
         }
         yield return new WaitForSeconds(attackduration);
         canAttack=true;
@@ -81,6 +86,7 @@ public class PlayerAttack : MonoBehaviour
         
     }
 
+    
     void OnDisable()
     {
         playerMovement.controls.Player.Attack.performed-=AttackInput;

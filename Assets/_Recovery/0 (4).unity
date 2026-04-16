@@ -131,7 +131,6 @@ GameObject:
   - component: {fileID: 24017369}
   - component: {fileID: 24017371}
   - component: {fileID: 24017372}
-  - component: {fileID: 24017373}
   m_Layer: 7
   m_Name: SquareCarrot
   m_TagString: Enemy
@@ -272,43 +271,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnnemyCarrot
   _detectionRange: 5
-  _firerate: 1.5
-  _stundelay: 1.5
-  _fireanticipation: 0.4
-  _speedRotation: 180
-  _ballspeed: 6
+  _firerate: 0.82
+  _fireanticipation: 0.6
+  _speedRotation: 240.6
+  _ballspeed: 6.75
   _burstDelay: 0.1
-  _recoildelay: 0.1
-  _recoilspeed: 5
   _projectilePrefab: {fileID: 3293875954055319704, guid: eaf75ee91bf347241a7def4e8ded0e58, type: 3}
+  V: {x: 0, y: 0}
   player: {fileID: 1053811537}
---- !u!50 &24017373
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 24017368}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -853,11 +823,9 @@ MonoBehaviour:
   moveDirection: {x: 0, y: 0}
   _currentState: 0
   moveSpeed: 5
-  _hitdelay: 0.12
   _dashForce: 60
   _dashDuration: 0.04
   _dashCooldown: 0.9
-  _hitspeed: 7.24
 --- !u!114 &1053811543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -872,7 +840,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAttack
   playerMovement: {fileID: 1053811542}
   attackPoint: {fileID: 1461601832}
-  ennemyCarrot: {fileID: 0}
   layerMask:
     serializedVersion: 2
     m_Bits: 128

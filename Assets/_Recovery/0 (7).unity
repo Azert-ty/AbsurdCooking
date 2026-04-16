@@ -274,13 +274,14 @@ MonoBehaviour:
   _detectionRange: 5
   _firerate: 1.5
   _stundelay: 1.5
-  _fireanticipation: 0.4
+  _fireanticipation: 3
   _speedRotation: 180
-  _ballspeed: 6
+  _ballspeed: 5
   _burstDelay: 0.1
   _recoildelay: 0.1
   _recoilspeed: 5
   _projectilePrefab: {fileID: 3293875954055319704, guid: eaf75ee91bf347241a7def4e8ded0e58, type: 3}
+  V: {x: 0, y: 0}
   player: {fileID: 1053811537}
 --- !u!50 &24017373
 Rigidbody2D:
