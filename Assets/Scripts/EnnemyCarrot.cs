@@ -1,5 +1,6 @@
 
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(SpriteRenderer))]
@@ -80,58 +81,83 @@ public class EnnemyCarrot : MonoBehaviour
         predictedPosition=GetPredictedPosition();
         float sqrtRange=(player.transform.position-transform.position).sqrMagnitude;
         bool Range=sqrtRange<_detectionRange*_detectionRange;
-        if (Range && canShoot)
+        if (Range && _currentEnnemyState==EnnemyState.Idle)
         {
 
-            canShoot = false;
-            StartCoroutine(Attack());
+             changeState(EnnemyState.Alert);
         }
-        if (!Range)
+        if (!Range && _currentEnnemyState!=EnnemyState.Idle)
         {   
-            _isfirsttime=true;
-            _currentEnnemyState=EnnemyState.Idle;
+            changeState(EnnemyState.Idle);
         }
         if (_currentEnnemyState == EnnemyState.Alert ||  _currentEnnemyState == EnnemyState.Shooting)
         {
             RotateTowardsPrediction();
         }
         
-
+       
         
     }
 
-    IEnumerator Attack()
+    void changeState(EnnemyState newState)
     {
-        if (_isfirsttime)
+        StopAllCoroutines();
+        _currentEnnemyState=newState;
+
+        switch (newState)
         {
-            _currentEnnemyState=EnnemyState.Alert;
-            spriteRenderer.color=Color.red;
-            Debug.Log("L'IA t'a vu ! Elle prépare son tir...");
-            yield return new WaitForSeconds(_fireanticipation);
-            spriteRenderer.color=Color.black;
-            _isfirsttime=false;
+            case EnnemyState.Alert:
+                StartCoroutine(AlertRoutine());
+                break;
+            case EnnemyState.Shooting:
+                StartCoroutine(ShootingRoutine());
+                break;
+            case EnnemyState.Stun:
+                StartCoroutine(StunRoutine());
+                break;
             
         }
-        _currentEnnemyState=EnnemyState.Shooting;
-        Debug.Log("PAN");
-        Vector2 centerdir=((Vector3)predictedPosition-transform.position).normalized;
-        Debug.DrawLine(transform.position, predictedPosition, Color.green, 1f);
-        Debug.DrawRay(predictedPosition, Vector2.up, Color.red, 1f); // Une croix sur la cible
-        Vector2 lastposition=transform.position;
-        float [] angles={-15,0,+15} ;
-        foreach (float angle in angles)
+    }
+
+    IEnumerator AlertRoutine()
+    {
+        spriteRenderer.color=Color.red;
+        Debug.Log("L'IA t'a vu ! Elle prépare son tir...");
+        yield return new WaitForSeconds(_fireanticipation);
+        spriteRenderer.color=Color.black;
+        changeState(EnnemyState.Shooting);
+    }
+
+    IEnumerator ShootingRoutine()
+    {
+        
+        while (true)
         {
-            Vector2 finaldir=Quaternion.Euler(0,0,angle)*centerdir;
-            Spreadball(finaldir);
-            yield return StartCoroutine(Recoil(centerdir));
-            yield return new WaitForSeconds(_burstDelay);
+            Debug.Log("PAN");
+            Vector2 centerdir=((Vector3)GetPredictedPosition()-transform.position).normalized;
+            Debug.DrawLine(transform.position, predictedPosition, Color.green, 1f);
+            Debug.DrawRay(predictedPosition, Vector2.up, Color.red, 1f); // Une croix sur la cible
+            float [] angles={-15,0,+15} ;
+            foreach (float angle in angles)
+            {
+                Vector2 finaldir=Quaternion.Euler(0,0,angle)*centerdir;
+                Spreadball(finaldir);
+                yield return StartCoroutine(Recoil(centerdir));
+                yield return new WaitForSeconds(_burstDelay);
+            }
+            
+    
+        
+            yield return new WaitForSeconds(_firerate);  
+    
+            if ((player.transform.position-transform.position).sqrMagnitude>_detectionRange*_detectionRange)
+            {
+               changeState(EnnemyState.Idle);   
+               yield break;
+            }
         }
         
-
-    
-        yield return new WaitForSeconds(_firerate);        
-        canShoot=true;
-
+            
     }
     void OnDrawGizmosSelected()
     {
@@ -238,28 +264,20 @@ IEnumerator Recoil(Vector2 direction)
     }
 
 
-    IEnumerator  TakeHit()
+    IEnumerator  StunRoutine()
     {
         
-        _currentEnnemyState=EnnemyState.Stun;
         spriteRenderer.color=Color.gold;
         yield return new WaitForSeconds(_stundelay);
         spriteRenderer.color=Color.black;
-        _currentEnnemyState=EnnemyState.Idle;
-        canShoot=true;
-        _isfirsttime = true;
+        changeState(EnnemyState.Idle);
 
     }
 
     
     public void OntriggerHit()
     {
-       if(_currentEnnemyState != EnnemyState.Stun)
-        {
-            StopAllCoroutines();
-        } 
-        
-        StartCoroutine(TakeHit());
+       changeState(EnnemyState.Stun);
     }
 
 
