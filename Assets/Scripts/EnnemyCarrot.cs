@@ -10,7 +10,21 @@ public class EnnemyCarrot : MonoBehaviour
 
 
     [SerializeField]
+    private  float carrot_speed=5f;
+    
+    [SerializeField]
+    private  float PatrolWaitDelay=2f;
+
+    [SerializeField]
+    private  float maxDegreesDelta=2f;
+
+    [SerializeField]
     private  float _detectionRange=5f;
+    
+    [SerializeField]
+    private  float leftangle=5f;
+    [SerializeField]
+    private  float rightangle=5f;
 
     [SerializeField]
     private float _firerate=1.5f;
@@ -38,10 +52,13 @@ public class EnnemyCarrot : MonoBehaviour
     private float _recoilspeed=5f;
     private bool canShoot=true;
     private bool _isfirsttime;
+
+    private Transform currenttarget;
     private enum EnnemyState
     {
-        Idle,Alert,Shooting,Stun
+        Alert,Shooting,Stun,PatrolWait,PatrolMove
     }
+
 
     private EnnemyState _currentEnnemyState;
     public  GameObject _projectilePrefab;
@@ -52,10 +69,12 @@ public class EnnemyCarrot : MonoBehaviour
     private Rigidbody2D rbr2_player;
 
     private Rigidbody2D rbr2_Carrot;
-    
+    private Vector3 direction_patrol;
 
     private SpriteRenderer spriteRenderer;
 
+    public GameObject waypointA;
+    public  GameObject waypointB;
 
     void Awake()
     {
@@ -67,6 +86,7 @@ public class EnnemyCarrot : MonoBehaviour
        rbr2_player=player.GetComponent<Rigidbody2D>();
        spriteRenderer=GetComponent<SpriteRenderer>();
        rbr2_Carrot=GetComponent<Rigidbody2D>();
+       currenttarget=waypointB.transform;
     }
 
     // Update is called once per frame
@@ -81,14 +101,14 @@ public class EnnemyCarrot : MonoBehaviour
         predictedPosition=GetPredictedPosition();
         float sqrtRange=(player.transform.position-transform.position).sqrMagnitude;
         bool Range=sqrtRange<_detectionRange*_detectionRange;
-        if (Range && _currentEnnemyState==EnnemyState.Idle)
+        if (Range && (_currentEnnemyState==EnnemyState.PatrolMove || _currentEnnemyState==EnnemyState.PatrolWait))
         {
 
              changeState(EnnemyState.Alert);
         }
-        if (!Range && _currentEnnemyState!=EnnemyState.Idle)
+        if (!Range && (_currentEnnemyState!=EnnemyState.PatrolMove && _currentEnnemyState!=EnnemyState.PatrolWait))
         {   
-            changeState(EnnemyState.Idle);
+            changeState(EnnemyState.PatrolMove);
         }
         if (_currentEnnemyState == EnnemyState.Alert ||  _currentEnnemyState == EnnemyState.Shooting)
         {
@@ -116,9 +136,50 @@ public class EnnemyCarrot : MonoBehaviour
                 StartCoroutine(StunRoutine());
                 break;
             
+            case EnnemyState.PatrolWait:
+                rbr2_Carrot.linearVelocity=Vector2.zero; 
+                StartCoroutine(PatrolWaitRoutine());
+                break;
+            case EnnemyState.PatrolMove:
+                StartCoroutine(PatrolMoveRoutine());
+                break;
+            
         }
     }
 
+    IEnumerator PatrolWaitRoutine()
+    {
+
+       float [] angles={leftangle,rightangle,0};
+       foreach (float angle in angles)
+        {
+            var targetRotation=Quaternion.Euler(0,0,angle);
+            while (Quaternion.Angle(transform.rotation,targetRotation)>0.5f)
+            {
+                transform.rotation=Quaternion.RotateTowards(transform.rotation,targetRotation,Time.deltaTime*maxDegreesDelta);
+                yield return null;
+            };       
+        };
+        changeState(EnnemyState.PatrolMove);
+       
+    }
+
+    IEnumerator PatrolMoveRoutine()
+    {
+        
+        while (Vector2.Distance(rbr2_Carrot.position,currenttarget.transform.position)>0.1f)
+        {
+            var direction_patrol=(currenttarget.transform.position-(Vector3)rbr2_Carrot.position).normalized;
+            rbr2_Carrot.MovePosition((Vector3)rbr2_Carrot.position+direction_patrol*carrot_speed*Time.fixedDeltaTime);
+            yield return null;
+        }
+        rbr2_Carrot.MovePosition(currenttarget.transform.position);
+        yield return new WaitForSeconds(PatrolWaitDelay);
+        currenttarget=(currenttarget==waypointA.transform)?waypointB.transform:waypointA.transform;
+        changeState(EnnemyState.PatrolWait);
+        yield break;
+        
+    }
     IEnumerator AlertRoutine()
     {
         spriteRenderer.color=Color.red;
@@ -133,8 +194,9 @@ public class EnnemyCarrot : MonoBehaviour
         
         while (true)
         {
+            predictedPosition=GetPredictedPosition();
             Debug.Log("PAN");
-            Vector2 centerdir=((Vector3)GetPredictedPosition()-transform.position).normalized;
+            Vector2 centerdir=((Vector3)predictedPosition-transform.position).normalized;
             Debug.DrawLine(transform.position, predictedPosition, Color.green, 1f);
             Debug.DrawRay(predictedPosition, Vector2.up, Color.red, 1f); // Une croix sur la cible
             float [] angles={-15,0,+15} ;
@@ -152,7 +214,7 @@ public class EnnemyCarrot : MonoBehaviour
     
             if ((player.transform.position-transform.position).sqrMagnitude>_detectionRange*_detectionRange)
             {
-               changeState(EnnemyState.Idle);   
+               changeState(EnnemyState.PatrolWait);   
                yield break;
             }
         }
@@ -161,8 +223,11 @@ public class EnnemyCarrot : MonoBehaviour
     }
     void OnDrawGizmosSelected()
     {
-        Gizmos.color=Color.red;
+        Gizmos.color=Color.yellow;
         Gizmos.DrawWireSphere(transform.position,_detectionRange);
+        Gizmos.DrawLine(waypointA.transform.position, waypointB.transform.position);
+
+        
     }
 
     void RotateTowardsPrediction()
@@ -270,7 +335,7 @@ IEnumerator Recoil(Vector2 direction)
         spriteRenderer.color=Color.gold;
         yield return new WaitForSeconds(_stundelay);
         spriteRenderer.color=Color.black;
-        changeState(EnnemyState.Idle);
+        changeState(EnnemyState.PatrolWait);
 
     }
 
