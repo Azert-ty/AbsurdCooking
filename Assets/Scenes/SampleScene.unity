@@ -271,7 +271,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5fbdd276491e1c4ebe7b107f8fc6600, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnnemyCarrot
+  carrot_speed: 5
+  PatrolWaitDelay: 0.79
+  maxDegreesDelta: 180
   _detectionRange: 5
+  leftangle: 30
+  rightangle: -30
   _firerate: 1.5
   _stundelay: 1.5
   _fireanticipation: 0.4

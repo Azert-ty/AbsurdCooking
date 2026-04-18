@@ -174,7 +174,7 @@ public class EnnemyCarrot : MonoBehaviour
             yield return null;
         }
         rbr2_Carrot.MovePosition(currenttarget.transform.position);
-        yield return new WaitForSeconds(PatrolWaitDelay);
+        yield return new WaitForSeconds(PatrolWaitDelay * 0.5f);
         currenttarget=(currenttarget==waypointA.transform)?waypointB.transform:waypointA.transform;
         changeState(EnnemyState.PatrolWait);
         yield break;
