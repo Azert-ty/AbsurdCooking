@@ -1,5 +1,8 @@
 
+
 using System.Collections;
+using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -7,16 +10,25 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class EnnemyCarrot : MonoBehaviour
 {
+    
 
+
+     [SerializeField]
+    private float angle=45f;
+    [SerializeField]
+    private  float PatrolMoveDelay;
 
     [SerializeField]
     private  float carrot_speed=5f;
+
+    [SerializeField]
+    private  float maxDegreesDelta_for_patrol_move=5f;
     
     [SerializeField]
     private  float PatrolWaitDelay=2f;
 
     [SerializeField]
-    private  float maxDegreesDelta=2f;
+    private  float maxDegreesDelta_for_patrol_wait=2f;
 
     [SerializeField]
     private  float _detectionRange=5f;
@@ -25,9 +37,6 @@ public class EnnemyCarrot : MonoBehaviour
     private  float leftangle=5f;
     [SerializeField]
     private  float rightangle=5f;
-
-    [SerializeField]
-    private float _firerate=1.5f;
 
     [SerializeField]
     private float _stundelay=1.5f;
@@ -40,24 +49,25 @@ public class EnnemyCarrot : MonoBehaviour
     private float  _speedRotation=180;
 
 
-    [SerializeField, Range(6f, 20f)]
-    private float  _ballspeed=6;
-
-    [SerializeField]
-    private float _burstDelay=0.1f;
+ 
      [SerializeField]
     private float _recoildelay=0.1f;
 
      [SerializeField]
     private float _recoilspeed=5f;
-    private bool canShoot=true;
-    private bool _isfirsttime;
+    
+    [SerializeField]
+    private LayerMask layerMask;
+
+    [SerializeField]
+    private LayerMask layerMask_wall;
 
     private Transform currenttarget;
     private enum EnnemyState
     {
-        Alert,Shooting,Stun,PatrolWait,PatrolMove
+        PatrolWait,PatrolMove,Alert,Chase,Search
     }
+
 
 
     private EnnemyState _currentEnnemyState;
@@ -73,8 +83,10 @@ public class EnnemyCarrot : MonoBehaviour
 
     private SpriteRenderer spriteRenderer;
 
-    public GameObject waypointA;
-    public  GameObject waypointB;
+
+    public List<Transform> waypoints;
+
+    private int currentWaypointIndex=0;
 
     void Awake()
     {
@@ -86,7 +98,6 @@ public class EnnemyCarrot : MonoBehaviour
        rbr2_player=player.GetComponent<Rigidbody2D>();
        spriteRenderer=GetComponent<SpriteRenderer>();
        rbr2_Carrot=GetComponent<Rigidbody2D>();
-       currenttarget=waypointB.transform;
     }
 
     // Update is called once per frame
@@ -97,26 +108,68 @@ public class EnnemyCarrot : MonoBehaviour
 
     void FixedUpdate()
     {
-        if(_currentEnnemyState==EnnemyState.Stun) return;
-        predictedPosition=GetPredictedPosition();
-        float sqrtRange=(player.transform.position-transform.position).sqrMagnitude;
-        bool Range=sqrtRange<_detectionRange*_detectionRange;
-        if (Range && (_currentEnnemyState==EnnemyState.PatrolMove || _currentEnnemyState==EnnemyState.PatrolWait))
+       
+        bool detectionSystem=DetectionSystem();
+        if (detectionSystem && (_currentEnnemyState==EnnemyState.PatrolMove || _currentEnnemyState==EnnemyState.PatrolWait))
         {
 
              changeState(EnnemyState.Alert);
         }
-        if (!Range && (_currentEnnemyState!=EnnemyState.PatrolMove && _currentEnnemyState!=EnnemyState.PatrolWait))
+        if (!detectionSystem && (_currentEnnemyState!=EnnemyState.PatrolMove && _currentEnnemyState!=EnnemyState.PatrolWait))
         {   
             changeState(EnnemyState.PatrolMove);
         }
-        if (_currentEnnemyState == EnnemyState.Alert ||  _currentEnnemyState == EnnemyState.Shooting)
+
+
+    
+    }
+
+
+    bool hitawall()
+    {
+        RaycastHit2D hit2D=Physics2D.Raycast(transform.position,transform.right,Mathf.Infinity,layerMask_wall);
+
+        if (hit2D.collider==null)
         {
-            RotateTowardsPrediction();
+            return false;
+        }
+        return true;
+    }
+
+    bool  DetectionSystem()
+    {
+        float sqrtRange=(player.transform.position-transform.position).sqrMagnitude;
+        bool Range=sqrtRange<_detectionRange*_detectionRange;
+        if (!Range)
+        {
+            return false ;
+        }
+
+        Vector2 forward=transform.right;
+        Vector2 directtoPlayer=(player.transform.position-transform.position).normalized;
+        float dot=Vector2.Dot(forward,directtoPlayer);
+        if (dot < Mathf.Cos(angle*Mathf.Deg2Rad) )
+        {
+            return false;
+        }
+
+
+
+        
+        RaycastHit2D hit=Physics2D.Raycast(transform.position,directtoPlayer,Mathf.Sqrt(sqrtRange),layerMask);
+        Debug.DrawRay(transform.position,directtoPlayer*Mathf.Sqrt(sqrtRange),Color.red);
+        if(hit.collider==null)
+        {
+            return false;
         }
         
-       
-        
+
+        if (hit.collider.gameObject==player)
+        {
+            return true;
+        }
+
+        return false;
     }
 
     void changeState(EnnemyState newState)
@@ -129,12 +182,7 @@ public class EnnemyCarrot : MonoBehaviour
             case EnnemyState.Alert:
                 StartCoroutine(AlertRoutine());
                 break;
-            case EnnemyState.Shooting:
-                StartCoroutine(ShootingRoutine());
-                break;
-            case EnnemyState.Stun:
-                StartCoroutine(StunRoutine());
-                break;
+            
             
             case EnnemyState.PatrolWait:
                 rbr2_Carrot.linearVelocity=Vector2.zero; 
@@ -149,17 +197,22 @@ public class EnnemyCarrot : MonoBehaviour
 
     IEnumerator PatrolWaitRoutine()
     {
+        Vector2 nextdir=(waypoints[currentWaypointIndex].position-transform.position).normalized;
+        float baseangle=Mathf.Atan2(nextdir.y,nextdir.x);
 
-       float [] angles={leftangle,rightangle,0};
+
+       float [] angles={baseangle ,baseangle+leftangle,baseangle-rightangle,baseangle};
        foreach (float angle in angles)
         {
             var targetRotation=Quaternion.Euler(0,0,angle);
             while (Quaternion.Angle(transform.rotation,targetRotation)>0.5f)
             {
-                transform.rotation=Quaternion.RotateTowards(transform.rotation,targetRotation,Time.deltaTime*maxDegreesDelta);
+                transform.rotation=Quaternion.RotateTowards(transform.rotation,targetRotation,Time.deltaTime*maxDegreesDelta_for_patrol_wait);
                 yield return null;
-            };       
+            };  
+             yield return new WaitForSeconds(0.2f) ;   
         };
+        yield return new WaitForSeconds(PatrolWaitDelay) ;   
         changeState(EnnemyState.PatrolMove);
        
     }
@@ -167,15 +220,23 @@ public class EnnemyCarrot : MonoBehaviour
     IEnumerator PatrolMoveRoutine()
     {
         
-        while (Vector2.Distance(rbr2_Carrot.position,currenttarget.transform.position)>0.1f)
+        while (Vector2.Distance(rbr2_Carrot.position,waypoints[currentWaypointIndex].transform.position)>0.1f)
         {
-            var direction_patrol=(currenttarget.transform.position-(Vector3)rbr2_Carrot.position).normalized;
-            rbr2_Carrot.MovePosition((Vector3)rbr2_Carrot.position+direction_patrol*carrot_speed*Time.fixedDeltaTime);
-            yield return null;
+            float distance=Vector2.Distance(rbr2_Carrot.position,waypoints[currentWaypointIndex].transform.position);
+            var direction_patrol=(waypoints[currentWaypointIndex].transform.position-(Vector3)rbr2_Carrot.position).normalized;
+            float speedfactor=Mathf.SmoothStep(0.2f,1f,distance);
+            float finalspeed=carrot_speed*speedfactor;
+            rbr2_Carrot.MovePosition((Vector3)rbr2_Carrot.position+direction_patrol*finalspeed*Time.fixedDeltaTime);
+            float angle=Mathf.Atan2(direction_patrol.y,direction_patrol.x)*Mathf.Rad2Deg;
+            var targetRotation= Quaternion.Euler(0,0,angle);
+            var currentrotation=transform.rotation;
+            transform.rotation=Quaternion.RotateTowards(currentrotation,targetRotation,Time.fixedDeltaTime*maxDegreesDelta_for_patrol_move);
+            yield return new WaitForFixedUpdate();
         }
-        rbr2_Carrot.MovePosition(currenttarget.transform.position);
-        yield return new WaitForSeconds(PatrolWaitDelay * 0.5f);
-        currenttarget=(currenttarget==waypointA.transform)?waypointB.transform:waypointA.transform;
+        // rbr2_Carrot.MovePosition(currenttarget.transform.position);
+        yield return new WaitForSeconds(PatrolMoveDelay + Random.Range(-0.2f, 0.2f));
+        // currenttarget=(currenttarget==waypointA.transform)?waypointB.transform:waypointA.transform;
+        currentWaypointIndex=(currentWaypointIndex+1)%waypoints.Count;
         changeState(EnnemyState.PatrolWait);
         yield break;
         
@@ -186,166 +247,31 @@ public class EnnemyCarrot : MonoBehaviour
         Debug.Log("L'IA t'a vu ! Elle prépare son tir...");
         yield return new WaitForSeconds(_fireanticipation);
         spriteRenderer.color=Color.black;
-        changeState(EnnemyState.Shooting);
+        // changeState(EnnemyState.Shooting);
     }
 
-    IEnumerator ShootingRoutine()
+   
+
+    void OnDrawGizmos()
     {
-        
-        while (true)
-        {
-            predictedPosition=GetPredictedPosition();
-            Debug.Log("PAN");
-            Vector2 centerdir=((Vector3)predictedPosition-transform.position).normalized;
-            Debug.DrawLine(transform.position, predictedPosition, Color.green, 1f);
-            Debug.DrawRay(predictedPosition, Vector2.up, Color.red, 1f); // Une croix sur la cible
-            float [] angles={-15,0,+15} ;
-            foreach (float angle in angles)
-            {
-                Vector2 finaldir=Quaternion.Euler(0,0,angle)*centerdir;
-                Spreadball(finaldir);
-                yield return StartCoroutine(Recoil(centerdir));
-                yield return new WaitForSeconds(_burstDelay);
-            }
-            
-    
-        
-            yield return new WaitForSeconds(_firerate);  
-    
-            if ((player.transform.position-transform.position).sqrMagnitude>_detectionRange*_detectionRange)
-            {
-               changeState(EnnemyState.PatrolWait);   
-               yield break;
-            }
-        }
-        
-            
-    }
-    void OnDrawGizmosSelected()
-    {
+        Gizmos.color=Color.blue;
+        Gizmos.DrawWireSphere(transform.position,_detectionRange); 
+        Vector2 forward=transform.right;
+
         Gizmos.color=Color.yellow;
-        Gizmos.DrawWireSphere(transform.position,_detectionRange);
-        Gizmos.DrawLine(waypointA.transform.position, waypointB.transform.position);
-
-        
-    }
-
-    void RotateTowardsPrediction()
-    {
-        Vector2 centerdir=((Vector3)predictedPosition-transform.position).normalized;
-        var carrotanglewithDeg=Mathf.Atan2(centerdir.y,centerdir.x)*Mathf.Rad2Deg;
-        Quaternion targetRotation=Quaternion.Euler(0,0,carrotanglewithDeg);
-        transform.rotation=Quaternion.RotateTowards(transform.rotation,targetRotation,Time.fixedDeltaTime*_speedRotation);
-    }
-
-    
-IEnumerator Recoil(Vector2 direction)
-{
-    float duration = 0.1f;
-    float t = 0;
-
-    Vector2 basePosition = rbr2_Carrot.position;
-
-    while (t < duration)
-    {
-        float strength = Mathf.Sin((t / duration) * Mathf.PI);
-        Vector2 offset = -direction * 0.3f * strength;
-
-        rbr2_Carrot.MovePosition(basePosition + offset);
-
-        t += Time.deltaTime;
-        yield return null;
-    }
-
-    rbr2_Carrot.MovePosition(basePosition);
-}
+        Gizmos.DrawLine(transform.position,transform.position+(Vector3)forward*3f);
 
 
-    void Spreadball(Vector2 vector2)
-    {
-            GameObject ball=Instantiate(_projectilePrefab,transform.position,Quaternion.identity);
-            Debug.Log("Spawn projectile");
-            Debug.Log(ball);
-            var rb2=ball.GetComponent<Rigidbody2D>();
-            rb2.linearVelocity=vector2*_ballspeed;
-            
-    }
+       
+        Vector2 left=Quaternion.Euler(0,0,angle)*forward;
+        Vector2 right=Quaternion.Euler(0,0,-angle)*forward;
 
-    public Vector2 GetPredictedPosition()
-    {
-        var  V=rbr2_player.linearVelocity;
-        var D= player.transform.position-transform.position;
-        var b= 2*Vector2.Dot(D,V);
-        var a= Vector2.Dot(V,V)-_ballspeed*_ballspeed;
-        var c=Vector2.Dot(D,D);
-        var delta=b*b-4*a*c;
-        if (Mathf.Abs(a) < 0.0001f)
-        {
-            return player.transform.position;
-        }
-        if (delta > 0)
-        {
-            var t1=(-b+Mathf.Sqrt(delta))/(2*a);
-            var t2=(-b-Mathf.Sqrt(delta))/(2*a);
+        Gizmos.color=Color.red;
+        Gizmos.DrawLine(transform.position,transform.position+(Vector3)left*3f);
 
-            var tmp=-1f;
-            if (t1 > 0)
-            {
-                tmp=t1;
-            }
-            if (0 < t2)
-            {
-                if (tmp < 0)
-                {
-                    tmp=t2;
-                }
-                else
-                {
-                    tmp= tmp<t2? tmp : t2;
-                }
-            }
-            if (tmp < 0)
-            {
-                return player.transform.position;
-            }
-            else
-            {
-                return (Vector2)player.transform.position+rbr2_player.linearVelocity*tmp;
-            }
-
-            
-            
-        }
-        else if (Mathf.Abs(delta) < 0.0001f)
-        {
-            var t0=-b/(2*a);
-
-            return (Vector2)player.transform.position+V*t0;
-        }
-        else
-        {
-            return player.transform.position;
-        }
-    }
-
-
-    IEnumerator  StunRoutine()
-    {
-        
-        spriteRenderer.color=Color.gold;
-        yield return new WaitForSeconds(_stundelay);
-        spriteRenderer.color=Color.black;
-        changeState(EnnemyState.PatrolWait);
+        Gizmos.DrawLine(transform.position,transform.position+(Vector3)right*3f);
 
     }
-
-    
-    public void OntriggerHit()
-    {
-       changeState(EnnemyState.Stun);
-    }
-
-
     
 }
 
