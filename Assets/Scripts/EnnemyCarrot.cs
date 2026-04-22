@@ -98,6 +98,8 @@ public class EnnemyCarrot : MonoBehaviour
        rbr2_player=player.GetComponent<Rigidbody2D>();
        spriteRenderer=GetComponent<SpriteRenderer>();
        rbr2_Carrot=GetComponent<Rigidbody2D>();
+       _currentEnnemyState = EnnemyState.PatrolMove;
+        StartCoroutine(PatrolMoveRoutine());
     }
 
     // Update is called once per frame
@@ -108,11 +110,10 @@ public class EnnemyCarrot : MonoBehaviour
 
     void FixedUpdate()
     {
-       
+        
         bool detectionSystem=DetectionSystem();
         if (detectionSystem && (_currentEnnemyState==EnnemyState.PatrolMove || _currentEnnemyState==EnnemyState.PatrolWait))
         {
-
              changeState(EnnemyState.Alert);
         }
         if (!detectionSystem && (_currentEnnemyState!=EnnemyState.PatrolMove && _currentEnnemyState!=EnnemyState.PatrolWait))
