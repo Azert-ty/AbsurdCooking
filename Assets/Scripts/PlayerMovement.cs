@@ -1,104 +1,37 @@
-using System;
-using System.Collections;
-using System.Diagnostics;
-using Unity.VisualScripting;
+
+
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public  PlayerControls controls;
+    [SerializeField] private float moveSpeed = 5f;
 
-    public Vector2 moveDirection;
-
-    private Rigidbody2D rb2D;
-
-    public enum PlayerState {Idle,Move}
-
-    public PlayerState _currentState;
-
-    [SerializeField]
-    private float moveSpeed=5;
-
-  
+    private PlayerControls controls;
+    private Vector2 moveInput;
+    private Rigidbody2D rb;
 
     void Awake()
     {
-         controls=new PlayerControls();
-         
+        controls = new PlayerControls();
     }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
-        rb2D=gameObject.GetComponent<Rigidbody2D>();
-       
-
-        // controls.Player.Move.performed+=onMove();
+        rb = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        moveDirection=controls.Player.Move.ReadValue<Vector2>();
-        
+        moveInput = controls.Player.Move.ReadValue<Vector2>();
     }
 
-    
-
-    void onMove()
+    void FixedUpdate()
     {
-        moveDirection=moveDirection.normalized;
-        Vector2 targetPosition=rb2D.position+moveDirection*moveSpeed*Time.fixedDeltaTime;
-        rb2D.MovePosition(targetPosition);
-          
+        Vector2 movement = moveInput.normalized * moveSpeed * Time.fixedDeltaTime;
+        rb.MovePosition(rb.position + movement);
     }
 
-    void OnEnable()
-    {
-        controls.Enable();
-        controls.Player.Dash.performed+=HandleDashInput;
-    }
-
-    private void HandleDashInput(InputAction.CallbackContext callbackContext)
-    {
-       
-    }
-
-    void OnDisable()
-    {
-        controls.Player.Dash.performed-=HandleDashInput;
-        controls.Disable();
-    }
-
-    void OnIdle()
-    {
-        rb2D.linearVelocity=Vector2.zero;
-    }
-
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-       
-    }
-
-    
-
-
-    
-    
-
-     void FixedUpdate()
-    {
-
-        
-        if (moveDirection!=Vector2.zero)
-        {
-           onMove();
-        }
-        else
-        {
-            OnIdle();
-        }
-    
-       
-    }
+    void OnEnable() => controls.Enable();
+    void OnDisable() => controls.Disable();
 }

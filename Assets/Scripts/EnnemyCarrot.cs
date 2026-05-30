@@ -5,9 +5,9 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.AI;
 
 [RequireComponent(typeof(SpriteRenderer))]
-[RequireComponent(typeof(Rigidbody2D))]
 public class EnnemyCarrot : MonoBehaviour
 {
     
@@ -50,11 +50,7 @@ public class EnnemyCarrot : MonoBehaviour
 
 
  
-     [SerializeField]
-    private float _recoildelay=0.1f;
-
-     [SerializeField]
-    private float _recoilspeed=5f;
+    
     
     [SerializeField]
     private LayerMask layerMask;
@@ -62,7 +58,6 @@ public class EnnemyCarrot : MonoBehaviour
     [SerializeField]
     private LayerMask layerMask_wall;
 
-    private Transform currenttarget;
     private enum EnnemyState
     {
         PatrolWait,PatrolMove,Alert,Chase,Search
@@ -76,10 +71,7 @@ public class EnnemyCarrot : MonoBehaviour
     private Vector2 predictedPosition;
   
     public GameObject player;
-    private Rigidbody2D rbr2_player;
 
-    private Rigidbody2D rbr2_Carrot;
-    private Vector3 direction_patrol;
 
     private SpriteRenderer spriteRenderer;
 
@@ -88,6 +80,8 @@ public class EnnemyCarrot : MonoBehaviour
 
     private int currentWaypointIndex=0;
 
+    private NavMeshAgent navMeshAgent;
+
     void Awake()
     {
         
@@ -95,9 +89,14 @@ public class EnnemyCarrot : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-       rbr2_player=player.GetComponent<Rigidbody2D>();
        spriteRenderer=GetComponent<SpriteRenderer>();
-       rbr2_Carrot=GetComponent<Rigidbody2D>();
+
+        navMeshAgent=GetComponent<NavMeshAgent>();
+        navMeshAgent.updateRotation = false;
+        navMeshAgent.updateUpAxis = false;
+
+
+
        _currentEnnemyState = EnnemyState.PatrolMove;
         StartCoroutine(PatrolMoveRoutine());
     }
@@ -126,16 +125,7 @@ public class EnnemyCarrot : MonoBehaviour
     }
 
 
-    bool hitawall()
-    {
-        RaycastHit2D hit2D=Physics2D.Raycast(transform.position,transform.right,Mathf.Infinity,layerMask_wall);
 
-        if (hit2D.collider==null)
-        {
-            return false;
-        }
-        return true;
-    }
 
     bool  DetectionSystem()
     {
@@ -154,9 +144,6 @@ public class EnnemyCarrot : MonoBehaviour
             return false;
         }
 
-
-
-        
         RaycastHit2D hit=Physics2D.Raycast(transform.position,directtoPlayer,Mathf.Sqrt(sqrtRange),layerMask);
         Debug.DrawRay(transform.position,directtoPlayer*Mathf.Sqrt(sqrtRange),Color.red);
         if(hit.collider==null)
@@ -186,7 +173,6 @@ public class EnnemyCarrot : MonoBehaviour
             
             
             case EnnemyState.PatrolWait:
-                rbr2_Carrot.linearVelocity=Vector2.zero; 
                 StartCoroutine(PatrolWaitRoutine());
                 break;
             case EnnemyState.PatrolMove:
@@ -199,7 +185,7 @@ public class EnnemyCarrot : MonoBehaviour
     IEnumerator PatrolWaitRoutine()
     {
         Vector2 nextdir=(waypoints[currentWaypointIndex].position-transform.position).normalized;
-        float baseangle=Mathf.Atan2(nextdir.y,nextdir.x);
+        float baseangle=Mathf.Atan2(nextdir.y,nextdir.x)*Mathf.Rad2Deg;
 
 
        float [] angles={baseangle ,baseangle+leftangle,baseangle-rightangle,baseangle};
@@ -221,25 +207,28 @@ public class EnnemyCarrot : MonoBehaviour
     IEnumerator PatrolMoveRoutine()
     {
         
-        while (Vector2.Distance(rbr2_Carrot.position,waypoints[currentWaypointIndex].transform.position)>0.1f)
+        navMeshAgent.SetDestination(waypoints[currentWaypointIndex].transform.position);
+        navMeshAgent.isStopped=false;
+        while (navMeshAgent.pathPending || 
+      (navMeshAgent.remainingDistance > navMeshAgent.stoppingDistance && navMeshAgent.hasPath))
         {
-            float distance=Vector2.Distance(rbr2_Carrot.position,waypoints[currentWaypointIndex].transform.position);
-            var direction_patrol=(waypoints[currentWaypointIndex].transform.position-(Vector3)rbr2_Carrot.position).normalized;
-            float speedfactor=Mathf.SmoothStep(0.2f,1f,distance);
-            float finalspeed=carrot_speed*speedfactor;
-            rbr2_Carrot.MovePosition((Vector3)rbr2_Carrot.position+direction_patrol*finalspeed*Time.fixedDeltaTime);
-            float angle=Mathf.Atan2(direction_patrol.y,direction_patrol.x)*Mathf.Rad2Deg;
-            var targetRotation= Quaternion.Euler(0,0,angle);
-            var currentrotation=transform.rotation;
-            transform.rotation=Quaternion.RotateTowards(currentrotation,targetRotation,Time.fixedDeltaTime*maxDegreesDelta_for_patrol_move);
-            yield return new WaitForFixedUpdate();
+           
+            Vector2 velocity=navMeshAgent.desiredVelocity.normalized;
+           if (velocity.sqrMagnitude>0.1f)
+           {
+             float angle=Mathf.Atan2(velocity.y,velocity.x)*Mathf.Rad2Deg;
+             var targetRotation= Quaternion.Euler(0,0,angle);
+             var currentrotation=transform.rotation;
+             transform.rotation=Quaternion.RotateTowards(currentrotation,targetRotation,Time.deltaTime*maxDegreesDelta_for_patrol_move);
+              
+             
+           }
+            yield return null;
         }
-        // rbr2_Carrot.MovePosition(currenttarget.transform.position);
-        yield return new WaitForSeconds(PatrolMoveDelay + Random.Range(-0.2f, 0.2f));
-        // currenttarget=(currenttarget==waypointA.transform)?waypointB.transform:waypointA.transform;
+        navMeshAgent.isStopped=true;
+        yield return new WaitForSeconds(PatrolMoveDelay );
         currentWaypointIndex=(currentWaypointIndex+1)%waypoints.Count;
         changeState(EnnemyState.PatrolWait);
-        yield break;
         
     }
     IEnumerator AlertRoutine()

@@ -19,8 +19,8 @@ TagManager:
   - Projectile
   - Player
   - Wall
-  - 
-  - 
+  - Ground
+  - NavMesh
   - 
   - 
   - 
