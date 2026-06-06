@@ -1,5 +1,3 @@
-
-
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -10,6 +8,8 @@ public class PlayerMovement : MonoBehaviour
     private PlayerControls controls;
     private Vector2 moveInput;
     private Rigidbody2D rb;
+
+    private bool inputEnabled = true;
 
     void Awake()
     {
@@ -23,6 +23,12 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        if (!inputEnabled)
+        {
+            moveInput = Vector2.zero;
+            return;
+        }
+
         moveInput = controls.Player.Move.ReadValue<Vector2>();
     }
 
@@ -30,6 +36,14 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector2 movement = moveInput.normalized * moveSpeed * Time.fixedDeltaTime;
         rb.MovePosition(rb.position + movement);
+    }
+
+    public void SetInputEnabled(bool enabled)
+    {
+        inputEnabled = enabled;
+
+        if (!enabled)
+            moveInput = Vector2.zero;
     }
 
     void OnEnable() => controls.Enable();

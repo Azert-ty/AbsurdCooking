@@ -7,11 +7,17 @@ public class EnemyVision : MonoBehaviour
 
     [Header("Vision")]
     [SerializeField] private float detectionRange = 5f;
-    [SerializeField] private float visionAngle = 45f;
+    [SerializeField] private float visionAngle = 30f;
 
     [SerializeField] private LayerMask visionMask;
 
     public Transform Player => player;
+
+    public Vector2 LastKnownDirection
+    {
+        get;
+        private set;
+    }
 
 
     public Vector3 LastKnownPlayerPosition
@@ -76,6 +82,9 @@ public class EnemyVision : MonoBehaviour
         if (hit.collider.CompareTag("Player"))
         {
             LastKnownPlayerPosition = player.position;
+            LastKnownDirection =
+            ((Vector2)player.position -
+            (Vector2)transform.position).normalized;
             return true;
         }
 

@@ -15,6 +15,12 @@ public class EnemyAI : MonoBehaviour
     private EnemyState currentState;
 
     [SerializeField]
+    private float searchAngle = 45f;
+
+    [SerializeField]
+    private float searchRotationSpeed = 180f;
+
+    [SerializeField]
     private float loseSightDelay = 2f;
 
 
@@ -38,7 +44,6 @@ public class EnemyAI : MonoBehaviour
         if (currentState == EnemyState.Patrol)
         {
             if (vision.CanSeePlayer())
-            // if (vision.CanSeePlayerIgnoringAngle())
             {
                 ChangeState(EnemyState.Alert);
             }
@@ -74,7 +79,14 @@ public class EnemyAI : MonoBehaviour
             case EnemyState.Chase:
                 StartCoroutine(ChaseRoutine());
                 break;
-            }
+
+            case EnemyState.Search:
+                StartCoroutine(SearchRoutine());
+                break;
+        }
+            
+
+            
     }
 
     private IEnumerator AlertRoutine()
@@ -88,8 +100,35 @@ public class EnemyAI : MonoBehaviour
         ChangeState(EnemyState.Chase);
     }
 
+    private IEnumerator RotateToAngle(float targetZ)
+    {
+        Quaternion targetRotation =
+            Quaternion.Euler(0, 0, targetZ);
+
+        while (
+            Quaternion.Angle(
+                transform.rotation,
+                targetRotation) > 1f)
+        {
+            transform.rotation =
+                Quaternion.RotateTowards(
+                    transform.rotation,
+                    targetRotation,
+                    searchRotationSpeed * Time.deltaTime);
+                    if (vision.CanSeePlayer())
+                    {
+                        ChangeState(EnemyState.Chase);
+                        yield break;
+                    }
+
+            yield return null;
+        }
+    }
+
     private IEnumerator ChaseRoutine()
     {
+        spriteRenderer.color = Color.red;
+
         lostSightTimer = 0f;
 
         while (currentState == EnemyState.Chase)
@@ -113,13 +152,59 @@ public class EnemyAI : MonoBehaviour
 
                     if (lostSightTimer >= loseSightDelay)
                     {
-                        ChangeState(EnemyState.Patrol);
+                        ChangeState(EnemyState.Search);
                     }
                 }
 
             yield return null;
         }
     }
+
+
+    
+
+    private IEnumerator SearchRoutine()
+    {
+        spriteRenderer.color = Color.yellow;
+
+        Vector3 predictedPosition =
+        vision.LastKnownPlayerPosition +
+        (Vector3)(vision.LastKnownDirection * 2f);
+
+        movement.MoveTo(predictedPosition);
+
+        while (!movement.ReachedDestination())
+        {
+             if (vision.CanSeePlayer())
+            {
+                ChangeState(EnemyState.Chase);
+                yield break;
+            }
+
+            yield return null;
+        }
+
+        float baseAngle =
+            transform.eulerAngles.z;
+
+        yield return RotateToAngle(
+            baseAngle + searchAngle);
+
+        yield return new WaitForSeconds(0.3f);
+
+        yield return RotateToAngle(
+            baseAngle - searchAngle);
+
+        yield return new WaitForSeconds(0.3f);
+
+        yield return RotateToAngle(
+            baseAngle);
+
+        yield return new WaitForSeconds(0.5f);
+
+        ChangeState(EnemyState.Patrol);
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.CompareTag("Player"))
