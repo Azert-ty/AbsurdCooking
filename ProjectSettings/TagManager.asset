@@ -7,6 +7,8 @@ TagManager:
   - Enemy
   - Projectile
   - Wall
+  - Coin
+  - Treasure
   layers:
   - Default
   - TransparentFX

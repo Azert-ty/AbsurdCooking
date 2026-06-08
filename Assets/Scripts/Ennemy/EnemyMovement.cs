@@ -4,6 +4,15 @@ using UnityEngine.AI;
 
 public class EnemyMovement : MonoBehaviour
 {
+
+
+    [Header("Chase Formation")]
+    [SerializeField] private float chaseSpacing = 0.6f;
+
+    private int chaseRank = 1;
+    
+
+
     [Header("Patrol")]
     [SerializeField] private Transform[] waypoints;
 
@@ -11,6 +20,11 @@ public class EnemyMovement : MonoBehaviour
 
     [SerializeField] private float rotationSpeed = 180f;
 
+    [Header("Speed")]
+    [SerializeField] private float chaseSpeed = 8f;
+
+
+    [SerializeField] private float patrolSpeed = 3.5f;
     private NavMeshAgent agent;
 
     
@@ -36,6 +50,24 @@ public class EnemyMovement : MonoBehaviour
     }
     
 
+
+    public void SetChaseSpeed()
+    {
+        agent.speed = chaseSpeed;
+    }
+
+
+    public void SetChaseRank(int rank)
+    {
+        chaseRank = Mathf.Max(1, rank);
+    }
+
+
+    public void SetPatrolSpeed()
+    {
+        agent.speed = patrolSpeed;
+    }
+
     public bool ReachedDestination()
     {
         if (agent.pathPending)
@@ -49,6 +81,25 @@ public class EnemyMovement : MonoBehaviour
     {
         agent.isStopped = false;
         agent.SetDestination(target);
+    }
+
+    public void ChaseTarget(Transform target)
+    {
+        if (target == null)
+            return;
+
+        agent.isStopped = false;
+
+        int spacingIndex = chaseRank - 1;
+
+        Vector3 directionFromTargetToEnemy =
+            (transform.position - target.position).normalized;
+
+        Vector3 chasePosition =
+            target.position +
+            directionFromTargetToEnemy * chaseSpacing * spacingIndex;
+
+        agent.SetDestination(chasePosition);
     }
     private void Update()
     {
@@ -87,6 +138,10 @@ public class EnemyMovement : MonoBehaviour
 
     public IEnumerator PatrolRoutine()
     {
+
+
+        SetPatrolSpeed();
+
         spriteRenderer.color = Color.white;
         
 

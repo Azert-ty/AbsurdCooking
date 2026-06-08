@@ -25,30 +25,7 @@ public class EnemyVision : MonoBehaviour
         get;
         private set;
     }
-//     public bool CanSeePlayerIgnoringAngle()
-// {
-//     Vector2 directionToPlayer =
-//         player.position - transform.position;
 
-//     float sqrDistance =
-//         directionToPlayer.sqrMagnitude;
-
-//     if (sqrDistance >
-//         detectionRange * detectionRange)
-//         return false;
-
-//     RaycastHit2D hit =
-//         Physics2D.Raycast(
-//             transform.position,
-//             directionToPlayer.normalized,
-//             Mathf.Sqrt(sqrDistance),
-//             visionMask);
-
-//     if (hit.collider == null)
-//         return false;
-
-//     return hit.collider.CompareTag("Player");
-// }
     public bool CanSeePlayer()
     {
         

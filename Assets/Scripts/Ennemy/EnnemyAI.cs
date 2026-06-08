@@ -51,11 +51,19 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
+
     private void ChangeState(EnemyState newState)
     {
+        if (currentState == EnemyState.Chase &&
+            newState != EnemyState.Chase)
+        {
+            EnemyChaseCoordinator.Unregister(movement);
+        }
+
         StopAllCoroutines();
-        Debug.Log(
-        $"{currentState} -> {newState}");
+
+        Debug.Log($"{currentState} -> {newState}");
+
         currentState = newState;
 
         switch (currentState)
@@ -77,18 +85,26 @@ public class EnemyAI : MonoBehaviour
                 break;
 
             case EnemyState.Chase:
-                StartCoroutine(ChaseRoutine());
+
+                EnemyChaseCoordinator.Register(
+                    movement,
+                    vision.Player);
+
+                StartCoroutine(
+                    ChaseRoutine());
+
                 break;
 
             case EnemyState.Search:
-                StartCoroutine(SearchRoutine());
+
+                StartCoroutine(
+                    SearchRoutine());
+
                 break;
         }
-            
-
-            
     }
 
+    
     private IEnumerator AlertRoutine()
     {
         movement.StopMovement();
@@ -125,41 +141,41 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
+   
     private IEnumerator ChaseRoutine()
     {
+        movement.SetChaseSpeed();
         spriteRenderer.color = Color.red;
 
         lostSightTimer = 0f;
 
         while (currentState == EnemyState.Chase)
         {
-                if (vision.CanSeePlayer())
+            if (vision.CanSeePlayer())
+            {
+                Debug.Log("VOIT JOUEUR");
+
+                lostSightTimer = 0f;
+
+                EnemyChaseCoordinator.RecalculateRanks();
+
+                movement.ChaseTarget(vision.Player);
+            }
+            else
+            {
+                Debug.Log("PERDU");
+
+                lostSightTimer += Time.deltaTime;
+
+                if (lostSightTimer >= loseSightDelay)
                 {
-                    Debug.Log("VOIT JOUEUR");
-
-                    lostSightTimer = 0f;
-
-                    movement.MoveTo(
-                        vision.Player.position);
+                    ChangeState(EnemyState.Search);
                 }
-                else
-                {
-                    Debug.Log("PERDU");
-
-                    lostSightTimer += Time.deltaTime;
-
-                    // Debug.Log(lostSightTimer);
-
-                    if (lostSightTimer >= loseSightDelay)
-                    {
-                        ChangeState(EnemyState.Search);
-                    }
-                }
+            }
 
             yield return null;
         }
     }
-
 
     
 
