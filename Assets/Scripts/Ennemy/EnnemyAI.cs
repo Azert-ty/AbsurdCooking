@@ -4,10 +4,18 @@ using UnityEngine;
 [RequireComponent(typeof(SpriteRenderer))]
 public class EnemyAI : MonoBehaviour
 {
+
+    
     [Header("References")]
     [SerializeField] private EnemyVision vision;
 
     [SerializeField] private EnemyMovement movement;
+
+     [SerializeField] 
+    private EnemyFeedback feedback;
+    
+    [SerializeField] 
+    private EnemyConeVisual coneVisual;
 
     [Header("Alert")]
     [SerializeField] private float alertDuration = 0.4f;
@@ -23,15 +31,26 @@ public class EnemyAI : MonoBehaviour
     [SerializeField]
     private float loseSightDelay = 2f;
 
-
+   
     private float lostSightTimer;
+
+
+    private bool aiPaused;
+
 
     private SpriteRenderer spriteRenderer;
 
     private void Awake()
     {
+        if (coneVisual == null)
+            coneVisual = GetComponentInChildren<EnemyConeVisual>();
         spriteRenderer =
             GetComponent<SpriteRenderer>();
+
+        if (feedback == null)
+        feedback = GetComponent<EnemyFeedback>();
+        if (coneVisual == null)
+        coneVisual = GetComponentInChildren<EnemyConeVisual>();
     }
 
     private void Start()
@@ -41,15 +60,20 @@ public class EnemyAI : MonoBehaviour
 
     private void Update()
     {
+        if (aiPaused)
+            return;
         if (currentState == EnemyState.Patrol)
         {
             if (vision.CanSeePlayer())
             {
+                if (GameManager.Instance != null)
+                    GameManager.Instance.RegisterPlayerSeen();
+
                 ChangeState(EnemyState.Alert);
             }
-            
         }
     }
+
 
 
     private void ChangeState(EnemyState newState)
@@ -69,9 +93,13 @@ public class EnemyAI : MonoBehaviour
         switch (currentState)
         {
             case EnemyState.Patrol:
+                
+                if (feedback != null)
+                    feedback.ShowPatrol();
 
-                spriteRenderer.color = Color.white;
-
+                if (coneVisual != null)
+                    coneVisual.ShowPatrol();
+                movement.ResetFatigue();
                 StartCoroutine(
                     movement.PatrolRoutine());
 
@@ -79,12 +107,22 @@ public class EnemyAI : MonoBehaviour
 
             case EnemyState.Alert:
 
+                if (feedback != null)
+                    feedback.ShowAlert();
+                if (coneVisual != null)
+                    coneVisual.ShowAlert();
+
                 StartCoroutine(
                     AlertRoutine());
 
                 break;
 
             case EnemyState.Chase:
+
+                if (feedback != null)
+                    feedback.ShowChase();
+                if (coneVisual != null)
+                    coneVisual.ShowChase();
 
                 EnemyChaseCoordinator.Register(
                     movement,
@@ -97,19 +135,24 @@ public class EnemyAI : MonoBehaviour
 
             case EnemyState.Search:
 
+                if (feedback != null)
+                    feedback.ShowSearch();
+
+                if (coneVisual != null)
+                    coneVisual.ShowSearch();
+
+                movement.ResetFatigue();
+
                 StartCoroutine(
                     SearchRoutine());
 
                 break;
         }
     }
-
-    
     private IEnumerator AlertRoutine()
     {
         movement.StopMovement();
 
-        spriteRenderer.color = Color.red;
 
         yield return new WaitForSeconds(alertDuration);
 
@@ -144,13 +187,14 @@ public class EnemyAI : MonoBehaviour
    
     private IEnumerator ChaseRoutine()
     {
-        movement.SetChaseSpeed();
-        spriteRenderer.color = Color.red;
+        movement.StartChaseFatigue();
 
         lostSightTimer = 0f;
 
         while (currentState == EnemyState.Chase)
         {
+            movement.UpdateChaseFatigue();
+
             if (vision.CanSeePlayer())
             {
                 Debug.Log("VOIT JOUEUR");
@@ -181,7 +225,6 @@ public class EnemyAI : MonoBehaviour
 
     private IEnumerator SearchRoutine()
     {
-        spriteRenderer.color = Color.yellow;
 
         Vector3 predictedPosition =
         vision.LastKnownPlayerPosition +
@@ -227,5 +270,28 @@ public class EnemyAI : MonoBehaviour
         {
             GameManager.Instance.GameOver();
         }
+    }
+
+
+    public void PauseAI()
+    {
+        aiPaused = true;
+
+        StopAllCoroutines();
+
+        if (currentState == EnemyState.Chase)
+        {
+            EnemyChaseCoordinator.Unregister(movement);
+        }
+
+        if (movement != null)
+            movement.StopMovement();
+    }
+
+    public void ResumeAI()
+    {
+        aiPaused = false;
+
+        ChangeState(EnemyState.Patrol);
     }
 }

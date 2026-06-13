@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ec032d4233212ca4489247c6a321fd0f
+guid: 866e41adfeb3ccb4ca71718ba8ee9a42
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7667276295239207083
-    second: Door 1_0
+      213: 1838356954316176288
+    second: Rectangle final_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Door 1_0
+      name: Rectangle final_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 55
-        height: 104
+        x: 377
+        y: 685
+        width: 936
+        height: 390
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ba88184ea23a76a60800000000000000
-      internalID: 7667276295239207083
+      spriteID: 0ab7260f8e7238910800000000000000
+      internalID: 1838356954316176288
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: cf69da09319eeca4fa200961befbe262
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -146,11 +146,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      Door 1_0: 7667276295239207083
+      Rectangle final_0: 1838356954316176288
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

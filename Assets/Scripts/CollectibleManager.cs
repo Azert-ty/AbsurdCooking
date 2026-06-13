@@ -4,12 +4,12 @@ public class CollectibleManager : MonoBehaviour
 {
     public static CollectibleManager Instance { get; private set; }
 
-    [Header("Collectibles")]
+    [Header("Coins")]
     [SerializeField] private int coinCount;
-    [SerializeField] private bool hasTreasure;
+    [SerializeField] private int totalCoins;
 
     public int CoinCount => coinCount;
-    public bool HasTreasure => hasTreasure;
+    public int TotalCoins => totalCoins;
 
     private void Awake()
     {
@@ -22,17 +22,23 @@ public class CollectibleManager : MonoBehaviour
         Instance = this;
     }
 
+    private void Start()
+    {
+        CountCoinsInScene();
+    }
+
+    private void CountCoinsInScene()
+    {
+        Coin[] coins = FindObjectsByType<Coin>(
+            FindObjectsSortMode.None);
+
+        totalCoins = coins.Length;
+    }
+
     public void AddCoin(int value)
     {
         coinCount += value;
 
-        Debug.Log("Pièces : " + coinCount);
-    }
-
-    public void CollectTreasure()
-    {
-        hasTreasure = true;
-
-        Debug.Log("Trésor récupéré !");
+        Debug.Log("Pièces : " + coinCount + " / " + totalCoins);
     }
 }

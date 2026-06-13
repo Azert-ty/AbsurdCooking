@@ -4,12 +4,14 @@ public class EnemyVision : MonoBehaviour
 {
     [Header("Target")]
     [SerializeField] private Transform player;
+    [SerializeField] private Transform playerVisionPoint;
 
     [Header("Vision")]
     [SerializeField] private float detectionRange = 5f;
     [SerializeField] private float visionAngle = 30f;
 
-    [SerializeField] private LayerMask visionMask;
+    [Header("Obstacles")]
+    [SerializeField] private LayerMask obstacleMask;
 
     public Transform Player => player;
 
@@ -19,7 +21,6 @@ public class EnemyVision : MonoBehaviour
         private set;
     }
 
-
     public Vector3 LastKnownPlayerPosition
     {
         get;
@@ -28,11 +29,16 @@ public class EnemyVision : MonoBehaviour
 
     public bool CanSeePlayer()
     {
-        
-        Vector2 directionToPlayer =
-            player.position - transform.position;
+        if (player == null)
+            return false;
 
-        float sqrDistance = directionToPlayer.sqrMagnitude;
+        Transform target =
+            playerVisionPoint != null ? playerVisionPoint : player;
+
+        Vector2 directionToTarget =
+            target.position - transform.position;
+
+        float sqrDistance = directionToTarget.sqrMagnitude;
 
         if (sqrDistance > detectionRange * detectionRange)
             return false;
@@ -42,35 +48,42 @@ public class EnemyVision : MonoBehaviour
         float dot =
             Vector2.Dot(
                 forward,
-                directionToPlayer.normalized);
+                directionToTarget.normalized);
 
         if (dot < Mathf.Cos(visionAngle * Mathf.Deg2Rad))
             return false;
 
-        RaycastHit2D hit =
+        float distance =
+            Mathf.Sqrt(sqrDistance);
+
+        RaycastHit2D wallHit =
             Physics2D.Raycast(
                 transform.position,
-                directionToPlayer.normalized,
-                Mathf.Sqrt(sqrDistance),
-                visionMask);
+                directionToTarget.normalized,
+                distance,
+                obstacleMask);
 
-        if (hit.collider == null)
+        Debug.DrawRay(
+            transform.position,
+            directionToTarget.normalized * distance,
+            wallHit.collider == null ? Color.green : Color.red);
+
+        if (wallHit.collider != null)
             return false;
-        if (hit.collider.CompareTag("Player"))
-        {
-            LastKnownPlayerPosition = player.position;
-            LastKnownDirection =
-            ((Vector2)player.position -
-            (Vector2)transform.position).normalized;
-            return true;
-        }
 
-        return false;
+        LastKnownPlayerPosition = target.position;
+
+        LastKnownDirection =
+            ((Vector2)target.position -
+             (Vector2)transform.position).normalized;
+
+        return true;
     }
 
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.blue;
+
         Gizmos.DrawWireSphere(
             transform.position,
             detectionRange);
@@ -78,12 +91,10 @@ public class EnemyVision : MonoBehaviour
         Vector2 forward = transform.right;
 
         Vector2 left =
-            Quaternion.Euler(0, 0, visionAngle)
-            * forward;
+            Quaternion.Euler(0, 0, visionAngle) * forward;
 
         Vector2 right =
-            Quaternion.Euler(0, 0, -visionAngle)
-            * forward;
+            Quaternion.Euler(0, 0, -visionAngle) * forward;
 
         Gizmos.color = Color.red;
 

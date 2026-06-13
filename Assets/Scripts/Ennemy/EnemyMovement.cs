@@ -6,6 +6,15 @@ public class EnemyMovement : MonoBehaviour
 {
 
 
+    [Header("Fatigue")]
+    [SerializeField] private float timeBeforeFatigue = 3f;
+    [SerializeField] private float tiredChaseSpeed = 4.5f;
+    [SerializeField] private GameObject tiredIcon;
+
+    private float chaseTimer;
+    private bool isTired;
+
+
     [Header("Chase Formation")]
     [SerializeField] private float chaseSpacing = 0.6f;
 
@@ -15,6 +24,9 @@ public class EnemyMovement : MonoBehaviour
 
     [Header("Patrol")]
     [SerializeField] private Transform[] waypoints;
+    [SerializeField] private PatrolPathFeedback patrolPathFeedback;
+    public Transform[] Waypoints => waypoints;
+
 
     [SerializeField] private float waitTime = 2f;
 
@@ -47,13 +59,19 @@ public class EnemyMovement : MonoBehaviour
 
         spriteRenderer =
             GetComponent<SpriteRenderer>();
+        if (patrolPathFeedback == null)
+            patrolPathFeedback = GetComponent<PatrolPathFeedback>();
+        
+        if (tiredIcon != null)
+            tiredIcon.SetActive(false);
     }
     
 
 
     public void SetChaseSpeed()
     {
-        agent.speed = chaseSpeed;
+        if (agent != null)
+            agent.speed = chaseSpeed;
     }
 
 
@@ -65,7 +83,8 @@ public class EnemyMovement : MonoBehaviour
 
     public void SetPatrolSpeed()
     {
-        agent.speed = patrolSpeed;
+        if (agent != null)
+            agent.speed = patrolSpeed;
     }
 
     public bool ReachedDestination()
@@ -103,7 +122,6 @@ public class EnemyMovement : MonoBehaviour
     }
     private void Update()
     {
-        
         RotateTowardsMovement();
     }
 
@@ -138,31 +156,40 @@ public class EnemyMovement : MonoBehaviour
 
     public IEnumerator PatrolRoutine()
     {
-
-
         SetPatrolSpeed();
 
-        spriteRenderer.color = Color.white;
-        
+        if (waypoints == null || waypoints.Length < 2)
+            yield break;
 
-       
+        if (patrolPathFeedback == null)
+            patrolPathFeedback = GetComponent<PatrolPathFeedback>();
+
         while (true)
         {
-            agent.isStopped = false;
+            int startWaypointIndex = currentWaypoint;
 
-            agent.SetDestination(waypoints[currentWaypoint].position);
+            int targetWaypointIndex = currentWaypoint + 1;
+
+            if (targetWaypointIndex >= waypoints.Length)
+                targetWaypointIndex = 0;
+
+            if (patrolPathFeedback != null)
+                patrolPathFeedback.StartSegment(
+                    startWaypointIndex,
+                    targetWaypointIndex);
+
+            agent.isStopped = false;
+            agent.SetDestination(waypoints[targetWaypointIndex].position);
 
             while (agent.pathPending ||
-            agent.remainingDistance > agent.stoppingDistance)
+                agent.remainingDistance > agent.stoppingDistance)
             {
                 yield return null;
             }
 
             agent.isStopped = true;
 
-            // Tourne vers l'orientation du waypoint
-            yield return RotateToWaypoint(
-                waypoints[currentWaypoint]);
+            yield return RotateToWaypoint(waypoints[targetWaypointIndex]);
 
             isWaiting = true;
 
@@ -170,12 +197,23 @@ public class EnemyMovement : MonoBehaviour
 
             isWaiting = false;
 
-            currentWaypoint = (currentWaypoint + 1) % waypoints.Length;
+            currentWaypoint = targetWaypointIndex;
         }
     }
     public void StopMovement()
     {
+        if (agent == null)
+            return;
+
+        if (!agent.enabled)
+            return;
+
+        if (!agent.isOnNavMesh)
+            return;
+
         agent.isStopped = true;
+        agent.ResetPath();
+        agent.velocity = Vector3.zero;
     }
 
     private void RotateTowardsMovement()
@@ -229,5 +267,56 @@ public class EnemyMovement : MonoBehaviour
         }
 
         transform.rotation = targetRotation;
+    }
+
+    /*  
+        Fonction pour  fatigue 
+    
+    */
+
+    public void StartChaseFatigue()
+    {
+        chaseTimer = 0f;
+        isTired = false;
+
+        if (tiredIcon != null)
+            tiredIcon.SetActive(false);
+
+        SetChaseSpeed();
+    }
+
+    public void UpdateChaseFatigue()
+    {
+        if (isTired)
+            return;
+
+        chaseTimer += Time.deltaTime;
+
+        if (chaseTimer >= timeBeforeFatigue)
+        {
+            BecomeTired();
+        }
+    }
+
+    private void BecomeTired()
+    {
+        isTired = true;
+
+        if (agent != null)
+            agent.speed = tiredChaseSpeed;
+
+        if (tiredIcon != null)
+            tiredIcon.SetActive(true);
+    }
+
+    public void ResetFatigue()
+    {
+        chaseTimer = 0f;
+        isTired = false;
+
+        if (tiredIcon != null)
+            tiredIcon.SetActive(false);
+
+        SetPatrolSpeed();
     }
 }

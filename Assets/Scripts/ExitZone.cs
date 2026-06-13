@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Collider2D))]
 public class ExitZone : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D other)
@@ -7,12 +8,12 @@ public class ExitZone : MonoBehaviour
         if (!other.CompareTag("Player"))
             return;
 
-        if (GameManager.Instance.HasObjective())
+        if (!GameManager.Instance.HasObjective())
         {
-            GameManager.Instance.Victory();
+            Debug.Log("Il faut récupérer le trésor avant de sortir !");
+            return;
         }
+
+        GameManager.Instance.Victory();
     }
-
-
-
 }

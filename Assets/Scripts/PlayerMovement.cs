@@ -1,65 +1,18 @@
-// using UnityEngine;
-// using UnityEngine.InputSystem;
-
-// public class PlayerMovement : MonoBehaviour
-// {
-//     [SerializeField] private float moveSpeed = 5f;
-
-//     private PlayerControls controls;
-//     private Vector2 moveInput;
-//     private Rigidbody2D rb;
-
-//     private bool inputEnabled = true;
-
-//     void Awake()
-//     {
-//         controls = new PlayerControls();
-//     }
-
-//     void Start()
-//     {
-//         rb = GetComponent<Rigidbody2D>();
-//     }
-
-//     void Update()
-//     {
-//         if (!inputEnabled)
-//         {
-//             moveInput = Vector2.zero;
-//             return;
-//         }
-
-//         moveInput = controls.Player.Move.ReadValue<Vector2>();
-//     }
-
-//     void FixedUpdate()
-//     {
-//         Vector2 movement = moveInput.normalized * moveSpeed * Time.fixedDeltaTime;
-//         rb.MovePosition(rb.position + movement);
-//     }
-
-//     public void SetInputEnabled(bool enabled)
-//     {
-//         inputEnabled = enabled;
-
-//         if (!enabled)
-//             moveInput = Vector2.zero;
-//     }
-
-//     void OnEnable() => controls.Enable();
-//     void OnDisable() => controls.Disable();
-// }
-
-
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [Header("Movement")]
     [SerializeField] private float moveSpeed = 5f;
+
+    [Header("Animation")]
+    [SerializeField] private Animator animator;
 
     private PlayerControls controls;
     private Vector2 moveInput;
+    private Vector2 lastMoveDirection = Vector2.down;
+
     private Rigidbody2D rb;
 
     private bool inputEnabled = true;
@@ -67,7 +20,11 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         controls = new PlayerControls();
+
         rb = GetComponent<Rigidbody2D>();
+
+        if (animator == null)
+            animator = GetComponent<Animator>();
     }
 
     private void Update()
@@ -75,10 +32,13 @@ public class PlayerMovement : MonoBehaviour
         if (!inputEnabled)
         {
             moveInput = Vector2.zero;
+            UpdateAnimation();
             return;
         }
 
         moveInput = controls.Player.Move.ReadValue<Vector2>();
+
+        UpdateAnimation();
     }
 
     private void FixedUpdate()
@@ -91,6 +51,57 @@ public class PlayerMovement : MonoBehaviour
         rb.linearVelocity = Vector2.zero;
     }
 
+    private void UpdateAnimation()
+    {
+        if (animator == null)
+            return;
+
+        bool isMoving =
+            moveInput.sqrMagnitude > 0.01f;
+
+        Vector2 animationDirection = Vector2.zero;
+
+        if (isMoving)
+        {
+            // Priorité à gauche/droite dès qu'il y a un mouvement horizontal
+            if (Mathf.Abs(moveInput.x) > 0.01f)
+            {
+                animationDirection =
+                    new Vector2(
+                        Mathf.Sign(moveInput.x),
+                        0f);
+            }
+            else
+            {
+                animationDirection =
+                    new Vector2(
+                        0f,
+                        Mathf.Sign(moveInput.y));
+            }
+
+            lastMoveDirection = animationDirection;
+        }
+
+        animator.SetBool(
+            "IsMoving",
+            isMoving);
+
+        animator.SetFloat(
+            "MoveX",
+            animationDirection.x);
+
+        animator.SetFloat(
+            "MoveY",
+            animationDirection.y);
+
+        animator.SetFloat(
+            "LastX",
+            lastMoveDirection.x);
+
+        animator.SetFloat(
+            "LastY",
+            lastMoveDirection.y);
+    }
     public void SetInputEnabled(bool enabled)
     {
         inputEnabled = enabled;
@@ -98,17 +109,23 @@ public class PlayerMovement : MonoBehaviour
         if (!enabled)
         {
             moveInput = Vector2.zero;
-            rb.linearVelocity = Vector2.zero;
+
+            if (rb != null)
+                rb.linearVelocity = Vector2.zero;
+
+            UpdateAnimation();
         }
     }
 
     private void OnEnable()
     {
-        controls.Enable();
+        if (controls != null)
+            controls.Enable();
     }
 
     private void OnDisable()
     {
-        controls.Disable();
+        if (controls != null)
+            controls.Disable();
     }
 }
