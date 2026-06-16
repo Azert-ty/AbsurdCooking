@@ -6,12 +6,23 @@ public class Treasure : MonoBehaviour
     [Header("Feedback")]
     [SerializeField] private GameObject collectEffect;
     [SerializeField] private AudioClip collectSound;
-    [SerializeField] private AudioSource audioSource;
 
     [SerializeField, Range(0f, 1f)]
     private float volume = 0.8f;
 
+    [Header("Visuals To Hide")]
+    [SerializeField] private SpriteRenderer spriteRenderer;
+
     private bool collected;
+    private Collider2D treasureCollider;
+
+    private void Awake()
+    {
+        treasureCollider = GetComponent<Collider2D>();
+
+        if (spriteRenderer == null)
+            spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -23,11 +34,14 @@ public class Treasure : MonoBehaviour
 
         collected = true;
 
-        GameManager.Instance.SetObjectiveCollected();
+        if (GameManager.Instance != null)
+            GameManager.Instance.SetObjectiveCollected();
 
         PlayFeedback();
 
-        Destroy(gameObject);
+        HideTreasure();
+
+        Destroy(gameObject, GetDestroyDelay());
     }
 
     private void PlayFeedback()
@@ -37,14 +51,49 @@ public class Treasure : MonoBehaviour
             Instantiate(
                 collectEffect,
                 transform.position,
-                Quaternion.identity);
+                Quaternion.identity
+            );
         }
 
-        if (collectSound != null && audioSource != null)
+        if (collectSound != null)
         {
-            audioSource.PlayOneShot(
+            PlaySound2D(
                 collectSound,
-                volume);
+                volume
+            );
         }
+    }
+
+    private void PlaySound2D(AudioClip clip, float soundVolume)
+    {
+        GameObject soundObject = new GameObject("Treasure Collect Sound");
+
+        AudioSource source = soundObject.AddComponent<AudioSource>();
+
+        source.clip = clip;
+        source.volume = soundVolume;
+        source.spatialBlend = 0f;
+        source.playOnAwake = false;
+
+        source.Play();
+
+        Destroy(soundObject, clip.length + 0.1f);
+    }
+
+    private void HideTreasure()
+    {
+        if (treasureCollider != null)
+            treasureCollider.enabled = false;
+
+        if (spriteRenderer != null)
+            spriteRenderer.enabled = false;
+    }
+
+    private float GetDestroyDelay()
+    {
+        if (collectSound == null)
+            return 0.1f;
+
+        return collectSound.length + 0.1f;
     }
 }

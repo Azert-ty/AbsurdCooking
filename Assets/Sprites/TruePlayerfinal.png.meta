@@ -1,0 +1,962 @@
+fileFormatVersion: 2
+guid: 63688089e9159024ea22eb0dd074d329
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3858467945401202616
+    second: TruePlayerfinal_0
+  - first:
+      213: 587085901535172484
+    second: TruePlayerfinal_1
+  - first:
+      213: 8569769458966400989
+    second: TruePlayerfinal_2
+  - first:
+      213: -1333807801212894503
+    second: TruePlayerfinal_3
+  - first:
+      213: -2143479312757553210
+    second: TruePlayerfinal_4
+  - first:
+      213: -8633683228247233344
+    second: TruePlayerfinal_5
+  - first:
+      213: 7284801547921097705
+    second: TruePlayerfinal_6
+  - first:
+      213: 4170573608050434947
+    second: TruePlayerfinal_7
+  - first:
+      213: 8148012794657572498
+    second: TruePlayerfinal_8
+  - first:
+      213: -6742003324985435925
+    second: TruePlayerfinal_9
+  - first:
+      213: -2677169063456563110
+    second: TruePlayerfinal_10
+  - first:
+      213: 5161765720921080575
+    second: TruePlayerfinal_11
+  - first:
+      213: 8072357901979460604
+    second: TruePlayerfinal_12
+  - first:
+      213: 9023646361118265500
+    second: TruePlayerfinal_13
+  - first:
+      213: -5166135482715521243
+    second: TruePlayerfinal_14
+  - first:
+      213: -8986230985702686781
+    second: TruePlayerfinal_15
+  - first:
+      213: 6008209601793564342
+    second: TruePlayerfinal_16
+  - first:
+      213: 8628695550401004287
+    second: TruePlayerfinal_17
+  - first:
+      213: 5556201704269749970
+    second: TruePlayerfinal_18
+  - first:
+      213: -70763551936098153
+    second: TruePlayerfinal_19
+  - first:
+      213: 8140957939441138257
+    second: TruePlayerfinal_20
+  - first:
+      213: -1195143914011157265
+    second: TruePlayerfinal_21
+  - first:
+      213: 8473941008136073670
+    second: TruePlayerfinal_22
+  - first:
+      213: -8068968047343090031
+    second: TruePlayerfinal_23
+  - first:
+      213: 8638988909750568425
+    second: TruePlayerfinal_24
+  - first:
+      213: -492275395094920034
+    second: TruePlayerfinal_25
+  - first:
+      213: 5634017667809131175
+    second: TruePlayerfinal_26
+  - first:
+      213: 5513153704688257208
+    second: TruePlayerfinal_27
+  - first:
+      213: -5662775363869025531
+    second: TruePlayerfinal_28
+  - first:
+      213: -8421246039460396144
+    second: TruePlayerfinal_29
+  - first:
+      213: -8453502551679608362
+    second: TruePlayerfinal_30
+  - first:
+      213: 3470543300685969661
+    second: TruePlayerfinal_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 12
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TruePlayerfinal_0
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 1080
+        width: 103
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b7bede37280c8530800000000000000
+      internalID: 3858467945401202616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruePlayerfinal_1
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 1076
+        width: 105
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 487d4a5548fb52800800000000000000
+      internalID: 587085901535172484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruePlayerfinal_2
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 1087
+        width: 103
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddf0fa81befede670800000000000000
+      internalID: 8569769458966400989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruePlayerfinal_3
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 1080
+        width: 102
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d28f022fdc5d7de0800000000000000
+      internalID: -1333807801212894503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruePlayerfinal_4
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 933
+        width: 106
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c700b3fbe4d042e0800000000000000
+      internalID: -2143479312757553210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruePlayerfinal_5
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 933
+        width: 108
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cc631dd8defe2880800000000000000
+      internalID: -8633683228247233344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruePlayerfinal_6
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 933
+        width: 105
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e38d0b4960d81560800000000000000
+      internalID: 7284801547921097705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruePlayerfinal_7
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 933
+        width: 105
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3832771999ad0e930800000000000000
+      internalID: 4170573608050434947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruePlayerfinal_8
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 801
+        width: 93
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29607ea777e831170800000000000000
+      internalID: 8148012794657572498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruePlayerfinal_9
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 796
+        width: 98
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be89db352b79f62a0800000000000000
+      internalID: -6742003324985435925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruePlayerfinal_10
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 801
+        width: 94
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a50a109cbe8c8dad0800000000000000
+      internalID: -2677169063456563110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruePlayerfinal_11
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 801
+        width: 93
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff20a41339642a740800000000000000
+      internalID: 5161765720921080575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruePlayerfinal_12
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 666
+        width: 90
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf3ad4f1eb6c60070800000000000000
+      internalID: 8072357901979460604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruePlayerfinal_13
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 664
+        width: 94
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c90533d5e8e6a3d70800000000000000
+      internalID: 9023646361118265500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruePlayerfinal_14
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 665
+        width: 96
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52f333b56233e48b0800000000000000
+      internalID: -5166135482715521243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruePlayerfinal_15
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 668
+        width: 94
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cf3593978e7a4380800000000000000
+      internalID: -8986230985702686781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruePlayerfinal_16
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 521
+        width: 103
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6be1ffaccc2716350800000000000000
+      internalID: 6008209601793564342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruePlayerfinal_17
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 520
+        width: 104
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff245a4e2e84fb770800000000000000
+      internalID: 8628695550401004287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruePlayerfinal_18
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 521
+        width: 102
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2de1b6313089b1d40800000000000000
+      internalID: 5556201704269749970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruePlayerfinal_19
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 521
+        width: 102
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 790ddc7ace8940ff0800000000000000
+      internalID: -70763551936098153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruePlayerfinal_20
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 381
+        width: 101
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15af8cffc1e7af070800000000000000
+      internalID: 8140957939441138257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruePlayerfinal_21
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 381
+        width: 101
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fec15ed31fef96fe0800000000000000
+      internalID: -1195143914011157265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruePlayerfinal_22
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 381
+        width: 101
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c1f095337c799570800000000000000
+      internalID: 8473941008136073670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruePlayerfinal_23
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 381
+        width: 100
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 196432aef44450090800000000000000
+      internalID: -8068968047343090031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruePlayerfinal_24
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 235
+        width: 85
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e5c83064aad3e770800000000000000
+      internalID: 8638988909750568425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruePlayerfinal_25
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 235
+        width: 84
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e94c3b7e2261b29f0800000000000000
+      internalID: -492275395094920034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruePlayerfinal_26
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 236
+        width: 84
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7aab904f73d003e40800000000000000
+      internalID: 5634017667809131175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruePlayerfinal_27
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 236
+        width: 85
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b88210a518a28c40800000000000000
+      internalID: 5513153704688257208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruePlayerfinal_28
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 93
+        width: 86
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50bd0c92fc7c961b0800000000000000
+      internalID: -5662775363869025531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruePlayerfinal_29
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 93
+        width: 86
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0934cc34859b12b80800000000000000
+      internalID: -8421246039460396144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruePlayerfinal_30
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 94
+        width: 86
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d95743c7302faa80800000000000000
+      internalID: -8453502551679608362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TruePlayerfinal_31
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 94
+        width: 86
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df8bff68eb8d92030800000000000000
+      internalID: 3470543300685969661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      TruePlayerfinal_0: 3858467945401202616
+      TruePlayerfinal_1: 587085901535172484
+      TruePlayerfinal_10: -2677169063456563110
+      TruePlayerfinal_11: 5161765720921080575
+      TruePlayerfinal_12: 8072357901979460604
+      TruePlayerfinal_13: 9023646361118265500
+      TruePlayerfinal_14: -5166135482715521243
+      TruePlayerfinal_15: -8986230985702686781
+      TruePlayerfinal_16: 6008209601793564342
+      TruePlayerfinal_17: 8628695550401004287
+      TruePlayerfinal_18: 5556201704269749970
+      TruePlayerfinal_19: -70763551936098153
+      TruePlayerfinal_2: 8569769458966400989
+      TruePlayerfinal_20: 8140957939441138257
+      TruePlayerfinal_21: -1195143914011157265
+      TruePlayerfinal_22: 8473941008136073670
+      TruePlayerfinal_23: -8068968047343090031
+      TruePlayerfinal_24: 8638988909750568425
+      TruePlayerfinal_25: -492275395094920034
+      TruePlayerfinal_26: 5634017667809131175
+      TruePlayerfinal_27: 5513153704688257208
+      TruePlayerfinal_28: -5662775363869025531
+      TruePlayerfinal_29: -8421246039460396144
+      TruePlayerfinal_3: -1333807801212894503
+      TruePlayerfinal_30: -8453502551679608362
+      TruePlayerfinal_31: 3470543300685969661
+      TruePlayerfinal_4: -2143479312757553210
+      TruePlayerfinal_5: -8633683228247233344
+      TruePlayerfinal_6: 7284801547921097705
+      TruePlayerfinal_7: 4170573608050434947
+      TruePlayerfinal_8: 8148012794657572498
+      TruePlayerfinal_9: -6742003324985435925
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

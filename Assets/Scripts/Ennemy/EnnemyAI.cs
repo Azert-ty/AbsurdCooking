@@ -1,56 +1,63 @@
 using System.Collections;
 using UnityEngine;
 
-[RequireComponent(typeof(SpriteRenderer))]
 public class EnemyAI : MonoBehaviour
 {
+    [Header("Capture")]
+    [SerializeField] private float captureDistance = 0.5f;
+    [SerializeField] private GameObject enemyVisualObject;
 
-    
+    private bool hasCapturedPlayer;
+
     [Header("References")]
     [SerializeField] private EnemyVision vision;
-
     [SerializeField] private EnemyMovement movement;
-
-     [SerializeField] 
-    private EnemyFeedback feedback;
-    
-    [SerializeField] 
-    private EnemyConeVisual coneVisual;
+    [SerializeField] private EnemyFeedback feedback;
+    [SerializeField] private EnemyConeVisual coneVisual;
 
     [Header("Alert")]
     [SerializeField] private float alertDuration = 0.4f;
 
+    [Header("Chase")]
+    [SerializeField] private float loseSightDelay = 2f;
+
+    [Header("Search")]
+    [SerializeField] private float searchPredictionDistance = 2f;
+    [SerializeField] private float searchLookDuration = 0.35f;
+    [SerializeField] private float searchMoveTimeout = 4f;
+
     private EnemyState currentState;
 
-    [SerializeField]
-    private float searchAngle = 45f;
-
-    [SerializeField]
-    private float searchRotationSpeed = 180f;
-
-    [SerializeField]
-    private float loseSightDelay = 2f;
-
-   
     private float lostSightTimer;
 
+    private Vector3 lastKnownPlayerPosition;
+    private Vector2 lastKnownPlayerDirection = Vector2.down;
 
+    private bool hasEnteredInitialState;
     private bool aiPaused;
-
-
-    private SpriteRenderer spriteRenderer;
 
     private void Awake()
     {
-        if (coneVisual == null)
-            coneVisual = GetComponentInChildren<EnemyConeVisual>();
-        spriteRenderer =
-            GetComponent<SpriteRenderer>();
+        if (vision == null)
+            vision = GetComponent<EnemyVision>();
+
+        if (movement == null)
+            movement = GetComponent<EnemyMovement>();
 
         if (feedback == null)
-        feedback = GetComponent<EnemyFeedback>();
+            feedback = GetComponent<EnemyFeedback>();
+
         if (coneVisual == null)
-        coneVisual = GetComponentInChildren<EnemyConeVisual>();
+            coneVisual = GetComponentInChildren<EnemyConeVisual>();
+
+        if (enemyVisualObject == null)
+        {
+            SpriteRenderer spriteRenderer =
+                GetComponentInChildren<SpriteRenderer>();
+
+            if (spriteRenderer != null)
+                enemyVisualObject = spriteRenderer.gameObject;
+        }
     }
 
     private void Start()
@@ -62,142 +69,180 @@ public class EnemyAI : MonoBehaviour
     {
         if (aiPaused)
             return;
-        if (currentState == EnemyState.Patrol)
-        {
-            if (vision.CanSeePlayer())
-            {
-                if (GameManager.Instance != null)
-                    GameManager.Instance.RegisterPlayerSeen();
 
-                ChangeState(EnemyState.Alert);
-            }
+        if (hasCapturedPlayer)
+            return;
+
+        if (GameManager.Instance != null &&
+            GameManager.Instance.GameEnded)
+            return;
+
+        if (currentState != EnemyState.Patrol)
+            return;
+
+        if (vision != null && vision.CanSeePlayer())
+        {
+            RegisterPlayerSeen();
+            SaveLastKnownPlayerData();
+
+            ChangeState(EnemyState.Alert);
         }
     }
 
-
-
-    private void ChangeState(EnemyState newState)
+    private void ChangeState(EnemyState newState, bool forceRestart = false)
     {
+        if (!forceRestart &&
+            hasEnteredInitialState &&
+            currentState == newState)
+        {
+            return;
+        }
+
         if (currentState == EnemyState.Chase &&
             newState != EnemyState.Chase)
         {
-            EnemyChaseCoordinator.Unregister(movement);
+            if (movement != null)
+                EnemyChaseCoordinator.Unregister(movement);
         }
 
         StopAllCoroutines();
 
-        Debug.Log($"{currentState} -> {newState}");
-
         currentState = newState;
+        hasEnteredInitialState = true;
 
         switch (currentState)
         {
             case EnemyState.Patrol:
-                
-                if (feedback != null)
-                    feedback.ShowPatrol();
-
-                if (coneVisual != null)
-                    coneVisual.ShowPatrol();
-                movement.ResetFatigue();
-                StartCoroutine(
-                    movement.PatrolRoutine());
-
+                EnterPatrol();
                 break;
 
             case EnemyState.Alert:
-
-                if (feedback != null)
-                    feedback.ShowAlert();
-                if (coneVisual != null)
-                    coneVisual.ShowAlert();
-
-                StartCoroutine(
-                    AlertRoutine());
-
+                EnterAlert();
                 break;
 
             case EnemyState.Chase:
-
-                if (feedback != null)
-                    feedback.ShowChase();
-                if (coneVisual != null)
-                    coneVisual.ShowChase();
-
-                EnemyChaseCoordinator.Register(
-                    movement,
-                    vision.Player);
-
-                StartCoroutine(
-                    ChaseRoutine());
-
+                EnterChase();
                 break;
 
             case EnemyState.Search:
-
-                if (feedback != null)
-                    feedback.ShowSearch();
-
-                if (coneVisual != null)
-                    coneVisual.ShowSearch();
-
-                movement.ResetFatigue();
-
-                StartCoroutine(
-                    SearchRoutine());
-
+                EnterSearch();
                 break;
         }
     }
+
+    private void EnterPatrol()
+    {
+        if (feedback != null)
+            feedback.ShowPatrol();
+
+        if (coneVisual != null)
+            coneVisual.ShowPatrol();
+
+        if (movement != null)
+        {
+            movement.ResetFatigue();
+            StartCoroutine(movement.PatrolRoutine());
+        }
+    }
+
+    private void EnterAlert()
+    {
+        if (feedback != null)
+            feedback.ShowAlert();
+
+        if (coneVisual != null)
+            coneVisual.ShowAlert();
+
+        StartCoroutine(AlertRoutine());
+    }
+
+    private void EnterChase()
+    {
+        if (feedback != null)
+            feedback.ShowChase();
+
+        if (coneVisual != null)
+            coneVisual.ShowChase();
+
+        if (movement != null &&
+            vision != null &&
+            vision.Player != null)
+        {
+            EnemyChaseCoordinator.Register(
+                movement,
+                vision.Player
+            );
+        }
+
+        StartCoroutine(ChaseRoutine());
+    }
+
+    private void EnterSearch()
+    {
+        if (feedback != null)
+            feedback.ShowSearch();
+
+        if (coneVisual != null)
+            coneVisual.ShowSearch();
+
+        if (movement != null)
+            movement.ResetFatigue();
+
+        StartCoroutine(SearchRoutine());
+    }
+
     private IEnumerator AlertRoutine()
     {
-        movement.StopMovement();
+        if (movement != null)
+        {
+            movement.StopMovement();
 
+            if (vision != null && vision.Player != null)
+                movement.FacePosition(vision.Player.position);
+            else
+                movement.FacePosition(lastKnownPlayerPosition);
+        }
 
         yield return new WaitForSeconds(alertDuration);
+
+        if (aiPaused)
+            yield break;
+
+        if (TryCapturePlayer())
+            yield break;
 
         ChangeState(EnemyState.Chase);
     }
 
-    private IEnumerator RotateToAngle(float targetZ)
-    {
-        Quaternion targetRotation =
-            Quaternion.Euler(0, 0, targetZ);
-
-        while (
-            Quaternion.Angle(
-                transform.rotation,
-                targetRotation) > 1f)
-        {
-            transform.rotation =
-                Quaternion.RotateTowards(
-                    transform.rotation,
-                    targetRotation,
-                    searchRotationSpeed * Time.deltaTime);
-                    if (vision.CanSeePlayer())
-                    {
-                        ChangeState(EnemyState.Chase);
-                        yield break;
-                    }
-
-            yield return null;
-        }
-    }
-
-   
     private IEnumerator ChaseRoutine()
     {
+        if (movement == null || vision == null || vision.Player == null)
+        {
+            ChangeState(EnemyState.Patrol);
+            yield break;
+        }
+
         movement.StartChaseFatigue();
 
         lostSightTimer = 0f;
 
         while (currentState == EnemyState.Chase)
         {
+            if (aiPaused)
+                yield break;
+
+            if (TryCapturePlayer())
+                yield break;
+
             movement.UpdateChaseFatigue();
 
-            if (vision.CanSeePlayer())
+            bool canStillSeePlayer =
+                vision.HasLineOfSightToPlayer();
+
+            if (canStillSeePlayer)
             {
-                Debug.Log("VOIT JOUEUR");
+                RegisterPlayerSeen();
+                SaveLastKnownPlayerData();
 
                 lostSightTimer = 0f;
 
@@ -207,13 +252,14 @@ public class EnemyAI : MonoBehaviour
             }
             else
             {
-                Debug.Log("PERDU");
-
                 lostSightTimer += Time.deltaTime;
+
+                movement.MoveToAndFace(lastKnownPlayerPosition);
 
                 if (lostSightTimer >= loseSightDelay)
                 {
                     ChangeState(EnemyState.Search);
+                    yield break;
                 }
             }
 
@@ -221,57 +267,211 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    
-
     private IEnumerator SearchRoutine()
     {
+        if (movement == null || vision == null)
+        {
+            ChangeState(EnemyState.Patrol);
+            yield break;
+        }
+
+        Vector2 searchDirection = lastKnownPlayerDirection;
+
+        if (searchDirection.sqrMagnitude < 0.01f)
+            searchDirection = Vector2.down;
 
         Vector3 predictedPosition =
-        vision.LastKnownPlayerPosition +
-        (Vector3)(vision.LastKnownDirection * 2f);
+            lastKnownPlayerPosition +
+            (Vector3)(searchDirection.normalized * searchPredictionDistance);
 
-        movement.MoveTo(predictedPosition);
+        movement.SetPatrolSpeed();
+        movement.MoveToAndFace(predictedPosition);
 
-        while (!movement.ReachedDestination())
+        float timer = 0f;
+
+        while (!movement.ReachedDestination() &&
+               timer < searchMoveTimeout)
         {
-             if (vision.CanSeePlayer())
+            if (aiPaused)
+                yield break;
+
+            if (TryCapturePlayer())
+                yield break;
+
+            if (vision.CanSeePlayer())
             {
+                RegisterPlayerSeen();
+                SaveLastKnownPlayerData();
+
                 ChangeState(EnemyState.Chase);
                 yield break;
             }
 
+            timer += Time.deltaTime;
             yield return null;
         }
 
-        float baseAngle =
-            transform.eulerAngles.z;
+        movement.StopMovement();
 
-        yield return RotateToAngle(
-            baseAngle + searchAngle);
+        yield return LookAroundRoutine();
 
-        yield return new WaitForSeconds(0.3f);
+        if (!aiPaused)
+            ChangeState(EnemyState.Patrol);
+    }
 
-        yield return RotateToAngle(
-            baseAngle - searchAngle);
+    private IEnumerator LookAroundRoutine()
+    {
+        Vector2 baseDirection = lastKnownPlayerDirection;
 
-        yield return new WaitForSeconds(0.3f);
+        if (baseDirection.sqrMagnitude < 0.01f)
+            baseDirection = Vector2.down;
 
-        yield return RotateToAngle(
-            baseAngle);
+        Vector2 leftDirection =
+            new Vector2(-baseDirection.y, baseDirection.x);
 
-        yield return new WaitForSeconds(0.5f);
+        Vector2 rightDirection =
+            new Vector2(baseDirection.y, -baseDirection.x);
 
-        ChangeState(EnemyState.Patrol);
+        yield return LookDirectionForSeconds(
+            baseDirection,
+            searchLookDuration
+        );
+
+        yield return LookDirectionForSeconds(
+            leftDirection,
+            searchLookDuration
+        );
+
+        yield return LookDirectionForSeconds(
+            rightDirection,
+            searchLookDuration
+        );
+
+        yield return LookDirectionForSeconds(
+            baseDirection,
+            searchLookDuration
+        );
+    }
+
+    private IEnumerator LookDirectionForSeconds(
+        Vector2 direction,
+        float duration)
+    {
+        float timer = 0f;
+
+        if (movement != null)
+            movement.FaceDirection(direction);
+
+        while (timer < duration)
+        {
+            if (aiPaused)
+                yield break;
+
+            if (TryCapturePlayer())
+                yield break;
+
+            if (vision != null && vision.CanSeePlayer())
+            {
+                RegisterPlayerSeen();
+                SaveLastKnownPlayerData();
+
+                ChangeState(EnemyState.Chase);
+                yield break;
+            }
+
+            timer += Time.deltaTime;
+            yield return null;
+        }
+    }
+
+    private bool TryCapturePlayer()
+    {
+        if (hasCapturedPlayer)
+            return true;
+
+        if (vision == null || vision.Player == null)
+            return false;
+
+        if (GameManager.Instance != null &&
+            GameManager.Instance.GameEnded)
+            return true;
+
+        float sqrDistance =
+            ((Vector2)transform.position -
+             (Vector2)vision.Player.position).sqrMagnitude;
+
+        if (sqrDistance > captureDistance * captureDistance)
+            return false;
+
+        CapturePlayer(vision.Player);
+
+        return true;
+    }
+
+    private void CapturePlayer(Transform playerTransform)
+    {
+        if (hasCapturedPlayer)
+            return;
+
+        hasCapturedPlayer = true;
+
+        if (movement != null)
+            movement.StopMovement();
+
+        if (currentState == EnemyState.Chase &&
+            movement != null)
+        {
+            EnemyChaseCoordinator.Unregister(movement);
+        }
+
+        if (GameManager.Instance == null)
+            return;
+
+        Vector3 capturePosition =
+            (transform.position + playerTransform.position) * 0.5f;
+
+        GameManager.Instance.GameOver(
+            capturePosition,
+            enemyVisualObject
+        );
+    }
+
+    private void SaveLastKnownPlayerData()
+    {
+        if (vision == null)
+            return;
+
+        lastKnownPlayerPosition = vision.LastKnownPlayerPosition;
+        lastKnownPlayerDirection = vision.LastKnownDirection;
+
+        if (lastKnownPlayerDirection.sqrMagnitude < 0.01f &&
+            vision.Player != null)
+        {
+            lastKnownPlayerDirection =
+                ((Vector2)vision.Player.position -
+                 (Vector2)transform.position).normalized;
+        }
+
+        if (lastKnownPlayerDirection.sqrMagnitude < 0.01f)
+            lastKnownPlayerDirection = Vector2.down;
+    }
+
+    private void RegisterPlayerSeen()
+    {
+        if (GameManager.Instance != null)
+            GameManager.Instance.RegisterPlayerSeen();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.CompareTag("Player"))
-        {
-            GameManager.Instance.GameOver();
-        }
-    }
+        if (!other.CompareTag("Player"))
+            return;
 
+        if (hasCapturedPlayer)
+            return;
+
+        CapturePlayer(other.transform);
+    }
 
     public void PauseAI()
     {
@@ -279,7 +479,8 @@ public class EnemyAI : MonoBehaviour
 
         StopAllCoroutines();
 
-        if (currentState == EnemyState.Chase)
+        if (currentState == EnemyState.Chase &&
+            movement != null)
         {
             EnemyChaseCoordinator.Unregister(movement);
         }
@@ -292,6 +493,10 @@ public class EnemyAI : MonoBehaviour
     {
         aiPaused = false;
 
-        ChangeState(EnemyState.Patrol);
+        if (GameManager.Instance != null &&
+            GameManager.Instance.GameEnded)
+            return;
+
+        ChangeState(EnemyState.Patrol, true);
     }
 }

@@ -49,5 +49,11 @@ TagManager:
   - name: Foreground
     uniqueID: 378080891
     locked: 0
+  - name: Effects
+    uniqueID: 1680084159
+    locked: 0
+  - name: Characters
+    uniqueID: 2414321295
+    locked: 0
   m_RenderingLayers:
   - Default

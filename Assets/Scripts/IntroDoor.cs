@@ -62,7 +62,7 @@ public class IntroDoor : MonoBehaviour
 
         transform.rotation = openedRotation;
 
-        if (doorCollider != null)
-            doorCollider.enabled = false;
+        // if (doorCollider != null)
+        //     doorCollider.enabled = false;
     }
 }

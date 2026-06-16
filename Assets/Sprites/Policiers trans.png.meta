@@ -1,0 +1,1170 @@
+fileFormatVersion: 2
+guid: 537379df942e3bf44a5343f9ad5b82f4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 317391783282905770
+    second: Policiers trans_0
+  - first:
+      213: 6966461626907491654
+    second: Policiers trans_1
+  - first:
+      213: 2202629114318769409
+    second: Policiers trans_2
+  - first:
+      213: -2462282013606716011
+    second: Policiers trans_3
+  - first:
+      213: 3540078753969750738
+    second: Policiers trans_4
+  - first:
+      213: -7175686143517132858
+    second: Policiers trans_5
+  - first:
+      213: 7141486853965533734
+    second: Policiers trans_6
+  - first:
+      213: -4305402367639392686
+    second: Policiers trans_7
+  - first:
+      213: -3916472736888723731
+    second: Policiers trans_8
+  - first:
+      213: -3859873529750132749
+    second: Policiers trans_9
+  - first:
+      213: 6971164166059760017
+    second: Policiers trans_10
+  - first:
+      213: 2243245159725688892
+    second: Policiers trans_11
+  - first:
+      213: 202099128762080441
+    second: Policiers trans_12
+  - first:
+      213: 6323983021215385366
+    second: Policiers trans_13
+  - first:
+      213: -5560624874233833599
+    second: Policiers trans_14
+  - first:
+      213: -430144233348244755
+    second: Policiers trans_15
+  - first:
+      213: -8743407835212002483
+    second: Policiers trans_16
+  - first:
+      213: 6330118005867478169
+    second: Policiers trans_17
+  - first:
+      213: -7326933214068411339
+    second: Policiers trans_18
+  - first:
+      213: 1142118508284845628
+    second: Policiers trans_19
+  - first:
+      213: -7937546951083298853
+    second: Policiers trans_20
+  - first:
+      213: 1757523429354918871
+    second: Policiers trans_21
+  - first:
+      213: -4620401815306854730
+    second: Policiers trans_22
+  - first:
+      213: 2163551175787412254
+    second: Policiers trans_23
+  - first:
+      213: 8066591249156296218
+    second: Policiers trans_24
+  - first:
+      213: -4279606916066287615
+    second: Policiers trans_25
+  - first:
+      213: 9105204321912895173
+    second: Policiers trans_26
+  - first:
+      213: -1052005248963228349
+    second: Policiers trans_27
+  - first:
+      213: -5065649808374365944
+    second: Policiers trans_28
+  - first:
+      213: -2577233133421432188
+    second: Policiers trans_29
+  - first:
+      213: 8707256947244928397
+    second: Policiers trans_30
+  - first:
+      213: 7191778921016097627
+    second: Policiers trans_31
+  - first:
+      213: -6746119938103481042
+    second: Policiers trans_32
+  - first:
+      213: 5206415758558519655
+    second: Policiers trans_33
+  - first:
+      213: -8486382704415545384
+    second: Policiers trans_34
+  - first:
+      213: 2970071548168640525
+    second: Policiers trans_35
+  - first:
+      213: -6186088508464609670
+    second: Policiers trans_36
+  - first:
+      213: 3511971691326368148
+    second: Policiers trans_37
+  - first:
+      213: -4480005428893960054
+    second: Policiers trans_38
+  - first:
+      213: 7793949521699862083
+    second: Policiers trans_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Policiers trans_0
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 989
+        width: 102
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa29431352a976400800000000000000
+      internalID: 317391783282905770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policiers trans_1
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 948
+        width: 97
+        height: 111
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64df53590f7dda060800000000000000
+      internalID: 6966461626907491654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policiers trans_2
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 951
+        width: 96
+        height: 109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10d47ea628f419e10800000000000000
+      internalID: 2202629114318769409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policiers trans_3
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 947
+        width: 94
+        height: 112
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59d532aed8734ddd0800000000000000
+      internalID: -2462282013606716011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policiers trans_4
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 946
+        width: 96
+        height: 113
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d2464fded2e02130800000000000000
+      internalID: 3540078753969750738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policiers trans_5
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 888
+        width: 135
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c7f7fb8877da6c90800000000000000
+      internalID: -7175686143517132858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policiers trans_6
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 833
+        width: 95
+        height: 108
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 622dcbad478ab1360800000000000000
+      internalID: 7141486853965533734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policiers trans_7
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 834
+        width: 96
+        height: 108
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25e6abd8b532044c0800000000000000
+      internalID: -4305402367639392686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policiers trans_8
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 836
+        width: 97
+        height: 105
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de6ee31dbc4e5a9c0800000000000000
+      internalID: -3916472736888723731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policiers trans_9
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 833
+        width: 98
+        height: 108
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f76f45a979fe6ac0800000000000000
+      internalID: -3859873529750132749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policiers trans_10
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 786
+        width: 116
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1999ceccfdc8eb060800000000000000
+      internalID: 6971164166059760017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policiers trans_11
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 737
+        width: 84
+        height: 91
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c386099669b912f10800000000000000
+      internalID: 2243245159725688892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policiers trans_12
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 739
+        width: 92
+        height: 91
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bc974b36100ec200800000000000000
+      internalID: 202099128762080441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policiers trans_13
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 739
+        width: 74
+        height: 91
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61705294d0d43c750800000000000000
+      internalID: 6323983021215385366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policiers trans_14
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 739
+        width: 75
+        height: 91
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 187571a6321b4d2b0800000000000000
+      internalID: -5560624874233833599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policiers trans_15
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 685
+        width: 130
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dea58194912d70af0800000000000000
+      internalID: -430144233348244755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policiers trans_16
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 647
+        width: 83
+        height: 90
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4b42dff5ec29a680800000000000000
+      internalID: -8743407835212002483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policiers trans_17
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 646
+        width: 75
+        height: 91
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99cf806b9c819d750800000000000000
+      internalID: 6330118005867478169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policiers trans_18
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 647
+        width: 86
+        height: 92
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 534f072cf01815a90800000000000000
+      internalID: -7326933214068411339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policiers trans_19
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 646
+        width: 87
+        height: 91
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3e97b96bbe99df00800000000000000
+      internalID: 1142118508284845628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policiers trans_20
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 590
+        width: 85
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdfe1b85a1b28d190800000000000000
+      internalID: -7937546951083298853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policiers trans_21
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 545
+        width: 93
+        height: 98
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d3502b4f3af36810800000000000000
+      internalID: 1757523429354918871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policiers trans_22
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 545
+        width: 93
+        height: 98
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6be9017670901efb0800000000000000
+      internalID: -4620401815306854730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policiers trans_23
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 545
+        width: 91
+        height: 99
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1bff26d45a760e10800000000000000
+      internalID: 2163551175787412254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policiers trans_24
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 545
+        width: 92
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1e4c32a00a42ff60800000000000000
+      internalID: 8066591249156296218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policiers trans_25
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 487
+        width: 117
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10060952f28cb94c0800000000000000
+      internalID: -4279606916066287615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policiers trans_26
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 441
+        width: 95
+        height: 101
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c638fed61f2c5e70800000000000000
+      internalID: 9105204321912895173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policiers trans_27
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 441
+        width: 95
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34d43b1ccc68661f0800000000000000
+      internalID: -1052005248963228349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policiers trans_28
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 441
+        width: 95
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8010257965233b9b0800000000000000
+      internalID: -5065649808374365944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policiers trans_29
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 441
+        width: 93
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4827c03be14db3cd0800000000000000
+      internalID: -2577233133421432188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policiers trans_30
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 390
+        width: 98
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8d069c7f0466d870800000000000000
+      internalID: 8707256947244928397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policiers trans_31
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 344
+        width: 74
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5b7e4233d45ec360800000000000000
+      internalID: 7191778921016097627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policiers trans_32
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 345
+        width: 74
+        height: 94
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2d6925a8a7f062a0800000000000000
+      internalID: -6746119938103481042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policiers trans_33
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 345
+        width: 75
+        height: 94
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76160e13c87e04840800000000000000
+      internalID: 5206415758558519655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policiers trans_34
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 345
+        width: 73
+        height: 94
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d7ea43a4ef4a3a80800000000000000
+      internalID: -8486382704415545384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policiers trans_35
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 283
+        width: 111
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0816124650d73920800000000000000
+      internalID: 2970071548168640525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policiers trans_36
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 248
+        width: 75
+        height: 94
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7647dfd649962aa0800000000000000
+      internalID: -6186088508464609670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policiers trans_37
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 248
+        width: 74
+        height: 93
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4996cb265a70db030800000000000000
+      internalID: 3511971691326368148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policiers trans_38
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 248
+        width: 73
+        height: 94
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8834fa6cc2d3d1c0800000000000000
+      internalID: -4480005428893960054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policiers trans_39
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 249
+        width: 74
+        height: 93
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 346fe3ebbcba92c60800000000000000
+      internalID: 7793949521699862083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 00734a341087a3e4aa9d6afc30f6f391
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Policiers trans_0: 317391783282905770
+      Policiers trans_1: 6966461626907491654
+      Policiers trans_10: 6971164166059760017
+      Policiers trans_11: 2243245159725688892
+      Policiers trans_12: 202099128762080441
+      Policiers trans_13: 6323983021215385366
+      Policiers trans_14: -5560624874233833599
+      Policiers trans_15: -430144233348244755
+      Policiers trans_16: -8743407835212002483
+      Policiers trans_17: 6330118005867478169
+      Policiers trans_18: -7326933214068411339
+      Policiers trans_19: 1142118508284845628
+      Policiers trans_2: 2202629114318769409
+      Policiers trans_20: -7937546951083298853
+      Policiers trans_21: 1757523429354918871
+      Policiers trans_22: -4620401815306854730
+      Policiers trans_23: 2163551175787412254
+      Policiers trans_24: 8066591249156296218
+      Policiers trans_25: -4279606916066287615
+      Policiers trans_26: 9105204321912895173
+      Policiers trans_27: -1052005248963228349
+      Policiers trans_28: -5065649808374365944
+      Policiers trans_29: -2577233133421432188
+      Policiers trans_3: -2462282013606716011
+      Policiers trans_30: 8707256947244928397
+      Policiers trans_31: 7191778921016097627
+      Policiers trans_32: -6746119938103481042
+      Policiers trans_33: 5206415758558519655
+      Policiers trans_34: -8486382704415545384
+      Policiers trans_35: 2970071548168640525
+      Policiers trans_36: -6186088508464609670
+      Policiers trans_37: 3511971691326368148
+      Policiers trans_38: -4480005428893960054
+      Policiers trans_39: 7793949521699862083
+      Policiers trans_4: 3540078753969750738
+      Policiers trans_5: -7175686143517132858
+      Policiers trans_6: 7141486853965533734
+      Policiers trans_7: -4305402367639392686
+      Policiers trans_8: -3916472736888723731
+      Policiers trans_9: -3859873529750132749
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

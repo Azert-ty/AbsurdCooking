@@ -226,7 +226,7 @@ public class GameUI : MonoBehaviour
         if (gameOverText != null)
         {
             gameOverText.text =
-                "Epinglé";
+                "Epinglé !";
         }
     }
 
