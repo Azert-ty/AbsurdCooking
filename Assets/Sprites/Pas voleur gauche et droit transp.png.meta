@@ -1,0 +1,962 @@
+fileFormatVersion: 2
+guid: 3b91bcb5c7ef2534d8c0b811d35817aa
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8758498232764309755
+    second: Pas voleur gauche et droit transp_0
+  - first:
+      213: -9006837048804061775
+    second: Pas voleur gauche et droit transp_1
+  - first:
+      213: -6531594064226490552
+    second: Pas voleur gauche et droit transp_2
+  - first:
+      213: -6921446908489930086
+    second: Pas voleur gauche et droit transp_3
+  - first:
+      213: 6271454214972734843
+    second: Pas voleur gauche et droit transp_4
+  - first:
+      213: 3166274951650548046
+    second: Pas voleur gauche et droit transp_5
+  - first:
+      213: -2641000257336744594
+    second: Pas voleur gauche et droit transp_6
+  - first:
+      213: 4980405456847177489
+    second: Pas voleur gauche et droit transp_7
+  - first:
+      213: -6625964926974857972
+    second: Pas voleur gauche et droit transp_8
+  - first:
+      213: 3147340002569570093
+    second: Pas voleur gauche et droit transp_9
+  - first:
+      213: 6044893396098331461
+    second: Pas voleur gauche et droit transp_10
+  - first:
+      213: -6132107737440605702
+    second: Pas voleur gauche et droit transp_11
+  - first:
+      213: -8981350903416344553
+    second: Pas voleur gauche et droit transp_12
+  - first:
+      213: 6886374850822047286
+    second: Pas voleur gauche et droit transp_13
+  - first:
+      213: 2077284575838915528
+    second: Pas voleur gauche et droit transp_14
+  - first:
+      213: 253174338392661675
+    second: Pas voleur gauche et droit transp_15
+  - first:
+      213: -7525206938548380713
+    second: Pas voleur gauche et droit transp_16
+  - first:
+      213: -6355921938231866657
+    second: Pas voleur gauche et droit transp_17
+  - first:
+      213: 1427051296292082510
+    second: Pas voleur gauche et droit transp_18
+  - first:
+      213: -7660077557028964432
+    second: Pas voleur gauche et droit transp_19
+  - first:
+      213: -8173708199057146781
+    second: Pas voleur gauche et droit transp_20
+  - first:
+      213: -4400532771841077658
+    second: Pas voleur gauche et droit transp_21
+  - first:
+      213: -4568441194257191911
+    second: Pas voleur gauche et droit transp_22
+  - first:
+      213: 1848638669152759285
+    second: Pas voleur gauche et droit transp_23
+  - first:
+      213: 4354160270840219051
+    second: Pas voleur gauche et droit transp_24
+  - first:
+      213: -5865100203962548986
+    second: Pas voleur gauche et droit transp_25
+  - first:
+      213: -717753683542664808
+    second: Pas voleur gauche et droit transp_26
+  - first:
+      213: -1449665076759930034
+    second: Pas voleur gauche et droit transp_27
+  - first:
+      213: 2919581641377825039
+    second: Pas voleur gauche et droit transp_28
+  - first:
+      213: 4914536750214394693
+    second: Pas voleur gauche et droit transp_29
+  - first:
+      213: 5001916944029806525
+    second: Pas voleur gauche et droit transp_30
+  - first:
+      213: -6110517272600540581
+    second: Pas voleur gauche et droit transp_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pas voleur gauche et droit transp_0
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 449
+        width: 44
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf0adc9fcbf6c8970800000000000000
+      internalID: 8758498232764309755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pas voleur gauche et droit transp_1
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 448
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bdc434ac69410380800000000000000
+      internalID: -9006837048804061775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pas voleur gauche et droit transp_2
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 449
+        width: 46
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 847eab0fdcd1b55a0800000000000000
+      internalID: -6531594064226490552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pas voleur gauche et droit transp_3
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 447
+        width: 46
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9a6bb745b412ff90800000000000000
+      internalID: -6921446908489930086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pas voleur gauche et droit transp_4
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 383
+        width: 46
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7d7394816ea80750800000000000000
+      internalID: 6271454214972734843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pas voleur gauche et droit transp_5
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 381
+        width: 48
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e49195afa4ed0fb20800000000000000
+      internalID: 3166274951650548046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pas voleur gauche et droit transp_6
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 382
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e656ab13248495bd0800000000000000
+      internalID: -2641000257336744594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pas voleur gauche et droit transp_7
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 383
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1170bcc2064fd1540800000000000000
+      internalID: 4980405456847177489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pas voleur gauche et droit transp_8
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 322
+        width: 39
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0d67793108db04a0800000000000000
+      internalID: -6625964926974857972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pas voleur gauche et droit transp_9
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 321
+        width: 41
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2749889e099dab20800000000000000
+      internalID: 3147340002569570093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pas voleur gauche et droit transp_10
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 322
+        width: 37
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 543bb8b3486c3e350800000000000000
+      internalID: 6044893396098331461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pas voleur gauche et droit transp_11
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 320
+        width: 35
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af9ad69808066eaa0800000000000000
+      internalID: -6132107737440605702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pas voleur gauche et droit transp_12
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 257
+        width: 40
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7103cb640f4db5380800000000000000
+      internalID: -8981350903416344553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pas voleur gauche et droit transp_13
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 257
+        width: 36
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6368e65f071519f50800000000000000
+      internalID: 6886374850822047286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pas voleur gauche et droit transp_14
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 256
+        width: 37
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cbc648d05ff3dc10800000000000000
+      internalID: 2077284575838915528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pas voleur gauche et droit transp_15
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 256
+        width: 37
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bae932a28b4738300800000000000000
+      internalID: 253174338392661675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pas voleur gauche et droit transp_16
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 196
+        width: 31
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dbd48ed828119790800000000000000
+      internalID: -7525206938548380713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pas voleur gauche et droit transp_17
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 197
+        width: 37
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdac39b1caa3bc7a0800000000000000
+      internalID: -6355921938231866657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pas voleur gauche et droit transp_18
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 198
+        width: 41
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4310c7d797edc310800000000000000
+      internalID: 1427051296292082510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pas voleur gauche et droit transp_19
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 196
+        width: 38
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b7b855fb00f1b590800000000000000
+      internalID: -7660077557028964432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pas voleur gauche et droit transp_20
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 140
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36c3089f2b7219e80800000000000000
+      internalID: -8173708199057146781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pas voleur gauche et droit transp_21
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 139
+        width: 46
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66e82ff42ca2ee2c0800000000000000
+      internalID: -4400532771841077658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pas voleur gauche et droit transp_22
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 139
+        width: 46
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91ce90f30f2a990c0800000000000000
+      internalID: -4568441194257191911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pas voleur gauche et droit transp_23
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 139
+        width: 45
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fda6e8331fa7a910800000000000000
+      internalID: 1848638669152759285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pas voleur gauche et droit transp_24
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 78
+        width: 32
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba5cc8e62b51d6c30800000000000000
+      internalID: 4354160270840219051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pas voleur gauche et droit transp_25
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 79
+        width: 30
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60dbdba607afa9ea0800000000000000
+      internalID: -5865100203962548986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pas voleur gauche et droit transp_26
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 78
+        width: 32
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8991630e3d60a06f0800000000000000
+      internalID: -717753683542664808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pas voleur gauche et droit transp_27
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 79
+        width: 32
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4b5f681b41c1ebe0800000000000000
+      internalID: -1449665076759930034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pas voleur gauche et droit transp_28
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 17
+        width: 29
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f01c313c800748820800000000000000
+      internalID: 2919581641377825039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pas voleur gauche et droit transp_29
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 18
+        width: 28
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 543b120d221f33440800000000000000
+      internalID: 4914536750214394693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pas voleur gauche et droit transp_30
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 17
+        width: 28
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbf67e495f06a6540800000000000000
+      internalID: 5001916944029806525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pas voleur gauche et droit transp_31
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 0
+        width: 85
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5a81cc5ae4133ba0800000000000000
+      internalID: -6110517272600540581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Pas voleur gauche et droit transp_0: 8758498232764309755
+      Pas voleur gauche et droit transp_1: -9006837048804061775
+      Pas voleur gauche et droit transp_10: 6044893396098331461
+      Pas voleur gauche et droit transp_11: -6132107737440605702
+      Pas voleur gauche et droit transp_12: -8981350903416344553
+      Pas voleur gauche et droit transp_13: 6886374850822047286
+      Pas voleur gauche et droit transp_14: 2077284575838915528
+      Pas voleur gauche et droit transp_15: 253174338392661675
+      Pas voleur gauche et droit transp_16: -7525206938548380713
+      Pas voleur gauche et droit transp_17: -6355921938231866657
+      Pas voleur gauche et droit transp_18: 1427051296292082510
+      Pas voleur gauche et droit transp_19: -7660077557028964432
+      Pas voleur gauche et droit transp_2: -6531594064226490552
+      Pas voleur gauche et droit transp_20: -8173708199057146781
+      Pas voleur gauche et droit transp_21: -4400532771841077658
+      Pas voleur gauche et droit transp_22: -4568441194257191911
+      Pas voleur gauche et droit transp_23: 1848638669152759285
+      Pas voleur gauche et droit transp_24: 4354160270840219051
+      Pas voleur gauche et droit transp_25: -5865100203962548986
+      Pas voleur gauche et droit transp_26: -717753683542664808
+      Pas voleur gauche et droit transp_27: -1449665076759930034
+      Pas voleur gauche et droit transp_28: 2919581641377825039
+      Pas voleur gauche et droit transp_29: 4914536750214394693
+      Pas voleur gauche et droit transp_3: -6921446908489930086
+      Pas voleur gauche et droit transp_30: 5001916944029806525
+      Pas voleur gauche et droit transp_31: -6110517272600540581
+      Pas voleur gauche et droit transp_4: 6271454214972734843
+      Pas voleur gauche et droit transp_5: 3166274951650548046
+      Pas voleur gauche et droit transp_6: -2641000257336744594
+      Pas voleur gauche et droit transp_7: 4980405456847177489
+      Pas voleur gauche et droit transp_8: -6625964926974857972
+      Pas voleur gauche et droit transp_9: 3147340002569570093
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

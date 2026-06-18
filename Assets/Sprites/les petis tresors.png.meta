@@ -1,0 +1,858 @@
+fileFormatVersion: 2
+guid: 2d11450e80e5230469e4008464bf4f5f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8110884176299595482
+    second: les petis tresors_0
+  - first:
+      213: 9149470332959241158
+    second: les petis tresors_1
+  - first:
+      213: 4618699400335613807
+    second: les petis tresors_2
+  - first:
+      213: -7999229922904671489
+    second: les petis tresors_3
+  - first:
+      213: -228030334901182931
+    second: les petis tresors_4
+  - first:
+      213: 3648455228992816574
+    second: les petis tresors_5
+  - first:
+      213: -6231775405582659899
+    second: les petis tresors_6
+  - first:
+      213: -7701872935766895197
+    second: les petis tresors_7
+  - first:
+      213: -1249332969867940061
+    second: les petis tresors_8
+  - first:
+      213: 4048794973644491550
+    second: les petis tresors_9
+  - first:
+      213: -8018922566710530587
+    second: les petis tresors_10
+  - first:
+      213: -878347391505821985
+    second: les petis tresors_11
+  - first:
+      213: -6086045059543611734
+    second: les petis tresors_12
+  - first:
+      213: 5633893141522518092
+    second: les petis tresors_13
+  - first:
+      213: 6670091986277410573
+    second: les petis tresors_14
+  - first:
+      213: 1000271521053938221
+    second: les petis tresors_15
+  - first:
+      213: -4084850987710021241
+    second: les petis tresors_16
+  - first:
+      213: -7757925016881600990
+    second: les petis tresors_17
+  - first:
+      213: -3242730812452426529
+    second: les petis tresors_18
+  - first:
+      213: 6535071024721923332
+    second: les petis tresors_19
+  - first:
+      213: 1103939887072465824
+    second: les petis tresors_20
+  - first:
+      213: 197818794171760342
+    second: les petis tresors_21
+  - first:
+      213: -4190716458706636035
+    second: les petis tresors_22
+  - first:
+      213: -8455651083079784645
+    second: les petis tresors_23
+  - first:
+      213: -8518910197198756703
+    second: les petis tresors_24
+  - first:
+      213: 6416482560948606640
+    second: les petis tresors_25
+  - first:
+      213: 4370426915204488988
+    second: les petis tresors_26
+  - first:
+      213: 4663620012952944829
+    second: les petis tresors_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: les petis tresors_0
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 497
+        width: 24
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad69cae5f26af8070800000000000000
+      internalID: 8110884176299595482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: les petis tresors_1
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 409
+        width: 62
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c3b207bac279fe70800000000000000
+      internalID: 9149470332959241158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: les petis tresors_2
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 413
+        width: 55
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6f505932aae81040800000000000000
+      internalID: 4618699400335613807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: les petis tresors_3
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 411
+        width: 49
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffa779054c60df090800000000000000
+      internalID: -7999229922904671489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: les petis tresors_4
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 412
+        width: 52
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2e933a5e9fd5dcf0800000000000000
+      internalID: -228030334901182931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: les petis tresors_5
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 411
+        width: 52
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb5880f43bae1a230800000000000000
+      internalID: 3648455228992816574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: les petis tresors_6
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 411
+        width: 53
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ceca3639494489a0800000000000000
+      internalID: -6231775405582659899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: les petis tresors_7
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 326
+        width: 55
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a55b660f537d1590800000000000000
+      internalID: -7701872935766895197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: les petis tresors_8
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 332
+        width: 64
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32f66dc784a79aee0800000000000000
+      internalID: -1249332969867940061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: les petis tresors_9
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 323
+        width: 46
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1b877cb395303830800000000000000
+      internalID: 4048794973644491550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: les petis tresors_10
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 328
+        width: 65
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5edead1696017b090800000000000000
+      internalID: -8018922566710530587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: les petis tresors_11
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 322
+        width: 46
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fde87eb73bb7fc3f0800000000000000
+      internalID: -878347391505821985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: les petis tresors_12
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 323
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa6c1ea73460a8ba0800000000000000
+      internalID: -6086045059543611734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: les petis tresors_13
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 226
+        width: 64
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4095fa66fb9f2e40800000000000000
+      internalID: 5633893141522518092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: les petis tresors_14
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 225
+        width: 57
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d07ae35625de09c50800000000000000
+      internalID: 6670091986277410573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: les petis tresors_15
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 225
+        width: 38
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d221c5316ada1ed00800000000000000
+      internalID: 1000271521053938221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: les petis tresors_16
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 223
+        width: 64
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 781042d4ba1bf47c0800000000000000
+      internalID: -4084850987710021241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: les petis tresors_17
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 222
+        width: 48
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 226e7a6ec40565490800000000000000
+      internalID: -7757925016881600990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: les petis tresors_18
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 124
+        width: 55
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdc2f8db1818ff2d0800000000000000
+      internalID: -3242730812452426529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: les petis tresors_19
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 123
+        width: 52
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40d8f72097c31ba50800000000000000
+      internalID: 6535071024721923332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: les petis tresors_20
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 121
+        width: 38
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a3d6567a7bf15f00800000000000000
+      internalID: 1103939887072465824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: les petis tresors_21
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 125
+        width: 44
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6def08c252bceb200800000000000000
+      internalID: 197818794171760342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: les petis tresors_22
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 129
+        width: 66
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df2786c859597d5c0800000000000000
+      internalID: -4190716458706636035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: les petis tresors_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 90
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b37e160d32e77aa80800000000000000
+      internalID: -8455651083079784645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: les petis tresors_24
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 0
+        width: 88
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a4e38e8f40c6c980800000000000000
+      internalID: -8518910197198756703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: les petis tresors_25
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 28
+        width: 72
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b694d8a4eceb0950800000000000000
+      internalID: 6416482560948606640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: les petis tresors_26
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 0
+        width: 94
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1fd195bf10e6ac30800000000000000
+      internalID: 4370426915204488988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: les petis tresors_27
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 0
+        width: 92
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db0867f51b188b040800000000000000
+      internalID: 4663620012952944829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      les petis tresors_0: 8110884176299595482
+      les petis tresors_1: 9149470332959241158
+      les petis tresors_10: -8018922566710530587
+      les petis tresors_11: -878347391505821985
+      les petis tresors_12: -6086045059543611734
+      les petis tresors_13: 5633893141522518092
+      les petis tresors_14: 6670091986277410573
+      les petis tresors_15: 1000271521053938221
+      les petis tresors_16: -4084850987710021241
+      les petis tresors_17: -7757925016881600990
+      les petis tresors_18: -3242730812452426529
+      les petis tresors_19: 6535071024721923332
+      les petis tresors_2: 4618699400335613807
+      les petis tresors_20: 1103939887072465824
+      les petis tresors_21: 197818794171760342
+      les petis tresors_22: -4190716458706636035
+      les petis tresors_23: -8455651083079784645
+      les petis tresors_24: -8518910197198756703
+      les petis tresors_25: 6416482560948606640
+      les petis tresors_26: 4370426915204488988
+      les petis tresors_27: 4663620012952944829
+      les petis tresors_3: -7999229922904671489
+      les petis tresors_4: -228030334901182931
+      les petis tresors_5: 3648455228992816574
+      les petis tresors_6: -6231775405582659899
+      les petis tresors_7: -7701872935766895197
+      les petis tresors_8: -1249332969867940061
+      les petis tresors_9: 4048794973644491550
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

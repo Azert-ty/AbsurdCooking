@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 455295878917985294}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.02643384, w: 0.99965054}
-  m_LocalPosition: {x: 0.03, y: 2.0504, z: 0}
+  m_LocalPosition: {x: 0.03, y: 4.8, z: 0}
   m_LocalScale: {x: 0.06277722, y: 0.052977547, z: 0.34193093}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -117,7 +117,7 @@ Transform:
   m_GameObject: {fileID: 544447997202354050}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.02, y: 1.19, z: 0}
+  m_LocalPosition: {x: 0.1, y: 4.02, z: 0}
   m_LocalScale: {x: 0.09297273, y: 0.11168318, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -208,7 +208,7 @@ Transform:
   m_GameObject: {fileID: 2281898515006542426}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.36, y: 1.5, z: 0}
+  m_LocalPosition: {x: 0.08, y: 4.19, z: 0}
   m_LocalScale: {x: 0.21776038, y: 0.26154462, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -458,7 +458,7 @@ MonoBehaviour:
   searchIcon: {fileID: 544447997202354050}
   alertSound: {fileID: 8300000, guid: f7786173cf0562146b867ae79657df09, type: 3}
   searchSound: {fileID: 8300000, guid: a21dbba7b4832a74bab22e89ef1f6dbd, type: 3}
-  chaseStartSound: {fileID: 8300000, guid: f02e0066ce97ac844810ab401a1f52ca, type: 3}
+  chaseStartSound: {fileID: 8300000, guid: 8376fc50bee7b1d4391bef6879cb0967, type: 3}
   chaseLoopSound: {fileID: 8300000, guid: 23160ec73a644c642b8bee7247e801b4, type: 3}
   alertSoundCooldown: 1
   searchSoundCooldown: 1
@@ -764,7 +764,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 4
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 3511971691326368148, guid: 537379df942e3bf44a5343f9ad5b82f4, type: 3}
+  m_Sprite: {fileID: -8486382704415545384, guid: 537379df942e3bf44a5343f9ad5b82f4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -884,7 +884,7 @@ MeshRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 5
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &1342172307730661271
@@ -907,7 +907,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   sortingLayerName: Default
-  sortingOrder: 2
+  sortingOrder: 5
   zOffset: -0.05
   patrolColor: {r: 1, g: 1, b: 1, a: 0.2}
   alertColor: {r: 1, g: 0.6, b: 0, a: 0.35}

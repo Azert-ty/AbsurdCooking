@@ -1,0 +1,1170 @@
+fileFormatVersion: 2
+guid: 4a6010f9a3aeebd488f5c37f83ac7932
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2430640664133995182
+    second: heros_topdown_spritesheet_BIG_4x8_256cells_0
+  - first:
+      213: -2504937263333358727
+    second: heros_topdown_spritesheet_BIG_4x8_256cells_1
+  - first:
+      213: -8467341887106665360
+    second: heros_topdown_spritesheet_BIG_4x8_256cells_2
+  - first:
+      213: 419939311876880988
+    second: heros_topdown_spritesheet_BIG_4x8_256cells_3
+  - first:
+      213: 4254172638039598939
+    second: heros_topdown_spritesheet_BIG_4x8_256cells_4
+  - first:
+      213: -8505314395774088523
+    second: heros_topdown_spritesheet_BIG_4x8_256cells_5
+  - first:
+      213: -1296432994978377961
+    second: heros_topdown_spritesheet_BIG_4x8_256cells_6
+  - first:
+      213: -2196377924120613317
+    second: heros_topdown_spritesheet_BIG_4x8_256cells_7
+  - first:
+      213: -516674092070912486
+    second: heros_topdown_spritesheet_BIG_4x8_256cells_8
+  - first:
+      213: -5558078374004606590
+    second: heros_topdown_spritesheet_BIG_4x8_256cells_9
+  - first:
+      213: 64060362654731820
+    second: heros_topdown_spritesheet_BIG_4x8_256cells_10
+  - first:
+      213: -7847149637650746734
+    second: heros_topdown_spritesheet_BIG_4x8_256cells_11
+  - first:
+      213: -5883413880844641890
+    second: heros_topdown_spritesheet_BIG_4x8_256cells_12
+  - first:
+      213: 4532291623718267822
+    second: heros_topdown_spritesheet_BIG_4x8_256cells_13
+  - first:
+      213: 7786736490979574358
+    second: heros_topdown_spritesheet_BIG_4x8_256cells_14
+  - first:
+      213: 6863449175683610451
+    second: heros_topdown_spritesheet_BIG_4x8_256cells_15
+  - first:
+      213: 2509325440555025740
+    second: heros_topdown_spritesheet_BIG_4x8_256cells_16
+  - first:
+      213: -1237606849897864986
+    second: heros_topdown_spritesheet_BIG_4x8_256cells_17
+  - first:
+      213: -7015780604291215691
+    second: heros_topdown_spritesheet_BIG_4x8_256cells_18
+  - first:
+      213: -1117848799909119019
+    second: heros_topdown_spritesheet_BIG_4x8_256cells_19
+  - first:
+      213: 7790057184698242346
+    second: heros_topdown_spritesheet_BIG_4x8_256cells_20
+  - first:
+      213: -3941152323271739922
+    second: heros_topdown_spritesheet_BIG_4x8_256cells_21
+  - first:
+      213: -3843526281216765824
+    second: heros_topdown_spritesheet_BIG_4x8_256cells_22
+  - first:
+      213: -6026124344839099513
+    second: heros_topdown_spritesheet_BIG_4x8_256cells_23
+  - first:
+      213: -6797957295898398734
+    second: heros_topdown_spritesheet_BIG_4x8_256cells_24
+  - first:
+      213: -3646669688695212075
+    second: heros_topdown_spritesheet_BIG_4x8_256cells_25
+  - first:
+      213: -1883943455076860969
+    second: heros_topdown_spritesheet_BIG_4x8_256cells_26
+  - first:
+      213: -6557452404634017877
+    second: heros_topdown_spritesheet_BIG_4x8_256cells_27
+  - first:
+      213: -7013521598398950025
+    second: heros_topdown_spritesheet_BIG_4x8_256cells_28
+  - first:
+      213: -8476422543420498616
+    second: heros_topdown_spritesheet_BIG_4x8_256cells_29
+  - first:
+      213: 6926246109295086116
+    second: heros_topdown_spritesheet_BIG_4x8_256cells_30
+  - first:
+      213: 2551507484728075691
+    second: heros_topdown_spritesheet_BIG_4x8_256cells_31
+  - first:
+      213: -4292691414259900189
+    second: heros_topdown_spritesheet_BIG_4x8_256cells_32
+  - first:
+      213: -1149230501782122267
+    second: heros_topdown_spritesheet_BIG_4x8_256cells_33
+  - first:
+      213: 7727920364083008734
+    second: heros_topdown_spritesheet_BIG_4x8_256cells_34
+  - first:
+      213: -2076932437243071261
+    second: heros_topdown_spritesheet_BIG_4x8_256cells_35
+  - first:
+      213: 5084155903870005942
+    second: heros_topdown_spritesheet_BIG_4x8_256cells_36
+  - first:
+      213: -6922041215694596650
+    second: heros_topdown_spritesheet_BIG_4x8_256cells_37
+  - first:
+      213: 8382452993062502257
+    second: heros_topdown_spritesheet_BIG_4x8_256cells_38
+  - first:
+      213: 7163047161798486231
+    second: heros_topdown_spritesheet_BIG_4x8_256cells_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 14.2
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: heros_topdown_spritesheet_BIG_4x8_256cells_0
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 1799
+        width: 153
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaa83525ece5bb120800000000000000
+      internalID: 2430640664133995182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heros_topdown_spritesheet_BIG_4x8_256cells_1
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 1799
+        width: 151
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 973406aa4dcac3dd0800000000000000
+      internalID: -2504937263333358727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heros_topdown_spritesheet_BIG_4x8_256cells_2
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 1799
+        width: 150
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 074b8336a65fd7a80800000000000000
+      internalID: -8467341887106665360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heros_topdown_spritesheet_BIG_4x8_256cells_3
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 1799
+        width: 179
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5ab4a7449ce3d500800000000000000
+      internalID: 419939311876880988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heros_topdown_spritesheet_BIG_4x8_256cells_4
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1543
+        width: 236
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b576987897bd90b30800000000000000
+      internalID: 4254172638039598939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heros_topdown_spritesheet_BIG_4x8_256cells_5
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 1543
+        width: 230
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ba8ed0ce9d07f980800000000000000
+      internalID: -8505314395774088523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heros_topdown_spritesheet_BIG_4x8_256cells_6
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 1543
+        width: 230
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71fc7335f05220ee0800000000000000
+      internalID: -1296432994978377961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heros_topdown_spritesheet_BIG_4x8_256cells_7
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 1543
+        width: 212
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3ee7483ae5e481e0800000000000000
+      internalID: -2196377924120613317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heros_topdown_spritesheet_BIG_4x8_256cells_8
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 1348
+        width: 169
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1e377596a764d8f0800000000000000
+      internalID: -516674092070912486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heros_topdown_spritesheet_BIG_4x8_256cells_9
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 1335
+        width: 161
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 289bca3ba2dbdd2b0800000000000000
+      internalID: -5558078374004606590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heros_topdown_spritesheet_BIG_4x8_256cells_10
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 1339
+        width: 157
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2ec7387f8693e000800000000000000
+      internalID: 64060362654731820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heros_topdown_spritesheet_BIG_4x8_256cells_11
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 1343
+        width: 159
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 292fd740bf2591390800000000000000
+      internalID: -7847149637650746734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heros_topdown_spritesheet_BIG_4x8_256cells_12
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 1287
+        width: 31
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9917ad3f3ae95ea0800000000000000
+      internalID: -5883413880844641890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heros_topdown_spritesheet_BIG_4x8_256cells_13
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 1287
+        width: 24
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaba43af73fe5ee30800000000000000
+      internalID: 4532291623718267822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heros_topdown_spritesheet_BIG_4x8_256cells_14
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 1287
+        width: 23
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 652c868259b001c60800000000000000
+      internalID: 7786736490979574358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heros_topdown_spritesheet_BIG_4x8_256cells_15
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 1287
+        width: 23
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 357b19249aedf3f50800000000000000
+      internalID: 6863449175683610451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heros_topdown_spritesheet_BIG_4x8_256cells_16
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 1031
+        width: 148
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c450226713ae2d220800000000000000
+      internalID: 2509325440555025740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heros_topdown_spritesheet_BIG_4x8_256cells_17
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 1031
+        width: 149
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e06f3c802323dee0800000000000000
+      internalID: -1237606849897864986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heros_topdown_spritesheet_BIG_4x8_256cells_18
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 1031
+        width: 152
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5be852b26b0f2ae90800000000000000
+      internalID: -7015780604291215691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heros_topdown_spritesheet_BIG_4x8_256cells_19
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 1031
+        width: 161
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dbf1d8607a9c70f0800000000000000
+      internalID: -1117848799909119019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heros_topdown_spritesheet_BIG_4x8_256cells_20
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 775
+        width: 162
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a251be96cb7db1c60800000000000000
+      internalID: 7790057184698242346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heros_topdown_spritesheet_BIG_4x8_256cells_21
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 775
+        width: 163
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee5bea5d7d63e49c0800000000000000
+      internalID: -3941152323271739922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heros_topdown_spritesheet_BIG_4x8_256cells_22
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 775
+        width: 162
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 080523b063d09aac0800000000000000
+      internalID: -3843526281216765824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heros_topdown_spritesheet_BIG_4x8_256cells_23
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 775
+        width: 165
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78b288d06d7ee5ca0800000000000000
+      internalID: -6026124344839099513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heros_topdown_spritesheet_BIG_4x8_256cells_24
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 519
+        width: 140
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ff63b34bddc8a1a0800000000000000
+      internalID: -6797957295898398734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heros_topdown_spritesheet_BIG_4x8_256cells_25
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 519
+        width: 135
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d733203d3d646dc0800000000000000
+      internalID: -3646669688695212075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heros_topdown_spritesheet_BIG_4x8_256cells_26
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 519
+        width: 130
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dbb83fb863ead5e0800000000000000
+      internalID: -1883943455076860969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heros_topdown_spritesheet_BIG_4x8_256cells_27
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 519
+        width: 130
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baf1246e7cf3ff4a0800000000000000
+      internalID: -6557452404634017877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heros_topdown_spritesheet_BIG_4x8_256cells_28
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 311
+        width: 111
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77596e6f347faae90800000000000000
+      internalID: -7013521598398950025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heros_topdown_spritesheet_BIG_4x8_256cells_29
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 310
+        width: 103
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84dde455b92bd5a80800000000000000
+      internalID: -8476422543420498616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heros_topdown_spritesheet_BIG_4x8_256cells_30
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 311
+        width: 101
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42a077bb328fe1060800000000000000
+      internalID: 6926246109295086116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heros_topdown_spritesheet_BIG_4x8_256cells_31
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 309
+        width: 102
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba5a7f4f986c86320800000000000000
+      internalID: 2551507484728075691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heros_topdown_spritesheet_BIG_4x8_256cells_32
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 263
+        width: 51
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e06ba207eb4d64c0800000000000000
+      internalID: -4292691414259900189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heros_topdown_spritesheet_BIG_4x8_256cells_33
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 263
+        width: 51
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e09b3092fc1d00f0800000000000000
+      internalID: -1149230501782122267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heros_topdown_spritesheet_BIG_4x8_256cells_34
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 263
+        width: 50
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed4dca970a61f3b60800000000000000
+      internalID: 7727920364083008734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heros_topdown_spritesheet_BIG_4x8_256cells_35
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 263
+        width: 49
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e4f3afc3f04d23e0800000000000000
+      internalID: -2076932437243071261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heros_topdown_spritesheet_BIG_4x8_256cells_36
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 7
+        width: 160
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b270e88bdc8e8640800000000000000
+      internalID: 5084155903870005942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heros_topdown_spritesheet_BIG_4x8_256cells_37
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 7
+        width: 158
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d519e95038ffef90800000000000000
+      internalID: -6922041215694596650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heros_topdown_spritesheet_BIG_4x8_256cells_38
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 7
+        width: 158
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17f76e5c594745470800000000000000
+      internalID: 8382452993062502257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heros_topdown_spritesheet_BIG_4x8_256cells_39
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 7
+        width: 159
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d86e543171486360800000000000000
+      internalID: 7163047161798486231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      heros_topdown_spritesheet_BIG_4x8_256cells_0: 2430640664133995182
+      heros_topdown_spritesheet_BIG_4x8_256cells_1: -2504937263333358727
+      heros_topdown_spritesheet_BIG_4x8_256cells_10: 64060362654731820
+      heros_topdown_spritesheet_BIG_4x8_256cells_11: -7847149637650746734
+      heros_topdown_spritesheet_BIG_4x8_256cells_12: -5883413880844641890
+      heros_topdown_spritesheet_BIG_4x8_256cells_13: 4532291623718267822
+      heros_topdown_spritesheet_BIG_4x8_256cells_14: 7786736490979574358
+      heros_topdown_spritesheet_BIG_4x8_256cells_15: 6863449175683610451
+      heros_topdown_spritesheet_BIG_4x8_256cells_16: 2509325440555025740
+      heros_topdown_spritesheet_BIG_4x8_256cells_17: -1237606849897864986
+      heros_topdown_spritesheet_BIG_4x8_256cells_18: -7015780604291215691
+      heros_topdown_spritesheet_BIG_4x8_256cells_19: -1117848799909119019
+      heros_topdown_spritesheet_BIG_4x8_256cells_2: -8467341887106665360
+      heros_topdown_spritesheet_BIG_4x8_256cells_20: 7790057184698242346
+      heros_topdown_spritesheet_BIG_4x8_256cells_21: -3941152323271739922
+      heros_topdown_spritesheet_BIG_4x8_256cells_22: -3843526281216765824
+      heros_topdown_spritesheet_BIG_4x8_256cells_23: -6026124344839099513
+      heros_topdown_spritesheet_BIG_4x8_256cells_24: -6797957295898398734
+      heros_topdown_spritesheet_BIG_4x8_256cells_25: -3646669688695212075
+      heros_topdown_spritesheet_BIG_4x8_256cells_26: -1883943455076860969
+      heros_topdown_spritesheet_BIG_4x8_256cells_27: -6557452404634017877
+      heros_topdown_spritesheet_BIG_4x8_256cells_28: -7013521598398950025
+      heros_topdown_spritesheet_BIG_4x8_256cells_29: -8476422543420498616
+      heros_topdown_spritesheet_BIG_4x8_256cells_3: 419939311876880988
+      heros_topdown_spritesheet_BIG_4x8_256cells_30: 6926246109295086116
+      heros_topdown_spritesheet_BIG_4x8_256cells_31: 2551507484728075691
+      heros_topdown_spritesheet_BIG_4x8_256cells_32: -4292691414259900189
+      heros_topdown_spritesheet_BIG_4x8_256cells_33: -1149230501782122267
+      heros_topdown_spritesheet_BIG_4x8_256cells_34: 7727920364083008734
+      heros_topdown_spritesheet_BIG_4x8_256cells_35: -2076932437243071261
+      heros_topdown_spritesheet_BIG_4x8_256cells_36: 5084155903870005942
+      heros_topdown_spritesheet_BIG_4x8_256cells_37: -6922041215694596650
+      heros_topdown_spritesheet_BIG_4x8_256cells_38: 8382452993062502257
+      heros_topdown_spritesheet_BIG_4x8_256cells_39: 7163047161798486231
+      heros_topdown_spritesheet_BIG_4x8_256cells_4: 4254172638039598939
+      heros_topdown_spritesheet_BIG_4x8_256cells_5: -8505314395774088523
+      heros_topdown_spritesheet_BIG_4x8_256cells_6: -1296432994978377961
+      heros_topdown_spritesheet_BIG_4x8_256cells_7: -2196377924120613317
+      heros_topdown_spritesheet_BIG_4x8_256cells_8: -516674092070912486
+      heros_topdown_spritesheet_BIG_4x8_256cells_9: -5558078374004606590
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
