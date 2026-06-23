@@ -1,0 +1,650 @@
+fileFormatVersion: 2
+guid: 5f95fa3e70be7eb4fa0e9b75111af2ad
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8355302676901904050
+    second: Ennemyfinalversion trans_0
+  - first:
+      213: 6238550732300873370
+    second: Ennemyfinalversion trans_1
+  - first:
+      213: -4179857535747929672
+    second: Ennemyfinalversion trans_2
+  - first:
+      213: -5147429067800488070
+    second: Ennemyfinalversion trans_3
+  - first:
+      213: -6929630622082701868
+    second: Ennemyfinalversion trans_4
+  - first:
+      213: 4376555458100069552
+    second: Ennemyfinalversion trans_5
+  - first:
+      213: 3582578845218247749
+    second: Ennemyfinalversion trans_6
+  - first:
+      213: -5027343051914391945
+    second: Ennemyfinalversion trans_7
+  - first:
+      213: 3687806543667244024
+    second: Ennemyfinalversion trans_8
+  - first:
+      213: -1307105327661480781
+    second: Ennemyfinalversion trans_9
+  - first:
+      213: -7683780015908332481
+    second: Ennemyfinalversion trans_10
+  - first:
+      213: -3083136343586213490
+    second: Ennemyfinalversion trans_11
+  - first:
+      213: -3520938605520495341
+    second: Ennemyfinalversion trans_12
+  - first:
+      213: 826379400624528901
+    second: Ennemyfinalversion trans_13
+  - first:
+      213: -2678286492266245430
+    second: Ennemyfinalversion trans_14
+  - first:
+      213: -193226546599390057
+    second: Ennemyfinalversion trans_15
+  - first:
+      213: -3279743726697578443
+    second: Ennemyfinalversion trans_16
+  - first:
+      213: -7294885746736165285
+    second: Ennemyfinalversion trans_17
+  - first:
+      213: -9042533334059520707
+    second: Ennemyfinalversion trans_18
+  - first:
+      213: -6714711155121167641
+    second: Ennemyfinalversion trans_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ennemyfinalversion trans_0
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 1139
+        width: 127
+        height: 222
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bebb9f248ff3f370800000000000000
+      internalID: 8355302676901904050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ennemyfinalversion trans_1
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 1139
+        width: 125
+        height: 221
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9eeb0876d8c39650800000000000000
+      internalID: 6238550732300873370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ennemyfinalversion trans_2
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 1136
+        width: 123
+        height: 224
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b9410297b92ef5c0800000000000000
+      internalID: -4179857535747929672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ennemyfinalversion trans_3
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 1139
+        width: 124
+        height: 219
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a775b3bf888a098b0800000000000000
+      internalID: -5147429067800488070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ennemyfinalversion trans_4
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 877
+        width: 122
+        height: 220
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d5671af9a105df90800000000000000
+      internalID: -6929630622082701868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ennemyfinalversion trans_5
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 877
+        width: 123
+        height: 220
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b40adb4006acbc30800000000000000
+      internalID: 4376555458100069552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ennemyfinalversion trans_6
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 877
+        width: 124
+        height: 220
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54410197a70e7b130800000000000000
+      internalID: 3582578845218247749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ennemyfinalversion trans_7
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 877
+        width: 120
+        height: 219
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77e4d9a512a4b3ab0800000000000000
+      internalID: -5027343051914391945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ennemyfinalversion trans_8
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 628
+        width: 123
+        height: 212
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fba5ab3388bd2330800000000000000
+      internalID: 3687806543667244024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ennemyfinalversion trans_9
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 630
+        width: 134
+        height: 212
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b487bc31aa3cdde0800000000000000
+      internalID: -1307105327661480781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ennemyfinalversion trans_10
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 628
+        width: 121
+        height: 216
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3cd98339cabd5590800000000000000
+      internalID: -7683780015908332481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ennemyfinalversion trans_11
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 630
+        width: 134
+        height: 214
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e817276a4df7635d0800000000000000
+      internalID: -3083136343586213490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ennemyfinalversion trans_12
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 375
+        width: 120
+        height: 204
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31dddf53efc132fc0800000000000000
+      internalID: -3520938605520495341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ennemyfinalversion trans_13
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 375
+        width: 119
+        height: 204
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50edcefbfa3e77b00800000000000000
+      internalID: 826379400624528901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ennemyfinalversion trans_14
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 376
+        width: 124
+        height: 205
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac25ebd10a0d4dad0800000000000000
+      internalID: -2678286492266245430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ennemyfinalversion trans_15
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 373
+        width: 120
+        height: 206
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79494c8ca75815df0800000000000000
+      internalID: -193226546599390057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ennemyfinalversion trans_16
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 93
+        width: 124
+        height: 219
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53000e715720c72d0800000000000000
+      internalID: -3279743726697578443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ennemyfinalversion trans_17
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 95
+        width: 124
+        height: 219
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5e0bb4301c53ca90800000000000000
+      internalID: -7294885746736165285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ennemyfinalversion trans_18
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 92
+        width: 101
+        height: 227
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3de0c197d7728280800000000000000
+      internalID: -9042533334059520707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ennemyfinalversion trans_19
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 93
+        width: 98
+        height: 225
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e266adc7cd80d2a0800000000000000
+      internalID: -6714711155121167641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 3a15ff045e89f5a4cb2ac32d4d4f6ebb
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Ennemyfinalversion trans_0: 8355302676901904050
+      Ennemyfinalversion trans_1: 6238550732300873370
+      Ennemyfinalversion trans_10: -7683780015908332481
+      Ennemyfinalversion trans_11: -3083136343586213490
+      Ennemyfinalversion trans_12: -3520938605520495341
+      Ennemyfinalversion trans_13: 826379400624528901
+      Ennemyfinalversion trans_14: -2678286492266245430
+      Ennemyfinalversion trans_15: -193226546599390057
+      Ennemyfinalversion trans_16: -3279743726697578443
+      Ennemyfinalversion trans_17: -7294885746736165285
+      Ennemyfinalversion trans_18: -9042533334059520707
+      Ennemyfinalversion trans_19: -6714711155121167641
+      Ennemyfinalversion trans_2: -4179857535747929672
+      Ennemyfinalversion trans_3: -5147429067800488070
+      Ennemyfinalversion trans_4: -6929630622082701868
+      Ennemyfinalversion trans_5: 4376555458100069552
+      Ennemyfinalversion trans_6: 3582578845218247749
+      Ennemyfinalversion trans_7: -5027343051914391945
+      Ennemyfinalversion trans_8: 3687806543667244024
+      Ennemyfinalversion trans_9: -1307105327661480781
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
