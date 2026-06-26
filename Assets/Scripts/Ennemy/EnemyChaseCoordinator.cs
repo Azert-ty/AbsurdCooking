@@ -6,7 +6,6 @@ public static class EnemyChaseCoordinator
     private static readonly List<EnemyMovement> chasingEnemies =
         new List<EnemyMovement>();
 
-    private static Transform currentTarget;
     private static PlayerTrail currentTrail;
 
     public static void Register(EnemyMovement enemy, Transform target)
@@ -14,7 +13,6 @@ public static class EnemyChaseCoordinator
         if (enemy == null || target == null)
             return;
 
-        currentTarget = target;
         currentTrail = target.GetComponent<PlayerTrail>();
 
         if (!chasingEnemies.Contains(enemy))
@@ -32,7 +30,6 @@ public static class EnemyChaseCoordinator
 
         if (chasingEnemies.Count == 0)
         {
-            currentTarget = null;
             currentTrail = null;
             return;
         }
@@ -89,7 +86,6 @@ public static class EnemyChaseCoordinator
     public static void Clear()
     {
         chasingEnemies.Clear();
-        currentTarget = null;
         currentTrail = null;
     }
 }
