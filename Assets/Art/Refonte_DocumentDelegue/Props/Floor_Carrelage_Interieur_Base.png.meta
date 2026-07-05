@@ -1,0 +1,1800 @@
+fileFormatVersion: 2
+guid: cabd01a78c34f5143b87595660cb3773
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4393675486594406656
+    second: Floor_Carrelage_Interieur_Base_0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1098
+        width: 156
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0091dcc839879fc30800000000000000
+      internalID: 4393675486594406656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_1
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 1098
+        width: 157
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3612c7338f71bf4399bab9da4044eda
+      internalID: 1263892301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_2
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 1098
+        width: 157
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8f8690e705d6004e95597af9e5b1d82
+      internalID: -669711593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_3
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 1098
+        width: 157
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8a1219fc43e77648b165937fe38f215
+      internalID: -681384679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1126
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 366e4763f9a7bce448660e30c82560d7
+      internalID: -292665088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1126
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed7e2437af8239d42b98d5673524bbaf
+      internalID: -1134375563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_7
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1126
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 088f29d821fbeb94980a9edb7d9f4a84
+      internalID: 2095872720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_8
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1126
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe41a6098ee195b4493c3f47f89ce613
+      internalID: -600600816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 941
+        width: 156
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 386604b4124ab4c499e21af0d84c3cb5
+      internalID: -2123690522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_10
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 941
+        width: 157
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d89e33f53b12b2942b48b7d328b29720
+      internalID: 43108066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_11
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 941
+        width: 157
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bddeddef0cb11ab4c935761a7bbb52cd
+      internalID: -1915706956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_14
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 998
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9bb63aff25c5c347ba4c7ed8f72e2fe
+      internalID: 953075591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_15
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 998
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2c55f92d689e974d86ce2d79e4404b8
+      internalID: 1841153538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_16
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 998
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cb4a6ac2c23d6d47aa8afb8b13fcb29
+      internalID: -1312990462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_17
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 998
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd55b9ad8acf07a4aa83b91f8c12f073
+      internalID: 1598182745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 784
+        width: 156
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 593ea34a81a86fb4ab3c1af7dc710adf
+      internalID: -17505458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_19
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 784
+        width: 157
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bf806a8f0abdfc48af662e86b3f1a7a
+      internalID: -1498906515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_20
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 784
+        width: 157
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d25787ddd82d734c804d3cdcd047cbe
+      internalID: -1911144185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_23
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 784
+        width: 157
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b01c89d68e7f6484b862eabd767e1b48
+      internalID: -1011962217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_24
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 870
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52c85f27a767355409756331e779d5a5
+      internalID: -1996987651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_25
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 870
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b081ff15ece06b7419580db063b5e73b
+      internalID: 1035921178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_26
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 870
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 002a2289d6bb2ae4c94a9b1a899ac60a
+      internalID: 1530034313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_32
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 742
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62795dcf73bebc047a9ad91bf015187b
+      internalID: 1259882165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_33
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 742
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fb8fdec9e1d8da40b1df689f42254f2
+      internalID: -1087784179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_34
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 742
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7387e19decdb04c408964f694bd68a27
+      internalID: 763960313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_35
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 742
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 089c7f25f4fbf0a428e18e0ee78947e2
+      internalID: -2146373773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 614
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ce189a68630c234297d12892165d9a7
+      internalID: 553616704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_37
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 614
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1057121fa9710a64d91b7e19cde9facf
+      internalID: -1329767838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_38
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 614
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa3ef7b26d4da73478a8218858bfbabf
+      internalID: -1387862270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_39
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 614
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2b433003e05e624e904b96bc41bff21
+      internalID: -1389025974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_40
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 614
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d746a7c3ddff10d42a5db1b3345c9a7d
+      internalID: 2013168861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_41
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 614
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e816766726d76d947849e3e3d3805bf6
+      internalID: -987680678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_42
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 614
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afc9d670b2bb0e84e95b1049d7b8bc24
+      internalID: -1042281246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_43
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 614
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 816afa7819597794f949137dd2160540
+      internalID: 374011695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_44
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 614
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 404abb73712246a4b9a64f4923a2e29a
+      internalID: 1952842526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 486
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c77115e3f3f64434c9a4def62a24ea53
+      internalID: -536628115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_46
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 486
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 900ad34faacf42f49b20ef357880c3fa
+      internalID: -283607963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_47
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 486
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c98409202244bee449df3ffeed62a4fa
+      internalID: 1957706148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_48
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 486
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cef0b6e2c7b3dd5479edfed99ae37130
+      internalID: -1450210302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_49
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 486
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55def02d847aa05418718eb6e0628ff3
+      internalID: 1477777658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_50
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 486
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab5aeeac08b42da43ac538c9365b0165
+      internalID: 277659446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_51
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 486
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 271053bcb835ebb4f9b30ead5b2aee75
+      internalID: 103575199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_52
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 486
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15ef0b7cb3a5f4047a00d7dabce310d1
+      internalID: 1621842814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_53
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 486
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80d9eb3d9d288104bb3633a3875c4f14
+      internalID: 1719184502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 358
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c2b5c704ae57f4499f9e2788b30455f
+      internalID: 2125693472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_55
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 358
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5252bad85ffb8544a90157d6341b9b87
+      internalID: 1138834885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_56
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 358
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cfbf04ca5a63a249953f00a79bebe38
+      internalID: -773657042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_57
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 358
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d0eeae5d40891d419b07c871b5ea58b
+      internalID: 1474556904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_58
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 358
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecd01c7f4bb008f4f87ec6dafe1d351b
+      internalID: 2127107646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_59
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 358
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 067cbbfd7fb03c8449f5ae2cd6f70279
+      internalID: -676555042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_60
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 358
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a439e43256e484b46970ff7a59b1af06
+      internalID: 131055772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_61
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 358
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d74c4f3c9184c84897f56d36e12f10b
+      internalID: 478637446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_62
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 358
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbd91f311d451b744a93e36bcb14ed9a
+      internalID: 981822198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 230
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61713eeffc9d5a744a19d897c4ce8687
+      internalID: 1519341481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_64
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 230
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82bad51d3aa014541bb847995ea04b47
+      internalID: -1406766365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_65
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 230
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d89792aa6a958334992af772cc95f6dd
+      internalID: -448260898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_66
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 230
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc3e7cdfe815b3f41a1ddf28b23fa37a
+      internalID: -1441732999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_67
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 230
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95dfd71c398354d4aaa0d2f925149461
+      internalID: -2016233226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_68
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 230
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23241a5fd48a1124da44ebc9689fff28
+      internalID: 261395256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_69
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 230
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45c3fde22eabefc4f964c190846876df
+      internalID: -1838679307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_70
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 230
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fb2009b31122674dbc74471627c218e
+      internalID: -1230713428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_71
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 230
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 810f1174e6ad2e444aa27003d6336fbc
+      internalID: -954904865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 102
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11f6f133f0ef1804e88d8c4f30445269
+      internalID: -1939316649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_73
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 102
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 198cf74f4b3906f4fb0771f798a711a2
+      internalID: -1005413397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_74
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 102
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55f7db3977ee0b545a06e633ce3ece87
+      internalID: -291415005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_75
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 102
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6102f51fca486274eb5e96d59e8c28e4
+      internalID: 812120781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_76
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 102
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 332f526da8542b9438778b15bf372a66
+      internalID: 285259849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_77
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 102
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d29852363e8ad9441bf5d629c006ddd1
+      internalID: -1095456773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_78
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 102
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b60f5e9ecd19eba4f832676589645860
+      internalID: -2122904288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_79
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 102
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8078b0585066a884d8a6514e3c05a6d3
+      internalID: -1532614537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_80
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 102
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 362fe31ce84c59a44be51704a05fc937
+      internalID: -670976057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floor_Carrelage_Interieur_Base_4
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 941
+        width: 157
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dffc4a7dd07d4145b6d61bb150a687b
+      internalID: 471482144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5d3a737a9e2415c47a69a5b896dd9829
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Floor_Carrelage_Interieur_Base_0: 4393675486594406656
+      Floor_Carrelage_Interieur_Base_1: 1263892301
+      Floor_Carrelage_Interieur_Base_10: 43108066
+      Floor_Carrelage_Interieur_Base_11: -1915706956
+      Floor_Carrelage_Interieur_Base_12: 1203200273
+      Floor_Carrelage_Interieur_Base_13: 1315667622
+      Floor_Carrelage_Interieur_Base_14: 953075591
+      Floor_Carrelage_Interieur_Base_15: 1841153538
+      Floor_Carrelage_Interieur_Base_16: -1312990462
+      Floor_Carrelage_Interieur_Base_17: 1598182745
+      Floor_Carrelage_Interieur_Base_18: -17505458
+      Floor_Carrelage_Interieur_Base_19: -1498906515
+      Floor_Carrelage_Interieur_Base_2: -669711593
+      Floor_Carrelage_Interieur_Base_20: -1911144185
+      Floor_Carrelage_Interieur_Base_21: 989422207
+      Floor_Carrelage_Interieur_Base_22: -532978085
+      Floor_Carrelage_Interieur_Base_23: -1011962217
+      Floor_Carrelage_Interieur_Base_24: -1996987651
+      Floor_Carrelage_Interieur_Base_25: 1035921178
+      Floor_Carrelage_Interieur_Base_26: 1530034313
+      Floor_Carrelage_Interieur_Base_27: 1958958883
+      Floor_Carrelage_Interieur_Base_28: -1826064296
+      Floor_Carrelage_Interieur_Base_29: 669173763
+      Floor_Carrelage_Interieur_Base_3: -681384679
+      Floor_Carrelage_Interieur_Base_30: -562780259
+      Floor_Carrelage_Interieur_Base_31: -574477753
+      Floor_Carrelage_Interieur_Base_32: 1259882165
+      Floor_Carrelage_Interieur_Base_33: -1087784179
+      Floor_Carrelage_Interieur_Base_34: 763960313
+      Floor_Carrelage_Interieur_Base_35: -2146373773
+      Floor_Carrelage_Interieur_Base_36: 553616704
+      Floor_Carrelage_Interieur_Base_37: -1329767838
+      Floor_Carrelage_Interieur_Base_38: -1387862270
+      Floor_Carrelage_Interieur_Base_39: -1389025974
+      Floor_Carrelage_Interieur_Base_4: 471482144
+      Floor_Carrelage_Interieur_Base_40: 2013168861
+      Floor_Carrelage_Interieur_Base_41: -987680678
+      Floor_Carrelage_Interieur_Base_42: -1042281246
+      Floor_Carrelage_Interieur_Base_43: 374011695
+      Floor_Carrelage_Interieur_Base_44: 1952842526
+      Floor_Carrelage_Interieur_Base_45: -536628115
+      Floor_Carrelage_Interieur_Base_46: -283607963
+      Floor_Carrelage_Interieur_Base_47: 1957706148
+      Floor_Carrelage_Interieur_Base_48: -1450210302
+      Floor_Carrelage_Interieur_Base_49: 1477777658
+      Floor_Carrelage_Interieur_Base_5: -292665088
+      Floor_Carrelage_Interieur_Base_50: 277659446
+      Floor_Carrelage_Interieur_Base_51: 103575199
+      Floor_Carrelage_Interieur_Base_52: 1621842814
+      Floor_Carrelage_Interieur_Base_53: 1719184502
+      Floor_Carrelage_Interieur_Base_54: 2125693472
+      Floor_Carrelage_Interieur_Base_55: 1138834885
+      Floor_Carrelage_Interieur_Base_56: -773657042
+      Floor_Carrelage_Interieur_Base_57: 1474556904
+      Floor_Carrelage_Interieur_Base_58: 2127107646
+      Floor_Carrelage_Interieur_Base_59: -676555042
+      Floor_Carrelage_Interieur_Base_6: -1134375563
+      Floor_Carrelage_Interieur_Base_60: 131055772
+      Floor_Carrelage_Interieur_Base_61: 478637446
+      Floor_Carrelage_Interieur_Base_62: 981822198
+      Floor_Carrelage_Interieur_Base_63: 1519341481
+      Floor_Carrelage_Interieur_Base_64: -1406766365
+      Floor_Carrelage_Interieur_Base_65: -448260898
+      Floor_Carrelage_Interieur_Base_66: -1441732999
+      Floor_Carrelage_Interieur_Base_67: -2016233226
+      Floor_Carrelage_Interieur_Base_68: 261395256
+      Floor_Carrelage_Interieur_Base_69: -1838679307
+      Floor_Carrelage_Interieur_Base_7: 2095872720
+      Floor_Carrelage_Interieur_Base_70: -1230713428
+      Floor_Carrelage_Interieur_Base_71: -954904865
+      Floor_Carrelage_Interieur_Base_72: -1939316649
+      Floor_Carrelage_Interieur_Base_73: -1005413397
+      Floor_Carrelage_Interieur_Base_74: -291415005
+      Floor_Carrelage_Interieur_Base_75: 812120781
+      Floor_Carrelage_Interieur_Base_76: 285259849
+      Floor_Carrelage_Interieur_Base_77: -1095456773
+      Floor_Carrelage_Interieur_Base_78: -2122904288
+      Floor_Carrelage_Interieur_Base_79: -1532614537
+      Floor_Carrelage_Interieur_Base_8: -600600816
+      Floor_Carrelage_Interieur_Base_80: -670976057
+      Floor_Carrelage_Interieur_Base_9: -2123690522
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

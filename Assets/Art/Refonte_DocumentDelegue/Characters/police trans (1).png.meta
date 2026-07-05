@@ -1,0 +1,654 @@
+fileFormatVersion: 2
+guid: 71e53d84f73151a46954a8e2daaa4441
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2221086686573345862
+    second: police trans (1)_0
+  - first:
+      213: -300436959227482061
+    second: police trans (1)_1
+  - first:
+      213: -3138193013494327118
+    second: police trans (1)_2
+  - first:
+      213: 1990448141453165758
+    second: police trans (1)_3
+  - first:
+      213: -1271965285020458845
+    second: police trans (1)_4
+  - first:
+      213: -9125902300517298667
+    second: police trans (1)_5
+  - first:
+      213: 2321377740270565020
+    second: police trans (1)_6
+  - first:
+      213: -1826814963414779297
+    second: police trans (1)_7
+  - first:
+      213: 1692343496290705927
+    second: police trans (1)_8
+  - first:
+      213: -1346914460986524593
+    second: police trans (1)_9
+  - first:
+      213: -4583946423004751739
+    second: police trans (1)_10
+  - first:
+      213: -6604831396350855153
+    second: police trans (1)_11
+  - first:
+      213: 1318918437743725516
+    second: police trans (1)_12
+  - first:
+      213: 6215310522687629856
+    second: police trans (1)_13
+  - first:
+      213: 2564686863773155309
+    second: police trans (1)_14
+  - first:
+      213: -7431702601144370663
+    second: police trans (1)_15
+  - first:
+      213: 964262947236989962
+    second: police trans (1)_16
+  - first:
+      213: -3429900261173470956
+    second: police trans (1)_17
+  - first:
+      213: -5034565303904601652
+    second: police trans (1)_18
+  - first:
+      213: -7346963080635957032
+    second: police trans (1)_19
+  - first:
+      213: 7734725062902839390
+    second: police trans (1)_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: police trans (1)_0
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 1123
+        width: 134
+        height: 258
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab342772d6d1d21e0800000000000000
+      internalID: -2221086686573345862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police trans (1)_1
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 1121
+        width: 134
+        height: 261
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 330f8d76d22a4dbf0800000000000000
+      internalID: -300436959227482061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police trans (1)_2
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 1123
+        width: 134
+        height: 260
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b8de02c416e274d0800000000000000
+      internalID: -3138193013494327118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police trans (1)_3
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 1121
+        width: 133
+        height: 261
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb4072fe90e7f9b10800000000000000
+      internalID: 1990448141453165758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police trans (1)_4
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 847
+        width: 132
+        height: 261
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a02abbff42195ee0800000000000000
+      internalID: -1271965285020458845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police trans (1)_5
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 849
+        width: 131
+        height: 258
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51e0fb275384a5180800000000000000
+      internalID: -9125902300517298667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police trans (1)_6
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 849
+        width: 131
+        height: 259
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c96735e61c0373020800000000000000
+      internalID: 2321377740270565020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police trans (1)_7
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 848
+        width: 131
+        height: 259
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5a3b4b3879d5a6e0800000000000000
+      internalID: -1826814963414779297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police trans (1)_8
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 593
+        width: 136
+        height: 248
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 702a95681796c7710800000000000000
+      internalID: 1692343496290705927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police trans (1)_10
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 592
+        width: 133
+        height: 249
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 588116bd30d8260c0800000000000000
+      internalID: -4583946423004751739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police trans (1)_11
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 593
+        width: 132
+        height: 248
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f08f823c6dce654a0800000000000000
+      internalID: -6604831396350855153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police trans (1)_12
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 592
+        width: 133
+        height: 249
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccb8d69c45dbd4210800000000000000
+      internalID: 1318918437743725516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police trans (1)_13
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 338
+        width: 133
+        height: 244
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02a2b818df7314650800000000000000
+      internalID: 6215310522687629856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police trans (1)_14
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 335
+        width: 132
+        height: 247
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: def3f434d19979320800000000000000
+      internalID: 2564686863773155309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police trans (1)_15
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 337
+        width: 131
+        height: 245
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91a717eebd94dd890800000000000000
+      internalID: -7431702601144370663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police trans (1)_16
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 335
+        width: 131
+        height: 247
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0cc128aa00c16d00800000000000000
+      internalID: 964262947236989962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police trans (1)_17
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 62
+        width: 130
+        height: 257
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4195cb582eb8660d0800000000000000
+      internalID: -3429900261173470956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police trans (1)_18
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 62
+        width: 125
+        height: 259
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc97246c781a12ab0800000000000000
+      internalID: -5034565303904601652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police trans (1)_19
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 59
+        width: 111
+        height: 266
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d0c8c801085a0a90800000000000000
+      internalID: -7346963080635957032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police trans (1)_20
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 60
+        width: 109
+        height: 263
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5872a1e673475b60800000000000000
+      internalID: 7734725062902839390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a461ad985385cbc44bbe96e6281c251a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      police trans (1)_0: -2221086686573345862
+      police trans (1)_1: -300436959227482061
+      police trans (1)_10: -4583946423004751739
+      police trans (1)_11: -6604831396350855153
+      police trans (1)_12: 1318918437743725516
+      police trans (1)_13: 6215310522687629856
+      police trans (1)_14: 2564686863773155309
+      police trans (1)_15: -7431702601144370663
+      police trans (1)_16: 964262947236989962
+      police trans (1)_17: -3429900261173470956
+      police trans (1)_18: -5034565303904601652
+      police trans (1)_19: -7346963080635957032
+      police trans (1)_2: -3138193013494327118
+      police trans (1)_20: 7734725062902839390
+      police trans (1)_3: 1990448141453165758
+      police trans (1)_4: -1271965285020458845
+      police trans (1)_5: -9125902300517298667
+      police trans (1)_6: 2321377740270565020
+      police trans (1)_7: -1826814963414779297
+      police trans (1)_8: 1692343496290705927
+      police trans (1)_9: -1346914460986524593
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,650 @@
+fileFormatVersion: 2
+guid: b93ae4305ed548b439fb042653b995aa
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7009205161037035235
+    second: dernier prom_0
+  - first:
+      213: -2579224880932928358
+    second: dernier prom_1
+  - first:
+      213: -9190509453329018198
+    second: dernier prom_2
+  - first:
+      213: 6954566376559547332
+    second: dernier prom_3
+  - first:
+      213: -3720673944727082830
+    second: dernier prom_4
+  - first:
+      213: 6736608850767077634
+    second: dernier prom_5
+  - first:
+      213: -5958871025694118252
+    second: dernier prom_6
+  - first:
+      213: -8354550298510370653
+    second: dernier prom_7
+  - first:
+      213: 643359650749215510
+    second: dernier prom_8
+  - first:
+      213: -7861408553669183904
+    second: dernier prom_9
+  - first:
+      213: -6154991246635535418
+    second: dernier prom_10
+  - first:
+      213: 8826564531396486190
+    second: dernier prom_11
+  - first:
+      213: -1363122925579454959
+    second: dernier prom_12
+  - first:
+      213: 5193931968004178611
+    second: dernier prom_13
+  - first:
+      213: 5367709794637936170
+    second: dernier prom_14
+  - first:
+      213: -8528827534635078347
+    second: dernier prom_15
+  - first:
+      213: 5649531367511528883
+    second: dernier prom_16
+  - first:
+      213: -8431942642183520420
+    second: dernier prom_17
+  - first:
+      213: -8920235474644307626
+    second: dernier prom_18
+  - first:
+      213: -3780499040405545244
+    second: dernier prom_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: dernier prom_0
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 1152
+        width: 122
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d198d8ada0d4abe90800000000000000
+      internalID: -7009205161037035235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dernier prom_1
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1155
+        width: 118
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a94c428d2a0c43cd0800000000000000
+      internalID: -2579224880932928358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dernier prom_2
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 1152
+        width: 129
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa254797850c47080800000000000000
+      internalID: -9190509453329018198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dernier prom_3
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 1152
+        width: 121
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c315b9c545938060800000000000000
+      internalID: 6954566376559547332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dernier prom_4
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 909
+        width: 119
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b8ad7f92c28d5cc0800000000000000
+      internalID: -3720673944727082830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dernier prom_5
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 909
+        width: 120
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20169b4ce0e3d7d50800000000000000
+      internalID: 6736608850767077634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dernier prom_6
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 909
+        width: 122
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49e6223af56dd4da0800000000000000
+      internalID: -5958871025694118252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dernier prom_7
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 908
+        width: 117
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a8d72f84ccae0c80800000000000000
+      internalID: -8354550298510370653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dernier prom_8
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 654
+        width: 144
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 613f9b5913cade800800000000000000
+      internalID: 643359650749215510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dernier prom_9
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 656
+        width: 143
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 066b45c629aa6e290800000000000000
+      internalID: -7861408553669183904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dernier prom_10
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 654
+        width: 147
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c376ac5214159aa0800000000000000
+      internalID: -6154991246635535418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dernier prom_11
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 653
+        width: 148
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2423f81da14e7a70800000000000000
+      internalID: 8826564531396486190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dernier prom_12
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 399
+        width: 146
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11635abdbe6351de0800000000000000
+      internalID: -1363122925579454959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dernier prom_13
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 395
+        width: 147
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b24f643b9d841840800000000000000
+      internalID: 5193931968004178611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dernier prom_14
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 399
+        width: 141
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2677ce6e9fed7a40800000000000000
+      internalID: 5367709794637936170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dernier prom_15
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 398
+        width: 148
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53d618f7b8483a980800000000000000
+      internalID: -8528827534635078347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dernier prom_16
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 98
+        width: 98
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b593f3a8da276e40800000000000000
+      internalID: 5649531367511528883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dernier prom_17
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 100
+        width: 115
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5fbe2e57d8bbfa80800000000000000
+      internalID: -8431942642183520420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dernier prom_18
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 100
+        width: 121
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 651fcf4e815f43480800000000000000
+      internalID: -8920235474644307626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dernier prom_19
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 97
+        width: 101
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ee1ce61728f88bc0800000000000000
+      internalID: -3780499040405545244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      dernier prom_0: -7009205161037035235
+      dernier prom_1: -2579224880932928358
+      dernier prom_10: -6154991246635535418
+      dernier prom_11: 8826564531396486190
+      dernier prom_12: -1363122925579454959
+      dernier prom_13: 5193931968004178611
+      dernier prom_14: 5367709794637936170
+      dernier prom_15: -8528827534635078347
+      dernier prom_16: 5649531367511528883
+      dernier prom_17: -8431942642183520420
+      dernier prom_18: -8920235474644307626
+      dernier prom_19: -3780499040405545244
+      dernier prom_2: -9190509453329018198
+      dernier prom_3: 6954566376559547332
+      dernier prom_4: -3720673944727082830
+      dernier prom_5: 6736608850767077634
+      dernier prom_6: -5958871025694118252
+      dernier prom_7: -8354550298510370653
+      dernier prom_8: 643359650749215510
+      dernier prom_9: -7861408553669183904
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

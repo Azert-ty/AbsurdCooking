@@ -1,0 +1,2749 @@
+fileFormatVersion: 2
+guid: 20eafd36cc6e9b042bcf66ed0e75bb0f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3366606496941751534
+    second: WallLayout_DeuxRectangles_Decoupable_trans_0
+  - first:
+      213: -3349827396025571170
+    second: WallLayout_DeuxRectangles_Decoupable_trans_1
+  - first:
+      213: -9068980244134115973
+    second: WallLayout_DeuxRectangles_Decoupable_trans_2
+  - first:
+      213: -6491987987954591585
+    second: WallLayout_DeuxRectangles_Decoupable_trans_3
+  - first:
+      213: 5700768501913371404
+    second: WallLayout_DeuxRectangles_Decoupable_trans_4
+  - first:
+      213: -8324996563266013750
+    second: WallLayout_DeuxRectangles_Decoupable_trans_5
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_0
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1190
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eec3cbc95c698be20800000000000000
+      internalID: 3366606496941751534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1190
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9826014bb50381d0800000000000000
+      internalID: -3349827396025571170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_2
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1190
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b75c9597482842280800000000000000
+      internalID: -9068980244134115973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1190
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f981ddb2253d7e5a0800000000000000
+      internalID: -6491987987954591585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_4
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1190
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c03484f9fb23d1f40800000000000000
+      internalID: 5700768501913371404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_5
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1190
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac57e22cbbba77c80800000000000000
+      internalID: -8324996563266013750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_6
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1190
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcab1900983ebe94aad61e596cee08b0
+      internalID: 1901362510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_7
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1190
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7a6504a00c9ed94080ecf1ec4439bf1
+      internalID: -1564840485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_8
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1190
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aa930d0e56c7604bab47f73697efd14
+      internalID: 266159113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_9
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1190
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d0a319384b7b954a804a494fbcff637
+      internalID: 905583932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_10
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 1190
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cfc477a31c5f3f478c0cf83912cb3a6
+      internalID: 1154839169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_11
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1190
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13f036715dae356448ea812648b3fbc7
+      internalID: -1714643304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_12
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1190
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 157db0c49f2166249b903757488642e1
+      internalID: 470804685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_13
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1126
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d9521e2bbc929041b4a53dc1bd3b149
+      internalID: -306554214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_14
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1126
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdd9d37a61f6ed544963f9529cae4b86
+      internalID: -1475850460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_15
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1126
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b18cee36d15f774a9e3b0669aeb7f39
+      internalID: -827194035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_16
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1126
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c307fd0317a3bea44a62a122927c8f34
+      internalID: 176366832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_17
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1126
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e823fac1f61d3041869852759da1f8c
+      internalID: 1195344953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_18
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1126
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42c1fec7cecd2d844af764fbab81fb30
+      internalID: 1247831798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_19
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1126
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e606bddd91f88544f8d7e81da3620ac5
+      internalID: 1698847462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_20
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1126
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26c029afc2e6e9f4995364c88be00625
+      internalID: -499587677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_21
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1126
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d54bb6c35a19c545b1c60831fbc6ad0
+      internalID: 1637672540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_22
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 1126
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e41d6626a4fa58e478b0d05ac13e4924
+      internalID: 1804170259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_23
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1126
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d85308e92788aec4897e84d012f168a1
+      internalID: -1709269766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_24
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1126
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5f95b216fd791d409e3ada14ab46f21
+      internalID: -593505340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_25
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1062
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49f48cf6644d7e141aa9fa07f382492f
+      internalID: 219435136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_26
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1062
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9b4af78a70a6e245a7c0d9c626a3739
+      internalID: -1410287527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_27
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1062
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37036a99d1147944a8ba49623cdf5b5d
+      internalID: 260793451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_28
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 998
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a73772ca73abb494e9a99eccc406b7aa
+      internalID: -1846358497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_29
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 998
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58531e1ce166d7946b6e8fb6cdb92b67
+      internalID: -1624894723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_30
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 998
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d30475ba0f618d458706efb4b3bde62
+      internalID: 443072870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_31
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 934
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b804aba5c81dd5445b54eb9208a2e000
+      internalID: -1277350806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_32
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 934
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9e353c76e09f2744a200251f73ef41c
+      internalID: -1177938805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_33
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 934
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e3b09c26edbb5b4e8643549b5f6889b
+      internalID: 1801717153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_34
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 870
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4196a0632af1a4c47942d3a4adac88db
+      internalID: 1092685055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_35
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 870
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdecc09578a763a4ab43ddb28151b153
+      internalID: -756112254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_36
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 870
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b937afa25accf84bb436b8488213d18
+      internalID: 360391684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_37
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 806
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af8a4e3f97e29014eb2ab042f6b2f8dd
+      internalID: -1882964142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_38
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 806
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67f77755893271c46b89a2a5c3322e2a
+      internalID: -485171068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_39
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 806
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2da7e329d7545f3408508f38b1ee5ed7
+      internalID: 1612445812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_40
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 742
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fa2ea0526da2c440a51a23c6dfe59ab
+      internalID: -1989280963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_41
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 742
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b73b12c39b341cf49a3d5472a0bd71dc
+      internalID: -4779727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_42
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 742
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4716e5c5f017f87459783895e25afb6a
+      internalID: -1262478180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_43
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 678
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a50ed190e672624384bafaf55074ff7
+      internalID: -2068123512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_44
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 678
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d56583180dde5de4fb0cff4cd10fabbe
+      internalID: 1612319487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_45
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 678
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 382a871c3593aef4da9a05ab25be9668
+      internalID: -1225759641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_47
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 614
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2437d5fc87e05f4cb8d7767c41f8ead
+      internalID: 2680366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_48
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 614
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25251e5f82cc07e41804e943bb1d454a
+      internalID: -2041293340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_49
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 614
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b40f0d819c5d0747b6d3d896b0f2da9
+      internalID: 466582180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_50
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 614
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0886dc2672b7e224584de88db82ca0c1
+      internalID: 365067501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_51
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 614
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35fbafe747cc7e842a1e6e1be4a90b24
+      internalID: 1790929871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_52
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 614
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b74059b883e217a4f8a769711218d94a
+      internalID: 167650021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_53
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 614
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ea0d33c84b5d7a419242300922b8691
+      internalID: -38703626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_54
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 614
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f287b93392016024f99f1aacb3480766
+      internalID: 176857730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_55
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 614
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4775d000d57ba114f92505eb0347f38d
+      internalID: -1688674814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_56
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 614
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25da24796aa334a479aee5801280f841
+      internalID: -803437394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_57
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 614
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 203c4148d3431c34a8141e87e5d06e60
+      internalID: -105426461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_64
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 550
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30e0396b98852084a8f9ac21b67db924
+      internalID: 88263751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_65
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 550
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1288ac963c51d1842b3ee993d584ff23
+      internalID: -689784311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_66
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 550
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a93cc6d585c45f4ca2b95e63c4d82dd
+      internalID: -774556265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_67
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 550
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abe3189ea538ac04084eee947d6c9fbf
+      internalID: 411383615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_68
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 550
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3995a601752cbe34e9af0435da4e74d4
+      internalID: 533881355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_69
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 550
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b49cf8ab1c238e04ca46ab4795cf1584
+      internalID: 946355595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_70
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 486
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b1b72fe59261ff4fb6abe861f3a5bb4
+      internalID: -484192137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_71
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 486
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6250c14e5534cd04ca18c57ef5adab0d
+      internalID: -1132412184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_72
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 486
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f663870bc23196c4e9416377990d04d3
+      internalID: -41480672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_73
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 422
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bce85008cab27249b98bbaa7dc587e4
+      internalID: -1118116555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_74
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 422
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 344beb760d13384489cfa5da60539110
+      internalID: 617739057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_75
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 422
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e76ebf12c2beb54498ab4b4b1672cf04
+      internalID: -728466130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_76
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 358
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0014b563bef6f6048be467568ec3060d
+      internalID: -973133437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_77
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 358
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78a3ac90db0f1f44aadf7ac7a5284fc4
+      internalID: 1497454190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_78
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 358
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7329489531f7f94e80c8a5bab7aa89e
+      internalID: 1627619386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_79
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 294
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e03691bf706973944887dd83dda53414
+      internalID: 805577976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_80
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 294
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bb92ad78451f2143998bcdb96c14979
+      internalID: -128338848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_81
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 294
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c66fa4c4c3ba8e740894253b84b7034a
+      internalID: 1479656072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_82
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 230
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9b216a571d2eaa49b1619a1c4c87653
+      internalID: -1523196286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_83
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 230
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3269a48f8b20e64ab09949961d7ed9d
+      internalID: -1838879192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_84
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 230
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9ed36f1cabb67e428cbd18de32c7d46
+      internalID: -651330295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_85
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 166
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6298132e48e5fc942be7b62e9c1add2c
+      internalID: 2021782617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_86
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 166
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d2dbf8d0b3df0458bd49cbc2fcfcf5
+      internalID: -1135656426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_87
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 166
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2caa2cb847356924c80b283a448d8806
+      internalID: -1871801898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_88
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 166
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26d3651ae9cf21d498b1e96a8c9a9db8
+      internalID: 1747076785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_89
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 102
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54ddd544611902f4095b3675230a83e7
+      internalID: -1279432627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_90
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 102
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92c77ef93205e75409cebf43da5420c5
+      internalID: -1843881093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_91
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 102
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fda7890be161e3442b21d20168428d32
+      internalID: -928791143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_92
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 102
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3b43e96ec381b041b28880a20b6eb4d
+      internalID: 1157822046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_93
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 102
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dda49383989910f4588ff3baae0db9ad
+      internalID: 991432219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_94
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 102
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 269dceb19e30a6a469b724bb3f103d72
+      internalID: 521775646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_95
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 102
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f4df0ee88b2e554eb54fc853afedbb6
+      internalID: -277531524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_96
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 102
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8219ace1dc1b0794abcd3bbd6e3fa114
+      internalID: -1700172391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_97
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 102
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b90d25decb7a9a74fb8d13f536eac2ec
+      internalID: 1797876283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_98
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 102
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c03935f71fb3d494ebe2f51e6796ca8e
+      internalID: 237600189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_99
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 102
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7c71eea0ae445a4a8c9cdeca5bb062e
+      internalID: -1919779297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_100
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 102
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c55b1c9376351134aa12a2d635b32e4d
+      internalID: 156105970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_101
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 38
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad113aae29577394b8be8b4a65ba0733
+      internalID: -413236391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_102
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 38
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd2d168a482592e4190923f49599d712
+      internalID: 619367787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_103
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 38
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1a080159d4eb3f428fe3ea821e46b11
+      internalID: -16937650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_104
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 38
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56fce210f83a2e6459b3b35a73f8ec94
+      internalID: 945682768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_105
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 38
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feb7836cee87d404caf929fb80264d52
+      internalID: -1514919287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_106
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 38
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f1eb7656fdded8429bfb564921753fb
+      internalID: -1701808977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_107
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 38
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d133647f12a0f14dbf6a04df3fc3f8e
+      internalID: -718246716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_108
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 38
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5ac2f6d2ae1bd445a441ee4e9bf53ec
+      internalID: -439537457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_109
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 38
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d95bbb4831934ae47b3845af90c54070
+      internalID: 1203637336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_110
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 38
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2077fa1a2d9a10744b88802af81cc1ba
+      internalID: 1118345059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_111
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 38
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19c110b2b10775d48aee9f8861bf121e
+      internalID: -724572808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_112
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 38
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dff72624cfcff34f9f9193c87d3464e
+      internalID: 222105130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_46
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 614
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6b1397e265180d4295730ef7c2bff17
+      internalID: 554533387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_58
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 550
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1afdc7a0d15051549bb69044e96ac16a
+      internalID: -696190781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_59
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 550
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39c6241f2fe142e41a26cf24bf9df8f8
+      internalID: -80891146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_60
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 550
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7d24e51a0c1bf9439438d32a9bf599e
+      internalID: -739296494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_61
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 550
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ca59f9557b7db44bb03596b6f746708
+      internalID: 2120234353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_62
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 550
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a058712208a052f469953cc0521fc4b4
+      internalID: -1379898923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WallLayout_DeuxRectangles_Decoupable_trans_63
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 550
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3da6bdc7857b60b4fa0d6b9430b519d1
+      internalID: -1265338371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 21133707f8906b34d98792f7f3547c7f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      WallLayout_DeuxRectangles_Decoupable_trans_0: 3366606496941751534
+      WallLayout_DeuxRectangles_Decoupable_trans_1: -3349827396025571170
+      WallLayout_DeuxRectangles_Decoupable_trans_10: 1154839169
+      WallLayout_DeuxRectangles_Decoupable_trans_100: 156105970
+      WallLayout_DeuxRectangles_Decoupable_trans_101: -413236391
+      WallLayout_DeuxRectangles_Decoupable_trans_102: 619367787
+      WallLayout_DeuxRectangles_Decoupable_trans_103: -16937650
+      WallLayout_DeuxRectangles_Decoupable_trans_104: 945682768
+      WallLayout_DeuxRectangles_Decoupable_trans_105: -1514919287
+      WallLayout_DeuxRectangles_Decoupable_trans_106: -1701808977
+      WallLayout_DeuxRectangles_Decoupable_trans_107: -718246716
+      WallLayout_DeuxRectangles_Decoupable_trans_108: -439537457
+      WallLayout_DeuxRectangles_Decoupable_trans_109: 1203637336
+      WallLayout_DeuxRectangles_Decoupable_trans_11: -1714643304
+      WallLayout_DeuxRectangles_Decoupable_trans_110: 1118345059
+      WallLayout_DeuxRectangles_Decoupable_trans_111: -724572808
+      WallLayout_DeuxRectangles_Decoupable_trans_112: 222105130
+      WallLayout_DeuxRectangles_Decoupable_trans_12: 470804685
+      WallLayout_DeuxRectangles_Decoupable_trans_13: -306554214
+      WallLayout_DeuxRectangles_Decoupable_trans_14: -1475850460
+      WallLayout_DeuxRectangles_Decoupable_trans_15: -827194035
+      WallLayout_DeuxRectangles_Decoupable_trans_16: 176366832
+      WallLayout_DeuxRectangles_Decoupable_trans_17: 1195344953
+      WallLayout_DeuxRectangles_Decoupable_trans_18: 1247831798
+      WallLayout_DeuxRectangles_Decoupable_trans_19: 1698847462
+      WallLayout_DeuxRectangles_Decoupable_trans_2: -9068980244134115973
+      WallLayout_DeuxRectangles_Decoupable_trans_20: -499587677
+      WallLayout_DeuxRectangles_Decoupable_trans_21: 1637672540
+      WallLayout_DeuxRectangles_Decoupable_trans_22: 1804170259
+      WallLayout_DeuxRectangles_Decoupable_trans_23: -1709269766
+      WallLayout_DeuxRectangles_Decoupable_trans_24: -593505340
+      WallLayout_DeuxRectangles_Decoupable_trans_25: 219435136
+      WallLayout_DeuxRectangles_Decoupable_trans_26: -1410287527
+      WallLayout_DeuxRectangles_Decoupable_trans_27: 260793451
+      WallLayout_DeuxRectangles_Decoupable_trans_28: -1846358497
+      WallLayout_DeuxRectangles_Decoupable_trans_29: -1624894723
+      WallLayout_DeuxRectangles_Decoupable_trans_3: -6491987987954591585
+      WallLayout_DeuxRectangles_Decoupable_trans_30: 443072870
+      WallLayout_DeuxRectangles_Decoupable_trans_31: -1277350806
+      WallLayout_DeuxRectangles_Decoupable_trans_32: -1177938805
+      WallLayout_DeuxRectangles_Decoupable_trans_33: 1801717153
+      WallLayout_DeuxRectangles_Decoupable_trans_34: 1092685055
+      WallLayout_DeuxRectangles_Decoupable_trans_35: -756112254
+      WallLayout_DeuxRectangles_Decoupable_trans_36: 360391684
+      WallLayout_DeuxRectangles_Decoupable_trans_37: -1882964142
+      WallLayout_DeuxRectangles_Decoupable_trans_38: -485171068
+      WallLayout_DeuxRectangles_Decoupable_trans_39: 1612445812
+      WallLayout_DeuxRectangles_Decoupable_trans_4: 5700768501913371404
+      WallLayout_DeuxRectangles_Decoupable_trans_40: -1989280963
+      WallLayout_DeuxRectangles_Decoupable_trans_41: -4779727
+      WallLayout_DeuxRectangles_Decoupable_trans_42: -1262478180
+      WallLayout_DeuxRectangles_Decoupable_trans_43: -2068123512
+      WallLayout_DeuxRectangles_Decoupable_trans_44: 1612319487
+      WallLayout_DeuxRectangles_Decoupable_trans_45: -1225759641
+      WallLayout_DeuxRectangles_Decoupable_trans_46: 554533387
+      WallLayout_DeuxRectangles_Decoupable_trans_47: 2680366
+      WallLayout_DeuxRectangles_Decoupable_trans_48: -2041293340
+      WallLayout_DeuxRectangles_Decoupable_trans_49: 466582180
+      WallLayout_DeuxRectangles_Decoupable_trans_5: -8324996563266013750
+      WallLayout_DeuxRectangles_Decoupable_trans_50: 365067501
+      WallLayout_DeuxRectangles_Decoupable_trans_51: 1790929871
+      WallLayout_DeuxRectangles_Decoupable_trans_52: 167650021
+      WallLayout_DeuxRectangles_Decoupable_trans_53: -38703626
+      WallLayout_DeuxRectangles_Decoupable_trans_54: 176857730
+      WallLayout_DeuxRectangles_Decoupable_trans_55: -1688674814
+      WallLayout_DeuxRectangles_Decoupable_trans_56: -803437394
+      WallLayout_DeuxRectangles_Decoupable_trans_57: -105426461
+      WallLayout_DeuxRectangles_Decoupable_trans_58: -696190781
+      WallLayout_DeuxRectangles_Decoupable_trans_59: -80891146
+      WallLayout_DeuxRectangles_Decoupable_trans_6: 1901362510
+      WallLayout_DeuxRectangles_Decoupable_trans_60: -739296494
+      WallLayout_DeuxRectangles_Decoupable_trans_61: 2120234353
+      WallLayout_DeuxRectangles_Decoupable_trans_62: -1379898923
+      WallLayout_DeuxRectangles_Decoupable_trans_63: -1265338371
+      WallLayout_DeuxRectangles_Decoupable_trans_64: 88263751
+      WallLayout_DeuxRectangles_Decoupable_trans_65: -689784311
+      WallLayout_DeuxRectangles_Decoupable_trans_66: -774556265
+      WallLayout_DeuxRectangles_Decoupable_trans_67: 411383615
+      WallLayout_DeuxRectangles_Decoupable_trans_68: 533881355
+      WallLayout_DeuxRectangles_Decoupable_trans_69: 946355595
+      WallLayout_DeuxRectangles_Decoupable_trans_7: -1564840485
+      WallLayout_DeuxRectangles_Decoupable_trans_70: -484192137
+      WallLayout_DeuxRectangles_Decoupable_trans_71: -1132412184
+      WallLayout_DeuxRectangles_Decoupable_trans_72: -41480672
+      WallLayout_DeuxRectangles_Decoupable_trans_73: -1118116555
+      WallLayout_DeuxRectangles_Decoupable_trans_74: 617739057
+      WallLayout_DeuxRectangles_Decoupable_trans_75: -728466130
+      WallLayout_DeuxRectangles_Decoupable_trans_76: -973133437
+      WallLayout_DeuxRectangles_Decoupable_trans_77: 1497454190
+      WallLayout_DeuxRectangles_Decoupable_trans_78: 1627619386
+      WallLayout_DeuxRectangles_Decoupable_trans_79: 805577976
+      WallLayout_DeuxRectangles_Decoupable_trans_8: 266159113
+      WallLayout_DeuxRectangles_Decoupable_trans_80: -128338848
+      WallLayout_DeuxRectangles_Decoupable_trans_81: 1479656072
+      WallLayout_DeuxRectangles_Decoupable_trans_82: -1523196286
+      WallLayout_DeuxRectangles_Decoupable_trans_83: -1838879192
+      WallLayout_DeuxRectangles_Decoupable_trans_84: -651330295
+      WallLayout_DeuxRectangles_Decoupable_trans_85: 2021782617
+      WallLayout_DeuxRectangles_Decoupable_trans_86: -1135656426
+      WallLayout_DeuxRectangles_Decoupable_trans_87: -1871801898
+      WallLayout_DeuxRectangles_Decoupable_trans_88: 1747076785
+      WallLayout_DeuxRectangles_Decoupable_trans_89: -1279432627
+      WallLayout_DeuxRectangles_Decoupable_trans_9: 905583932
+      WallLayout_DeuxRectangles_Decoupable_trans_90: -1843881093
+      WallLayout_DeuxRectangles_Decoupable_trans_91: -928791143
+      WallLayout_DeuxRectangles_Decoupable_trans_92: 1157822046
+      WallLayout_DeuxRectangles_Decoupable_trans_93: 991432219
+      WallLayout_DeuxRectangles_Decoupable_trans_94: 521775646
+      WallLayout_DeuxRectangles_Decoupable_trans_95: -277531524
+      WallLayout_DeuxRectangles_Decoupable_trans_96: -1700172391
+      WallLayout_DeuxRectangles_Decoupable_trans_97: 1797876283
+      WallLayout_DeuxRectangles_Decoupable_trans_98: 237600189
+      WallLayout_DeuxRectangles_Decoupable_trans_99: -1919779297
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

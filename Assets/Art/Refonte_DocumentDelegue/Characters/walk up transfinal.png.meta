@@ -1,0 +1,650 @@
+fileFormatVersion: 2
+guid: d08fa00fc414425419a14ee92862487c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7558069245432132831
+    second: walk up transfinal_0
+  - first:
+      213: -4459237687704928355
+    second: walk up transfinal_1
+  - first:
+      213: -5911730951345727550
+    second: walk up transfinal_2
+  - first:
+      213: 6323675035813461533
+    second: walk up transfinal_3
+  - first:
+      213: 103456190142034820
+    second: walk up transfinal_4
+  - first:
+      213: 4314326156775622486
+    second: walk up transfinal_5
+  - first:
+      213: 5037764458193233855
+    second: walk up transfinal_6
+  - first:
+      213: -989634306502950004
+    second: walk up transfinal_7
+  - first:
+      213: -988874534018489131
+    second: walk up transfinal_8
+  - first:
+      213: -7086379346014733021
+    second: walk up transfinal_9
+  - first:
+      213: 8343563553426350966
+    second: walk up transfinal_10
+  - first:
+      213: -937700257737092487
+    second: walk up transfinal_11
+  - first:
+      213: -3983126005323431431
+    second: walk up transfinal_12
+  - first:
+      213: 726143158803779495
+    second: walk up transfinal_13
+  - first:
+      213: 3090142191716890732
+    second: walk up transfinal_14
+  - first:
+      213: 1257694159581496240
+    second: walk up transfinal_15
+  - first:
+      213: 6193889670520898784
+    second: walk up transfinal_16
+  - first:
+      213: -8870337838651220792
+    second: walk up transfinal_17
+  - first:
+      213: -367831483147207286
+    second: walk up transfinal_18
+  - first:
+      213: 7293495582278885657
+    second: walk up transfinal_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: walk up transfinal_0
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 1173
+        width: 112
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd479c13fe7a3e860800000000000000
+      internalID: 7558069245432132831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk up transfinal_1
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 1172
+        width: 108
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9f3057f2fa9d12c0800000000000000
+      internalID: -4459237687704928355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk up transfinal_2
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 1170
+        width: 113
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c71b5d750055fda0800000000000000
+      internalID: -5911730951345727550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk up transfinal_3
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 1133
+        width: 109
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1ebaa8d0f432c750800000000000000
+      internalID: 6323675035813461533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk up transfinal_4
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 951
+        width: 118
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4833b375bdc8f6100800000000000000
+      internalID: 103456190142034820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk up transfinal_5
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 945
+        width: 115
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65789c308c09fdb30800000000000000
+      internalID: 4314326156775622486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk up transfinal_6
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 947
+        width: 122
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb722b0651cb9e540800000000000000
+      internalID: 5037764458193233855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk up transfinal_7
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 944
+        width: 110
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c830a5f67dc1442f0800000000000000
+      internalID: -989634306502950004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk up transfinal_8
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 703
+        width: 130
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d4e560c9dfc642f0800000000000000
+      internalID: -988874534018489131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk up transfinal_9
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 702
+        width: 127
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32d7021b78f18ad90800000000000000
+      internalID: -7086379346014733021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk up transfinal_10
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 702
+        width: 133
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 673afd288da4ac370800000000000000
+      internalID: 8343563553426350966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk up transfinal_11
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 703
+        width: 136
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 972d9cf659e9cf2f0800000000000000
+      internalID: -937700257737092487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk up transfinal_12
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 457
+        width: 137
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f1831d600819b8c0800000000000000
+      internalID: -3983126005323431431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk up transfinal_13
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 456
+        width: 133
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7af449c0b57c31a00800000000000000
+      internalID: 726143158803779495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk up transfinal_14
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 458
+        width: 135
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c687bba73f362ea20800000000000000
+      internalID: 3090142191716890732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk up transfinal_15
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 456
+        width: 130
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b340f1bc2a347110800000000000000
+      internalID: 1257694159581496240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk up transfinal_16
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 150
+        width: 86
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e40c55b6dd15f550800000000000000
+      internalID: 6193889670520898784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk up transfinal_17
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 148
+        width: 108
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ccdc799bba36e480800000000000000
+      internalID: -8870337838651220792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk up transfinal_18
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 148
+        width: 109
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8d3ec5073335eaf0800000000000000
+      internalID: -367831483147207286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk up transfinal_19
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 148
+        width: 93
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9112d98e693b73560800000000000000
+      internalID: 7293495582278885657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      walk up transfinal_0: 7558069245432132831
+      walk up transfinal_1: -4459237687704928355
+      walk up transfinal_10: 8343563553426350966
+      walk up transfinal_11: -937700257737092487
+      walk up transfinal_12: -3983126005323431431
+      walk up transfinal_13: 726143158803779495
+      walk up transfinal_14: 3090142191716890732
+      walk up transfinal_15: 1257694159581496240
+      walk up transfinal_16: 6193889670520898784
+      walk up transfinal_17: -8870337838651220792
+      walk up transfinal_18: -367831483147207286
+      walk up transfinal_19: 7293495582278885657
+      walk up transfinal_2: -5911730951345727550
+      walk up transfinal_3: 6323675035813461533
+      walk up transfinal_4: 103456190142034820
+      walk up transfinal_5: 4314326156775622486
+      walk up transfinal_6: 5037764458193233855
+      walk up transfinal_7: -989634306502950004
+      walk up transfinal_8: -988874534018489131
+      walk up transfinal_9: -7086379346014733021
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

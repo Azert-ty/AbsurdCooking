@@ -1,0 +1,702 @@
+fileFormatVersion: 2
+guid: 553a95fa06dbdd14295e2cf61c831bdd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8775521114924762460
+    second: Perso_nouveauscenario_trans_0
+  - first:
+      213: 1731657662392023482
+    second: Perso_nouveauscenario_trans_1
+  - first:
+      213: 8621464329527710527
+    second: Perso_nouveauscenario_trans_2
+  - first:
+      213: -2048251462921078785
+    second: Perso_nouveauscenario_trans_3
+  - first:
+      213: -2377956176710069274
+    second: Perso_nouveauscenario_trans_4
+  - first:
+      213: -7749379097085809074
+    second: Perso_nouveauscenario_trans_5
+  - first:
+      213: -1838546870997556738
+    second: Perso_nouveauscenario_trans_6
+  - first:
+      213: 4470602901139958017
+    second: Perso_nouveauscenario_trans_7
+  - first:
+      213: 9612097651973060
+    second: Perso_nouveauscenario_trans_8
+  - first:
+      213: -4027086183186431224
+    second: Perso_nouveauscenario_trans_9
+  - first:
+      213: -3159889545862644474
+    second: Perso_nouveauscenario_trans_10
+  - first:
+      213: 8792084282653296668
+    second: Perso_nouveauscenario_trans_11
+  - first:
+      213: 7851130727236946395
+    second: Perso_nouveauscenario_trans_12
+  - first:
+      213: 5177608104391183183
+    second: Perso_nouveauscenario_trans_13
+  - first:
+      213: 8108950007036549729
+    second: Perso_nouveauscenario_trans_14
+  - first:
+      213: -2404469327615922516
+    second: Perso_nouveauscenario_trans_15
+  - first:
+      213: -1644452936602520252
+    second: Perso_nouveauscenario_trans_16
+  - first:
+      213: -2474811179387287548
+    second: Perso_nouveauscenario_trans_17
+  - first:
+      213: 2047776574237099885
+    second: Perso_nouveauscenario_trans_18
+  - first:
+      213: -3616597421857601154
+    second: Perso_nouveauscenario_trans_19
+  - first:
+      213: 1569862698968698731
+    second: Perso_nouveauscenario_trans_20
+  - first:
+      213: -7762287993741855728
+    second: Perso_nouveauscenario_trans_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Perso_nouveauscenario_trans_0
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 1117
+        width: 133
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c55c70695f9e8c970800000000000000
+      internalID: 8775521114924762460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Perso_nouveauscenario_trans_1
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 1122
+        width: 132
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab9b57f1875180810800000000000000
+      internalID: 1731657662392023482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Perso_nouveauscenario_trans_2
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 1111
+        width: 138
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f335335112895a770800000000000000
+      internalID: 8621464329527710527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Perso_nouveauscenario_trans_3
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1121
+        width: 132
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff73ae585262393e0800000000000000
+      internalID: -2048251462921078785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Perso_nouveauscenario_trans_4
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 858
+        width: 132
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e310cbc47dcffed0800000000000000
+      internalID: -2377956176710069274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Perso_nouveauscenario_trans_5
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 856
+        width: 129
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4eec58e4cca47490800000000000000
+      internalID: -7749379097085809074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Perso_nouveauscenario_trans_6
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 856
+        width: 130
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef1e843ac5b2c76e0800000000000000
+      internalID: -1838546870997556738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Perso_nouveauscenario_trans_7
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 857
+        width: 133
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 109274ef6a5ca0e30800000000000000
+      internalID: 4470602901139958017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Perso_nouveauscenario_trans_8
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 606
+        width: 135
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cb9712e626222000800000000000000
+      internalID: 9612097651973060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Perso_nouveauscenario_trans_9
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 607
+        width: 135
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8030a4be37aec18c0800000000000000
+      internalID: -4027086183186431224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Perso_nouveauscenario_trans_10
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 609
+        width: 137
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60df2692331d524d0800000000000000
+      internalID: -3159889545862644474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Perso_nouveauscenario_trans_11
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 607
+        width: 134
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1848d69212c30a70800000000000000
+      internalID: 8792084282653296668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Perso_nouveauscenario_trans_12
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 351
+        width: 142
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd9cc12acc1d4fc60800000000000000
+      internalID: 7851130727236946395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Perso_nouveauscenario_trans_13
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 334
+        width: 140
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4b8b68832f8ad740800000000000000
+      internalID: 5177608104391183183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Perso_nouveauscenario_trans_14
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 349
+        width: 141
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16a90de7117c88070800000000000000
+      internalID: 8108950007036549729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Perso_nouveauscenario_trans_15
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 351
+        width: 138
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cae612ec2eb91aed0800000000000000
+      internalID: -2404469327615922516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Perso_nouveauscenario_trans_16
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 341
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44575ff44cabd29e0800000000000000
+      internalID: -1644452936602520252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Perso_nouveauscenario_trans_17
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 74
+        width: 124
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 408847e2854b7add0800000000000000
+      internalID: -2474811179387287548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Perso_nouveauscenario_trans_18
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 74
+        width: 123
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d67c4c6d1f92b6c10800000000000000
+      internalID: 2047776574237099885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Perso_nouveauscenario_trans_19
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 73
+        width: 99
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e79859e6ec34fcdc0800000000000000
+      internalID: -3616597421857601154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Perso_nouveauscenario_trans_20
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 69
+        width: 101
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6f4a26aec549c510800000000000000
+      internalID: 1569862698968698731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Perso_nouveauscenario_trans_21
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 17
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 014bcb03230d64490800000000000000
+      internalID: -7762287993741855728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Perso_nouveauscenario_trans_0: 8775521114924762460
+      Perso_nouveauscenario_trans_1: 1731657662392023482
+      Perso_nouveauscenario_trans_10: -3159889545862644474
+      Perso_nouveauscenario_trans_11: 8792084282653296668
+      Perso_nouveauscenario_trans_12: 7851130727236946395
+      Perso_nouveauscenario_trans_13: 5177608104391183183
+      Perso_nouveauscenario_trans_14: 8108950007036549729
+      Perso_nouveauscenario_trans_15: -2404469327615922516
+      Perso_nouveauscenario_trans_16: -1644452936602520252
+      Perso_nouveauscenario_trans_17: -2474811179387287548
+      Perso_nouveauscenario_trans_18: 2047776574237099885
+      Perso_nouveauscenario_trans_19: -3616597421857601154
+      Perso_nouveauscenario_trans_2: 8621464329527710527
+      Perso_nouveauscenario_trans_20: 1569862698968698731
+      Perso_nouveauscenario_trans_21: -7762287993741855728
+      Perso_nouveauscenario_trans_3: -2048251462921078785
+      Perso_nouveauscenario_trans_4: -2377956176710069274
+      Perso_nouveauscenario_trans_5: -7749379097085809074
+      Perso_nouveauscenario_trans_6: -1838546870997556738
+      Perso_nouveauscenario_trans_7: 4470602901139958017
+      Perso_nouveauscenario_trans_8: 9612097651973060
+      Perso_nouveauscenario_trans_9: -4027086183186431224
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

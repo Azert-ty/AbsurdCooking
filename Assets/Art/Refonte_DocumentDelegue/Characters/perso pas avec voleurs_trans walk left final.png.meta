@@ -1,0 +1,676 @@
+fileFormatVersion: 2
+guid: 50a635c90b2e63c4996a44e4e42b4872
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4931442149653554912
+    second: perso pas avec voleurs_trans walk left final_0
+  - first:
+      213: 5253479857070499797
+    second: perso pas avec voleurs_trans walk left final_1
+  - first:
+      213: -1930726784773099060
+    second: perso pas avec voleurs_trans walk left final_2
+  - first:
+      213: 1999672139351363700
+    second: perso pas avec voleurs_trans walk left final_3
+  - first:
+      213: 1296211306114766009
+    second: perso pas avec voleurs_trans walk left final_4
+  - first:
+      213: 2608597340271996412
+    second: perso pas avec voleurs_trans walk left final_5
+  - first:
+      213: 1913954981291537036
+    second: perso pas avec voleurs_trans walk left final_6
+  - first:
+      213: 1322436363091174098
+    second: perso pas avec voleurs_trans walk left final_7
+  - first:
+      213: 3497833030294385185
+    second: perso pas avec voleurs_trans walk left final_8
+  - first:
+      213: 5325619240487515671
+    second: perso pas avec voleurs_trans walk left final_9
+  - first:
+      213: 1405620460966403381
+    second: perso pas avec voleurs_trans walk left final_10
+  - first:
+      213: -8041213890915088694
+    second: perso pas avec voleurs_trans walk left final_11
+  - first:
+      213: -8878719243891590323
+    second: perso pas avec voleurs_trans walk left final_12
+  - first:
+      213: 908360146420491733
+    second: perso pas avec voleurs_trans walk left final_13
+  - first:
+      213: 5464092313981195761
+    second: perso pas avec voleurs_trans walk left final_14
+  - first:
+      213: -481173557881156812
+    second: perso pas avec voleurs_trans walk left final_15
+  - first:
+      213: 7912828937246451389
+    second: perso pas avec voleurs_trans walk left final_16
+  - first:
+      213: -1974507071741446232
+    second: perso pas avec voleurs_trans walk left final_17
+  - first:
+      213: 831618579952663566
+    second: perso pas avec voleurs_trans walk left final_18
+  - first:
+      213: 4878307429214178578
+    second: perso pas avec voleurs_trans walk left final_19
+  - first:
+      213: -1254043662795117053
+    second: perso pas avec voleurs_trans walk left final_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: perso pas avec voleurs_trans walk left final_0
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 1391
+        width: 39
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e62d78d180007440800000000000000
+      internalID: 4931442149653554912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: perso pas avec voleurs_trans walk left final_1
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 1391
+        width: 40
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d76b5b881c18e840800000000000000
+      internalID: 5253479857070499797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: perso pas avec voleurs_trans walk left final_2
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 1389
+        width: 39
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc1744bf73ea435e0800000000000000
+      internalID: -1930726784773099060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: perso pas avec voleurs_trans walk left final_3
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 1391
+        width: 41
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 470984d473340cb10800000000000000
+      internalID: 1999672139351363700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: perso pas avec voleurs_trans walk left final_4
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 1391
+        width: 38
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b4d0d6b0511df110800000000000000
+      internalID: 1296211306114766009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: perso pas avec voleurs_trans walk left final_5
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 1391
+        width: 38
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfde0f4c579933420800000000000000
+      internalID: 2608597340271996412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: perso pas avec voleurs_trans walk left final_6
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 1046
+        width: 131
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c82b8f73aebbf8a10800000000000000
+      internalID: 1913954981291537036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: perso pas avec voleurs_trans walk left final_7
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1048
+        width: 126
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d2eb1c9ddc3a5210800000000000000
+      internalID: 1322436363091174098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: perso pas avec voleurs_trans walk left final_8
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 1041
+        width: 128
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1223356db9cca8030800000000000000
+      internalID: 3497833030294385185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: perso pas avec voleurs_trans walk left final_9
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1044
+        width: 126
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7167e3e9b7668e940800000000000000
+      internalID: 5325619240487515671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: perso pas avec voleurs_trans walk left final_10
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 1061
+        width: 114
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53d5ce8ac54c18310800000000000000
+      internalID: 1405620460966403381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: perso pas avec voleurs_trans walk left final_11
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 756
+        width: 146
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac6c115029ed76090800000000000000
+      internalID: -8041213890915088694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: perso pas avec voleurs_trans walk left final_12
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 757
+        width: 146
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4bba6f93e378c480800000000000000
+      internalID: -8878719243891590323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: perso pas avec voleurs_trans walk left final_13
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 756
+        width: 148
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d5e38f8db42b9c00800000000000000
+      internalID: 908360146420491733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: perso pas avec voleurs_trans walk left final_14
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 757
+        width: 146
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f59ac2720b54db40800000000000000
+      internalID: 5464092313981195761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: perso pas avec voleurs_trans walk left final_15
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 748
+        width: 91
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43bce2fc2378259f0800000000000000
+      internalID: -481173557881156812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: perso pas avec voleurs_trans walk left final_16
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 458
+        width: 145
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db6a1059ef300dd60800000000000000
+      internalID: 7912828937246451389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: perso pas avec voleurs_trans walk left final_17
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 455
+        width: 148
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a7ba5697442994e0800000000000000
+      internalID: -1974507071741446232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: perso pas avec voleurs_trans walk left final_18
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 455
+        width: 146
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0c71be31b08a8b00800000000000000
+      internalID: 831618579952663566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: perso pas avec voleurs_trans walk left final_19
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 457
+        width: 142
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21dc57fa2ca33b340800000000000000
+      internalID: 4878307429214178578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: perso pas avec voleurs_trans walk left final_20
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 442
+        width: 91
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30e6442deedb89ee0800000000000000
+      internalID: -1254043662795117053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      perso pas avec voleurs_trans walk left final_0: 4931442149653554912
+      perso pas avec voleurs_trans walk left final_1: 5253479857070499797
+      perso pas avec voleurs_trans walk left final_10: 1405620460966403381
+      perso pas avec voleurs_trans walk left final_11: -8041213890915088694
+      perso pas avec voleurs_trans walk left final_12: -8878719243891590323
+      perso pas avec voleurs_trans walk left final_13: 908360146420491733
+      perso pas avec voleurs_trans walk left final_14: 5464092313981195761
+      perso pas avec voleurs_trans walk left final_15: -481173557881156812
+      perso pas avec voleurs_trans walk left final_16: 7912828937246451389
+      perso pas avec voleurs_trans walk left final_17: -1974507071741446232
+      perso pas avec voleurs_trans walk left final_18: 831618579952663566
+      perso pas avec voleurs_trans walk left final_19: 4878307429214178578
+      perso pas avec voleurs_trans walk left final_2: -1930726784773099060
+      perso pas avec voleurs_trans walk left final_20: -1254043662795117053
+      perso pas avec voleurs_trans walk left final_3: 1999672139351363700
+      perso pas avec voleurs_trans walk left final_4: 1296211306114766009
+      perso pas avec voleurs_trans walk left final_5: 2608597340271996412
+      perso pas avec voleurs_trans walk left final_6: 1913954981291537036
+      perso pas avec voleurs_trans walk left final_7: 1322436363091174098
+      perso pas avec voleurs_trans walk left final_8: 3497833030294385185
+      perso pas avec voleurs_trans walk left final_9: 5325619240487515671
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

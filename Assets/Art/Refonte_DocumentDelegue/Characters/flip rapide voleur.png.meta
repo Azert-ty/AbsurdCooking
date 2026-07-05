@@ -1,0 +1,650 @@
+fileFormatVersion: 2
+guid: 3cc11fab2a747014896b39815c697f8d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2789925831482034168
+    second: flip rapide voleur_0
+  - first:
+      213: -6095884462418134919
+    second: flip rapide voleur_1
+  - first:
+      213: -9032394458408349567
+    second: flip rapide voleur_2
+  - first:
+      213: 1725005282736055133
+    second: flip rapide voleur_3
+  - first:
+      213: -8449730524712263518
+    second: flip rapide voleur_4
+  - first:
+      213: 2099484933800722971
+    second: flip rapide voleur_5
+  - first:
+      213: 1198577937515989181
+    second: flip rapide voleur_6
+  - first:
+      213: -5354308557582983067
+    second: flip rapide voleur_7
+  - first:
+      213: -3895539126463524542
+    second: flip rapide voleur_8
+  - first:
+      213: 7301955303875976873
+    second: flip rapide voleur_9
+  - first:
+      213: 8749133763080037805
+    second: flip rapide voleur_10
+  - first:
+      213: 5254164281316648388
+    second: flip rapide voleur_11
+  - first:
+      213: 2865405432947589485
+    second: flip rapide voleur_12
+  - first:
+      213: -854478143756014197
+    second: flip rapide voleur_13
+  - first:
+      213: 8536014044674853322
+    second: flip rapide voleur_14
+  - first:
+      213: -7921004282891396526
+    second: flip rapide voleur_15
+  - first:
+      213: -885309844435924885
+    second: flip rapide voleur_16
+  - first:
+      213: 7733845084459800247
+    second: flip rapide voleur_17
+  - first:
+      213: -1655527289619602159
+    second: flip rapide voleur_18
+  - first:
+      213: -8019789527519893166
+    second: flip rapide voleur_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: flip rapide voleur_0
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 1153
+        width: 120
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f74c2713cec7b620800000000000000
+      internalID: 2789925831482034168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flip rapide voleur_1
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 1147
+        width: 127
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9787eb9f061176ba0800000000000000
+      internalID: -6095884462418134919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flip rapide voleur_2
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 1152
+        width: 123
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1801d53881d76a280800000000000000
+      internalID: -9032394458408349567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flip rapide voleur_3
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 1148
+        width: 122
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d53a7294a2370f710800000000000000
+      internalID: 1725005282736055133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flip rapide voleur_4
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 880
+        width: 121
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a020ca3bd68cba80800000000000000
+      internalID: -8449730524712263518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flip rapide voleur_5
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 880
+        width: 122
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b120a7a7c6ed22d10800000000000000
+      internalID: 2099484933800722971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flip rapide voleur_6
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 881
+        width: 121
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db8c249a84432a010800000000000000
+      internalID: 1198577937515989181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flip rapide voleur_7
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 883
+        width: 122
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 560ae673cbca1b5b0800000000000000
+      internalID: -5354308557582983067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flip rapide voleur_8
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 630
+        width: 122
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 241918ecdc340f9c0800000000000000
+      internalID: -3895539126463524542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flip rapide voleur_9
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 630
+        width: 141
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ae9e4559a1c55560800000000000000
+      internalID: 7301955303875976873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flip rapide voleur_10
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 630
+        width: 135
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da523c87dca2b6970800000000000000
+      internalID: 8749133763080037805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flip rapide voleur_11
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 630
+        width: 138
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c5ac6b739a8ae840800000000000000
+      internalID: 5254164281316648388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flip rapide voleur_12
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 388
+        width: 122
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d61c0584f07f3c720800000000000000
+      internalID: 2865405432947589485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flip rapide voleur_13
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 393
+        width: 134
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8d661dc7a84424f0800000000000000
+      internalID: -854478143756014197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flip rapide voleur_14
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 394
+        width: 134
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac907924c83067670800000000000000
+      internalID: 8536014044674853322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flip rapide voleur_15
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 393
+        width: 139
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25a19ed6290f21290800000000000000
+      internalID: -7921004282891396526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flip rapide voleur_16
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 99
+        width: 91
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b688d36136fb6b3f0800000000000000
+      internalID: -885309844435924885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flip rapide voleur_17
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 101
+        width: 121
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b6902fe023245b60800000000000000
+      internalID: 7733845084459800247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flip rapide voleur_18
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 101
+        width: 119
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 115224293b26609e0800000000000000
+      internalID: -1655527289619602159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flip rapide voleur_19
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 102
+        width: 90
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25967c65aebf3b090800000000000000
+      internalID: -8019789527519893166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      flip rapide voleur_0: 2789925831482034168
+      flip rapide voleur_1: -6095884462418134919
+      flip rapide voleur_10: 8749133763080037805
+      flip rapide voleur_11: 5254164281316648388
+      flip rapide voleur_12: 2865405432947589485
+      flip rapide voleur_13: -854478143756014197
+      flip rapide voleur_14: 8536014044674853322
+      flip rapide voleur_15: -7921004282891396526
+      flip rapide voleur_16: -885309844435924885
+      flip rapide voleur_17: 7733845084459800247
+      flip rapide voleur_18: -1655527289619602159
+      flip rapide voleur_19: -8019789527519893166
+      flip rapide voleur_2: -9032394458408349567
+      flip rapide voleur_3: 1725005282736055133
+      flip rapide voleur_4: -8449730524712263518
+      flip rapide voleur_5: 2099484933800722971
+      flip rapide voleur_6: 1198577937515989181
+      flip rapide voleur_7: -5354308557582983067
+      flip rapide voleur_8: -3895539126463524542
+      flip rapide voleur_9: 7301955303875976873
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
