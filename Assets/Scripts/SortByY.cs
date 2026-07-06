@@ -1,108 +1,201 @@
 using UnityEngine;
+using UnityEngine.Rendering;
 
 [DisallowMultipleComponent]
 public class SortByY : MonoBehaviour
 {
-    [Header("Sprite à trier")]
-    [Tooltip("Laisse vide : le SpriteRenderer sera trouvé automatiquement.")]
-    [SerializeField] private SpriteRenderer objectRenderer;
+    // =========================================================
+    // GLOBAL SETTINGS
+    // =========================================================
 
-    [Header("Correction du point de tri")]
-    [Tooltip("Permet d'avancer ou reculer légèrement le point de tri.")]
-    [SerializeField] private float sortYOffset = 0f;
+    // Tous les objets qui utilisent SortByY doivent être
+    // dans la même Sorting Layer pour pouvoir se croiser.
+    private const string SharedSortingLayer = "Default";
 
-    [Header("Réglages")]
-    [SerializeField] private int baseOrder = 10000;
+    private const int BaseOrder = 10000;
+    private const int Precision = 100;
 
-    [Tooltip("Précision du tri selon la position Y.")]
-    [SerializeField] private int precision = 100;
+    // =========================================================
+    // REFERENCES
+    // =========================================================
 
-    [Tooltip("Correction manuelle de l'ordre final.")]
-    [SerializeField] private int sortingOffset = 0;
+    private SortingGroup sortingGroup;
 
-    private float automaticSortOffsetY;
-    private bool sortOffsetInitialized;
+    private SpriteRenderer targetRenderer;
 
-    private int lastSortingOrder = int.MinValue;
+    private SpriteRenderer[] allSpriteRenderers;
 
-    private void Awake()
-    {
-        FindSpriteRendererIfNeeded();
-        InitializeAutomaticSortPoint();
-        UpdateSortingOrder();
-    }
+    private Collider2D groundCollider;
+
+    // =========================================================
+    // CACHE
+    // =========================================================
+
+    private int lastSortingOrder =
+        int.MinValue;
+
+    // =========================================================
+    // UNITY
+    // =========================================================
 
     private void Reset()
     {
-        objectRenderer = null;
-        FindSpriteRendererIfNeeded();
+        AutoSetup(true);
+
+        ForceSharedSortingLayer();
+
+        UpdateSortingOrder(true);
+    }
+
+    private void Awake()
+    {
+        AutoSetup(true);
+
+        ForceSharedSortingLayer();
+
+        UpdateSortingOrder(true);
+    }
+
+    private void OnEnable()
+    {
+        ForceSharedSortingLayer();
+
+        UpdateSortingOrder(true);
     }
 
     private void LateUpdate()
     {
-        if (objectRenderer == null)
-        {
-            FindSpriteRendererIfNeeded();
-
-            if (objectRenderer == null)
-                return;
-        }
-
-        if (!sortOffsetInitialized)
-            InitializeAutomaticSortPoint();
-
-        UpdateSortingOrder();
+        UpdateSortingOrder(false);
     }
 
-    private void FindSpriteRendererIfNeeded()
+    // =========================================================
+    // AUTO SETUP
+    // =========================================================
+
+    private void AutoSetup(
+        bool allowSortingGroupCreation)
     {
-        if (objectRenderer != null)
+        FindRenderers(
+            allowSortingGroupCreation
+        );
+
+        FindGroundCollider();
+    }
+
+    // =========================================================
+    // RENDERERS
+    // =========================================================
+
+    private void FindRenderers(
+        bool allowSortingGroupCreation)
+    {
+        allSpriteRenderers =
+            GetComponentsInChildren<SpriteRenderer>(
+                true
+            );
+
+        // -----------------------------------------------------
+        // 1. SORTING GROUP DÉJÀ PRÉSENT
+        // -----------------------------------------------------
+
+        sortingGroup =
+            GetComponent<SortingGroup>();
+
+        if (sortingGroup != null)
+        {
+            targetRenderer = null;
+
             return;
+        }
 
-        // 1. Cas normal :
-        // le SpriteRenderer est directement sur le GameObject.
-        objectRenderer = GetComponent<SpriteRenderer>();
+        // -----------------------------------------------------
+        // 2. PLUSIEURS SPRITES
+        //
+        // On crée automatiquement un SortingGroup.
+        // -----------------------------------------------------
 
-        if (objectRenderer != null)
+        if (allSpriteRenderers.Length > 1 &&
+            allowSortingGroupCreation)
+        {
+            sortingGroup =
+                gameObject.AddComponent<SortingGroup>();
+
+            targetRenderer = null;
+
             return;
+        }
 
-        // 2. Cas du policier :
-        // cherche d'abord un enfant nommé "Visual".
-        Transform visual = transform.Find("Visual");
+        // -----------------------------------------------------
+        // 3. SPRITE DIRECTEMENT SUR L'OBJET
+        // -----------------------------------------------------
+
+        targetRenderer =
+            GetComponent<SpriteRenderer>();
+
+        if (targetRenderer != null)
+        {
+            return;
+        }
+
+        // -----------------------------------------------------
+        // 4. CAS DU POLICIER AVEC ENFANT "Visual"
+        // -----------------------------------------------------
+
+        Transform visual =
+            transform.Find("Visual");
 
         if (visual != null)
         {
-            objectRenderer =
-                visual.GetComponentInChildren<SpriteRenderer>(true);
+            targetRenderer =
+                visual.GetComponentInChildren<SpriteRenderer>(
+                    true
+                );
 
-            if (objectRenderer != null)
+            if (targetRenderer != null)
+            {
                 return;
+            }
         }
 
-        // 3. Dernier recours :
-        // prend le plus grand SpriteRenderer enfant.
-        objectRenderer = FindLargestChildSpriteRenderer();
+        // -----------------------------------------------------
+        // 5. DERNIER RECOURS
+        //
+        // Utilise le plus grand sprite enfant.
+        // -----------------------------------------------------
+
+        targetRenderer =
+            FindLargestSpriteRenderer(
+                allSpriteRenderers
+            );
     }
 
-    private SpriteRenderer FindLargestChildSpriteRenderer()
+    private SpriteRenderer FindLargestSpriteRenderer(
+        SpriteRenderer[] renderers)
     {
-        SpriteRenderer[] renderers =
-            GetComponentsInChildren<SpriteRenderer>(true);
-
         SpriteRenderer bestRenderer = null;
+
         float largestArea = -1f;
 
-        foreach (SpriteRenderer renderer in renderers)
+        foreach (
+            SpriteRenderer renderer
+            in renderers)
         {
-            if (renderer == null || renderer.sprite == null)
+            if (renderer == null ||
+                renderer.sprite == null)
+            {
                 continue;
+            }
 
-            Vector2 size = renderer.bounds.size;
-            float area = size.x * size.y;
+            Vector2 size =
+                renderer.bounds.size;
+
+            float area =
+                size.x * size.y;
 
             if (area > largestArea)
             {
                 largestArea = area;
+
                 bestRenderer = renderer;
             }
         }
@@ -110,38 +203,235 @@ public class SortByY : MonoBehaviour
         return bestRenderer;
     }
 
-    private void InitializeAutomaticSortPoint()
+    // =========================================================
+    // FORCE SAME SORTING LAYER
+    // =========================================================
+
+    private void ForceSharedSortingLayer()
     {
-        if (objectRenderer == null)
+        // -----------------------------------------------------
+        // OBJET COMPLEXE AVEC SORTING GROUP
+        // -----------------------------------------------------
+
+        if (sortingGroup != null)
+        {
+            sortingGroup.sortingLayerName =
+                SharedSortingLayer;
+
             return;
+        }
 
-        // Calcule une seule fois la distance entre
-        // le centre du GameObject et le bas visible du sprite.
-        automaticSortOffsetY =
-            objectRenderer.bounds.min.y - transform.position.y;
+        // -----------------------------------------------------
+        // OBJET SIMPLE AVEC UN SEUL SPRITE
+        // -----------------------------------------------------
 
-        sortOffsetInitialized = true;
+        if (targetRenderer != null)
+        {
+            targetRenderer.sortingLayerName =
+                SharedSortingLayer;
+        }
     }
 
-    private void UpdateSortingOrder()
+    // =========================================================
+    // COLLIDER USED FOR SORTING
+    // =========================================================
+
+    private void FindGroundCollider()
     {
-        if (objectRenderer == null)
+        groundCollider = null;
+
+        // -----------------------------------------------------
+        // 1. COLLIDER PHYSIQUE DIRECT
+        // -----------------------------------------------------
+
+        Collider2D directCollider =
+            GetComponent<Collider2D>();
+
+        if (IsValidPhysicalCollider(
+                directCollider))
+        {
+            groundCollider =
+                directCollider;
+
             return;
+        }
+
+        // -----------------------------------------------------
+        // 2. COLLIDERS ENFANTS
+        // -----------------------------------------------------
+
+        Collider2D[] colliders =
+            GetComponentsInChildren<Collider2D>(
+                true
+            );
+
+        Collider2D lowestPhysicalCollider =
+            null;
+
+        float lowestY =
+            float.PositiveInfinity;
+
+        foreach (
+            Collider2D collider
+            in colliders)
+        {
+            if (!IsValidPhysicalCollider(
+                    collider))
+            {
+                continue;
+            }
+
+            float colliderY =
+                collider.bounds.center.y;
+
+            if (colliderY < lowestY)
+            {
+                lowestY =
+                    colliderY;
+
+                lowestPhysicalCollider =
+                    collider;
+            }
+        }
+
+        groundCollider =
+            lowestPhysicalCollider;
+    }
+
+    private bool IsValidPhysicalCollider(
+        Collider2D collider)
+    {
+        return collider != null &&
+               collider.enabled &&
+               !collider.isTrigger;
+    }
+
+    // =========================================================
+    // AUTOMATIC SORT POINT
+    // =========================================================
+
+    private float GetSortY()
+    {
+        // -----------------------------------------------------
+        // MEILLEUR CAS :
+        // BAS DU COLLIDER PHYSIQUE
+        // -----------------------------------------------------
+
+        if (groundCollider != null &&
+            groundCollider.enabled)
+        {
+            return groundCollider.bounds.min.y;
+        }
+
+        // -----------------------------------------------------
+        // UN SEUL SPRITE
+        // -----------------------------------------------------
+
+        if (targetRenderer != null)
+        {
+            return targetRenderer.bounds.min.y;
+        }
+
+        // -----------------------------------------------------
+        // PLUSIEURS SPRITES DANS UN SORTING GROUP
+        // -----------------------------------------------------
+
+        if (allSpriteRenderers != null &&
+            allSpriteRenderers.Length > 0)
+        {
+            float lowestY =
+                float.PositiveInfinity;
+
+            bool foundRenderer = false;
+
+            foreach (
+                SpriteRenderer renderer
+                in allSpriteRenderers)
+            {
+                if (renderer == null ||
+                    !renderer.enabled)
+                {
+                    continue;
+                }
+
+                lowestY =
+                    Mathf.Min(
+                        lowestY,
+                        renderer.bounds.min.y
+                    );
+
+                foundRenderer = true;
+            }
+
+            if (foundRenderer)
+            {
+                return lowestY;
+            }
+        }
+
+        // -----------------------------------------------------
+        // DERNIER RECOURS
+        // -----------------------------------------------------
+
+        return transform.position.y;
+    }
+
+    // =========================================================
+    // SORTING
+    // =========================================================
+
+    private void UpdateSortingOrder(
+        bool forceUpdate)
+    {
+        if (sortingGroup == null &&
+            targetRenderer == null)
+        {
+            return;
+        }
 
         float sortY =
-            transform.position.y
-            + automaticSortOffsetY
-            + sortYOffset;
+            GetSortY();
 
         int newSortingOrder =
-            baseOrder
-            - Mathf.RoundToInt(sortY * precision)
-            + sortingOffset;
+            BaseOrder -
+            Mathf.RoundToInt(
+                sortY * Precision
+            );
 
-        if (newSortingOrder == lastSortingOrder)
+        if (!forceUpdate &&
+            newSortingOrder ==
+            lastSortingOrder)
+        {
             return;
+        }
 
-        objectRenderer.sortingOrder = newSortingOrder;
-        lastSortingOrder = newSortingOrder;
+        // -----------------------------------------------------
+        // SORTING GROUP
+        // -----------------------------------------------------
+
+        if (sortingGroup != null)
+        {
+            sortingGroup.sortingLayerName =
+                SharedSortingLayer;
+
+            sortingGroup.sortingOrder =
+                newSortingOrder;
+        }
+
+        // -----------------------------------------------------
+        // SPRITE SIMPLE
+        // -----------------------------------------------------
+
+        else
+        {
+            targetRenderer.sortingLayerName =
+                SharedSortingLayer;
+
+            targetRenderer.sortingOrder =
+                newSortingOrder;
+        }
+
+        lastSortingOrder =
+            newSortingOrder;
     }
 }

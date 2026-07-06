@@ -294,4 +294,14 @@ public class EnemyVision : MonoBehaviour
             origin.position + (Vector3)forward * detectionRange
         );
     }
+
+    public Transform GetVisionOrigin()
+    {
+        return GetOrigin();
+    }
+
+    public LayerMask GetObstacleMask()
+    {
+        return obstacleMask;
+    }
 }

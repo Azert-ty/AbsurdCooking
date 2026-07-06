@@ -97,7 +97,7 @@ public class GameUI : MonoBehaviour
         else
         {
             objectiveText.text =
-                "Objectif : récupérer le trésor";
+                "Objectif : récupérer le coffret";
         }
     }
 

@@ -191,28 +191,59 @@ public class EnemyAI : MonoBehaviour
         StartCoroutine(SearchRoutine());
     }
 
+    // private IEnumerator AlertRoutine()
+    // {
+    //     if (movement != null)
+    //     {
+    //         movement.StopMovement();
+
+    //         if (vision != null && vision.Player != null)
+    //             movement.FacePosition(vision.Player.position);
+    //         else
+    //             movement.FacePosition(lastKnownPlayerPosition);
+    //     }
+
+    //     yield return new WaitForSeconds(alertDuration);
+
+    //     if (aiPaused)
+    //         yield break;
+
+    //     if (TryCapturePlayer())
+    //         yield break;
+
+    //     ChangeState(EnemyState.Chase);
+    // }
+
     private IEnumerator AlertRoutine()
+{
+    if (movement != null)
     {
-        if (movement != null)
+        movement.StopMovement();
+
+        if (vision != null &&
+    vision.Player != null)
+{
+    movement.FaceTarget(
+        vision.Player
+    );
+}
+        else
         {
-            movement.StopMovement();
-
-            if (vision != null && vision.Player != null)
-                movement.FacePosition(vision.Player.position);
-            else
-                movement.FacePosition(lastKnownPlayerPosition);
+            movement.FacePosition(
+                lastKnownPlayerPosition
+            );
         }
-
-        yield return new WaitForSeconds(alertDuration);
-
-        if (aiPaused)
-            yield break;
-
-        if (TryCapturePlayer())
-            yield break;
-
-        ChangeState(EnemyState.Chase);
     }
+
+    yield return new WaitForSeconds(
+        alertDuration
+    );
+
+    if (aiPaused)
+        yield break;
+
+    ChangeState(EnemyState.Chase);
+}
 
     private IEnumerator ChaseRoutine()
     {
@@ -389,6 +420,10 @@ public class EnemyAI : MonoBehaviour
         if (hasCapturedPlayer)
             return true;
 
+        // Une capture n'est possible qu'en Chase.
+    if (currentState != EnemyState.Chase)
+        return false;
+
         if (vision == null || vision.Player == null)
             return false;
 
@@ -455,6 +490,24 @@ public class EnemyAI : MonoBehaviour
         if (lastKnownPlayerDirection.sqrMagnitude < 0.01f)
             lastKnownPlayerDirection = Vector2.down;
     }
+    private void SavePlayerContactData(Transform playerTransform)
+{
+    if (playerTransform == null)
+        return;
+
+    lastKnownPlayerPosition =
+        playerTransform.position;
+
+    Vector2 direction =
+        (Vector2)playerTransform.position -
+        (Vector2)transform.position;
+
+    if (direction.sqrMagnitude > 0.001f)
+    {
+        lastKnownPlayerDirection =
+            direction.normalized;
+    }
+}
 
     private void RegisterPlayerSeen()
     {
@@ -462,16 +515,63 @@ public class EnemyAI : MonoBehaviour
             GameManager.Instance.RegisterPlayerSeen();
     }
 
+    // private void OnTriggerEnter2D(Collider2D other)
+    // {
+    //     if (!other.CompareTag("Player"))
+    //         return;
+
+    //     if (hasCapturedPlayer)
+    //         return;
+
+    //     CapturePlayer(other.transform);
+    // }
+
+
     private void OnTriggerEnter2D(Collider2D other)
+{
+    if (hasCapturedPlayer)
+        return;
+
+    if (aiPaused)
+        return;
+
+    if (vision == null || vision.Player == null)
+        return;
+
+    // Vérifie que le collider appartient bien au joueur.
+    bool isPlayer =
+        other.transform == vision.Player ||
+        other.transform.IsChildOf(vision.Player);
+
+    if (!isPlayer)
+        return;
+
+    // =====================================================
+    // CAS 1 :
+    // L'ennemi poursuivait déjà le joueur.
+    //
+    // Contact = capture immédiate.
+    // =====================================================
+
+    if (currentState == EnemyState.Chase)
     {
-        if (!other.CompareTag("Player"))
-            return;
-
-        if (hasCapturedPlayer)
-            return;
-
-        CapturePlayer(other.transform);
+        CapturePlayer(vision.Player);
+        return;
     }
+
+    // =====================================================
+    // CAS 2 :
+    // L'ennemi ne poursuivait pas encore le joueur.
+    //
+    // Le contact déclenche une alerte.
+    // =====================================================
+
+    RegisterPlayerSeen();
+
+    SavePlayerContactData(vision.Player);
+
+    ChangeState(EnemyState.Alert);
+}
 
     public void PauseAI()
     {

@@ -1,3 +1,6 @@
+
+
+
 using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
@@ -12,8 +15,16 @@ public class EnemyMovement : MonoBehaviour
         LookAtTarget
     }
 
+    // =========================================================
+    // ANIMATION
+    // =========================================================
+
     [Header("Animation")]
     [SerializeField] private Animator animator;
+
+    // =========================================================
+    // VISION
+    // =========================================================
 
     [Header("Vision")]
     [SerializeField] private Transform visionPivot;
@@ -22,8 +33,16 @@ public class EnemyMovement : MonoBehaviour
     [Tooltip("Correction globale du cône. Laisse 0 si le cône regarde déjà dans la bonne direction.")]
     [SerializeField] private float globalConeAngleOffset = 0f;
 
+    // =========================================================
+    // ROTATION
+    // =========================================================
+
     [Header("Rotation")]
+    [Tooltip("Vitesse de rotation du cône en patrouille.")]
     [SerializeField] private float rotationSpeed = 180f;
+
+    [Tooltip("Vitesse de rotation du cône pendant la poursuite.")]
+    [SerializeField] private float chaseRotationSpeed = 360f;
 
     [SerializeField] private bool waitUntilRotatedBeforeMove = true;
 
@@ -42,14 +61,23 @@ public class EnemyMovement : MonoBehaviour
     private Vector2 visualDirection = Vector2.down;
 
     private FacingMode facingMode = FacingMode.Movement;
+
     private Transform lookTarget;
     private Vector3 lookPosition;
+
+    // =========================================================
+    // SPEED
+    // =========================================================
 
     [Header("Speed")]
     [SerializeField] private float patrolSpeed = 2.6f;
     [SerializeField] private float chaseStartSpeed = 3.4f;
     [SerializeField] private float chaseSpeed = 4.6f;
     [SerializeField] private float chaseSpeedRamp = 2.2f;
+
+    // =========================================================
+    // FATIGUE
+    // =========================================================
 
     [Header("Fatigue")]
     [SerializeField] private float timeBeforeFatigue = 4f;
@@ -59,6 +87,10 @@ public class EnemyMovement : MonoBehaviour
     private float chaseTimer;
     private bool isTired;
 
+    // =========================================================
+    // CHASE BEHAVIOUR
+    // =========================================================
+
     [Header("Chase Behaviour")]
     [SerializeField] private float chaseTrailDelayPerRank = 0.18f;
     [SerializeField] private float leadPredictionTime = 0.12f;
@@ -66,24 +98,67 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private float minDestinationChange = 0.12f;
 
     private int chaseRank = 1;
+
     private float nextChaseRepathTime;
+
     private Vector3 lastChaseDestination;
+
     private bool hasLastChaseDestination;
+
+    // =========================================================
+    // CHASE / CONE SYNCHRONIZATION
+    // =========================================================
+
+    [Header("Chase / Cone Synchronization")]
+
+    [Tooltip("Synchronise le déplacement de poursuite avec l'orientation du cône.")]
+    [SerializeField] private bool synchronizeChaseWithCone = true;
+
+    [Tooltip("Sous cet angle, l'ennemi court à pleine vitesse.")]
+    [SerializeField] private float chaseFullSpeedAngle = 12f;
+
+    [Tooltip("Au-dessus de cet angle, l'ennemi s'arrête pour tourner.")]
+    [SerializeField] private float chaseTurnLockAngle = 70f;
+
+    [Tooltip("Angle sous lequel l'ennemi peut recommencer à avancer après un gros virage.")]
+    [SerializeField] private float chaseTurnUnlockAngle = 22f;
+
+    [Tooltip("Vitesse minimale pendant un virage qui ne nécessite pas un arrêt complet.")]
+    [Range(0f, 1f)]
+    [SerializeField] private float chaseMinimumMovementFactor = 0.2f;
+
+    private bool isChasing;
+    private bool chaseTurnLocked;
+
+    private float chaseBaseSpeed;
+    private float chaseMovementFactor = 1f;
+
+    // =========================================================
+    // PATROL
+    // =========================================================
 
     [Header("Patrol")]
     [SerializeField] private Transform[] waypoints;
+
     [SerializeField] private PatrolPathFeedback patrolPathFeedback;
 
     public Transform[] Waypoints => waypoints;
 
     [SerializeField] private float waitTime = 2f;
+
     [SerializeField] private float turnDelayBeforeMove = 0.2f;
 
     private NavMeshAgent agent;
+
     private int currentWaypoint;
+
     private bool isWaiting;
 
     public bool IsWaiting => isWaiting;
+
+    // =========================================================
+    // UNITY
+    // =========================================================
 
     private void Awake()
     {
@@ -103,20 +178,34 @@ public class EnemyMovement : MonoBehaviour
         }
 
         if (animator == null)
+        {
             animator = GetComponentInChildren<Animator>();
+        }
 
         if (patrolPathFeedback == null)
-            patrolPathFeedback = GetComponent<PatrolPathFeedback>();
+        {
+            patrolPathFeedback =
+                GetComponent<PatrolPathFeedback>();
+        }
 
         if (tiredIcon != null)
+        {
             tiredIcon.SetActive(false);
+        }
 
-        activeConeAngleOffset = globalConeAngleOffset;
-        activeTurnDirection = EnemyWaypointLook.TurnDirection.Shortest;
+        activeConeAngleOffset =
+            globalConeAngleOffset;
+
+        activeTurnDirection =
+            EnemyWaypointLook.TurnDirection.Shortest;
+
+        chaseBaseSpeed = chaseStartSpeed;
 
         if (visionPivot != null)
         {
-            targetVisionAngle = visionPivot.eulerAngles.z;
+            targetVisionAngle =
+                visionPivot.eulerAngles.z;
+
             hasTargetVisionAngle = true;
 
             SyncIdleSpriteWithCurrentCone();
@@ -127,14 +216,25 @@ public class EnemyMovement : MonoBehaviour
 
     private void Update()
     {
+        // 1. Décide où le cône doit regarder.
         UpdateConeFacingTarget();
 
+        // 2. Fait réellement tourner le cône.
         UpdateVisionRotation();
 
+        // 3. Adapte le déplacement de chase à l'angle du cône.
+        UpdateChaseConeSynchronization();
+
+        // 4. Synchronise le sprite.
         UpdateSpriteDirection();
 
+        // 5. Met à jour l'Animator.
         UpdateAnimation();
     }
+
+    // =========================================================
+    // AGENT
+    // =========================================================
 
     private bool AgentReady()
     {
@@ -146,154 +246,281 @@ public class EnemyMovement : MonoBehaviour
     private bool IsMoving()
     {
         if (!AgentReady())
+        {
             return false;
+        }
 
         if (agent.isStopped)
+        {
             return false;
+        }
 
         if (agent.velocity.sqrMagnitude > 0.01f)
+        {
             return true;
+        }
 
         if (!agent.hasPath)
+        {
             return false;
+        }
 
         if (agent.pathPending)
+        {
             return true;
+        }
 
-        return agent.remainingDistance > agent.stoppingDistance + 0.05f;
+        return agent.remainingDistance >
+               agent.stoppingDistance + 0.05f;
     }
+
+    // =========================================================
+    // CONE TARGET
+    // =========================================================
 
     private void UpdateConeFacingTarget()
     {
         if (facingMode == FacingMode.LookAtTarget)
         {
             if (lookTarget == null)
+            {
                 return;
+            }
 
             Vector2 direction =
-                lookTarget.position - transform.position;
+                lookTarget.position -
+                transform.position;
 
             SetTargetAngleFromDirection(direction);
+
             return;
         }
 
         if (facingMode == FacingMode.LookAtPosition)
         {
             Vector2 direction =
-                lookPosition - transform.position;
+                lookPosition -
+                transform.position;
 
             SetTargetAngleFromDirection(direction);
+
             return;
         }
 
         if (facingMode == FacingMode.WaypointIdle)
+        {
             return;
+        }
 
         UpdateConeFromMovement();
     }
 
     private void UpdateConeFromMovement()
     {
-        Vector2 direction = GetAgentMovementDirection();
+        Vector2 direction;
+
+        if (isChasing)
+        {
+            direction =
+                GetChaseSteeringDirection();
+        }
+        else
+        {
+            direction =
+                GetAgentMovementDirection();
+        }
 
         if (direction.sqrMagnitude < 0.01f)
+        {
             return;
+        }
 
-        activeConeAngleOffset = globalConeAngleOffset;
-        activeTurnDirection = EnemyWaypointLook.TurnDirection.Shortest;
+        activeConeAngleOffset =
+            globalConeAngleOffset;
+
+        activeTurnDirection =
+            EnemyWaypointLook.TurnDirection.Shortest;
 
         SetTargetAngleFromDirection(direction);
     }
 
-    private void UpdateSpriteDirection()
-    {
-        if (IsMoving())
-        {
-            Vector2 movementDirection = GetAgentMovementDirection();
-
-            if (movementDirection.sqrMagnitude >= 0.01f)
-            {
-                float movementAngle = DirectionToAngle(movementDirection);
-                visualDirection = AngleToCardinalDirection(movementAngle);
-            }
-
-            return;
-        }
-
-        SyncIdleSpriteWithCurrentCone();
-    }
+    // =========================================================
+    // MOVEMENT DIRECTIONS
+    // =========================================================
 
     private Vector2 GetAgentMovementDirection()
     {
         if (!AgentReady())
+        {
             return Vector2.zero;
+        }
 
         Vector2 direction = Vector2.zero;
 
+        // Direction actuelle.
         if (agent.velocity.sqrMagnitude > 0.01f)
         {
             direction = agent.velocity;
         }
+        // Direction voulue par le NavMesh.
         else if (agent.desiredVelocity.sqrMagnitude > 0.01f)
         {
             direction = agent.desiredVelocity;
         }
+        // Prochain point du chemin.
         else if (agent.hasPath && !agent.pathPending)
         {
-            direction = agent.steeringTarget - transform.position;
+            direction =
+                agent.steeringTarget -
+                transform.position;
         }
+        // Destination finale.
         else
         {
-            direction = agent.destination - transform.position;
+            direction =
+                agent.destination -
+                transform.position;
         }
 
         return direction;
     }
 
+    private Vector2 GetChaseSteeringDirection()
+    {
+        if (!AgentReady())
+        {
+            return Vector2.zero;
+        }
+
+        // -----------------------------------------------------
+        // 1. Direction que le NavMesh veut prendre.
+        // -----------------------------------------------------
+
+        if (agent.desiredVelocity.sqrMagnitude > 0.01f)
+        {
+            return agent.desiredVelocity.normalized;
+        }
+
+        // -----------------------------------------------------
+        // 2. Prochain angle du chemin.
+        //
+        // Très important quand l'agent est arrêté pour tourner.
+        // -----------------------------------------------------
+
+        if (agent.hasPath && !agent.pathPending)
+        {
+            Vector2 directionToSteeringTarget =
+                agent.steeringTarget -
+                transform.position;
+
+            if (directionToSteeringTarget.sqrMagnitude > 0.01f)
+            {
+                return directionToSteeringTarget.normalized;
+            }
+        }
+
+        // -----------------------------------------------------
+        // 3. Destination finale.
+        // -----------------------------------------------------
+
+        if (agent.hasPath)
+        {
+            Vector2 directionToDestination =
+                agent.destination -
+                transform.position;
+
+            if (directionToDestination.sqrMagnitude > 0.01f)
+            {
+                return directionToDestination.normalized;
+            }
+        }
+
+        return Vector2.zero;
+    }
+
+    // =========================================================
+    // ANGLES
+    // =========================================================
+
     private float DirectionToAngle(Vector2 direction)
     {
         return Mathf.Repeat(
-            Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg,
+            Mathf.Atan2(
+                direction.y,
+                direction.x
+            ) * Mathf.Rad2Deg,
             360f
         );
     }
 
-    private void SetTargetAngleFromDirection(Vector2 direction)
+    private void SetTargetAngleFromDirection(
+        Vector2 direction)
     {
         if (direction.sqrMagnitude < 0.01f)
+        {
             return;
+        }
 
-        float rawAngle = DirectionToAngle(direction);
+        float rawAngle =
+            DirectionToAngle(direction);
 
-        SetTargetVisionAngle(rawAngle, activeConeAngleOffset);
+        SetTargetVisionAngle(
+            rawAngle,
+            activeConeAngleOffset
+        );
     }
 
-    private void SetTargetVisionAngle(float rawAngle, float coneOffset)
+    private void SetTargetVisionAngle(
+        float rawAngle,
+        float coneOffset)
     {
-        targetVisionAngle = Mathf.Repeat(rawAngle + coneOffset, 360f);
+        targetVisionAngle =
+            Mathf.Repeat(
+                rawAngle + coneOffset,
+                360f
+            );
+
         hasTargetVisionAngle = true;
     }
+
+    // =========================================================
+    // VISION ROTATION
+    // =========================================================
 
     private void UpdateVisionRotation()
     {
         if (visionPivot == null)
+        {
             return;
+        }
 
         if (!hasTargetVisionAngle)
+        {
             return;
+        }
 
-        float currentAngle = visionPivot.eulerAngles.z;
+        float currentAngle =
+            visionPivot.eulerAngles.z;
+
+        float activeRotationSpeed =
+            isChasing
+                ? chaseRotationSpeed
+                : rotationSpeed;
 
         float newAngle =
             MoveAngleWithDirection(
                 currentAngle,
                 targetVisionAngle,
-                rotationSpeed * Time.deltaTime,
+                activeRotationSpeed * Time.deltaTime,
                 activeTurnDirection
             );
 
         visionPivot.rotation =
-            Quaternion.Euler(0f, 0f, newAngle);
+            Quaternion.Euler(
+                0f,
+                0f,
+                newAngle
+            );
     }
 
     private float MoveAngleWithDirection(
@@ -302,13 +529,28 @@ public class EnemyMovement : MonoBehaviour
         float maxDelta,
         EnemyWaypointLook.TurnDirection turnDirection)
     {
-        currentAngle = Mathf.Repeat(currentAngle, 360f);
-        targetAngle = Mathf.Repeat(targetAngle, 360f);
+        currentAngle =
+            Mathf.Repeat(currentAngle, 360f);
 
-        if (Mathf.Abs(Mathf.DeltaAngle(currentAngle, targetAngle)) <= 0.01f)
+        targetAngle =
+            Mathf.Repeat(targetAngle, 360f);
+
+        if (Mathf.Abs(
+                Mathf.DeltaAngle(
+                    currentAngle,
+                    targetAngle
+                )
+            ) <= 0.01f)
+        {
             return targetAngle;
+        }
 
-        if (turnDirection == EnemyWaypointLook.TurnDirection.Shortest)
+        // -----------------------------------------------------
+        // SHORTEST
+        // -----------------------------------------------------
+
+        if (turnDirection ==
+            EnemyWaypointLook.TurnDirection.Shortest)
         {
             return Mathf.MoveTowardsAngle(
                 currentAngle,
@@ -317,26 +559,52 @@ public class EnemyMovement : MonoBehaviour
             );
         }
 
-        if (turnDirection == EnemyWaypointLook.TurnDirection.Clockwise)
+        // -----------------------------------------------------
+        // CLOCKWISE
+        // -----------------------------------------------------
+
+        if (turnDirection ==
+            EnemyWaypointLook.TurnDirection.Clockwise)
         {
             float clockwiseDistance =
-                Mathf.Repeat(currentAngle - targetAngle, 360f);
+                Mathf.Repeat(
+                    currentAngle - targetAngle,
+                    360f
+                );
 
             if (clockwiseDistance <= maxDelta)
+            {
                 return targetAngle;
+            }
 
-            return Mathf.Repeat(currentAngle - maxDelta, 360f);
+            return Mathf.Repeat(
+                currentAngle - maxDelta,
+                360f
+            );
         }
 
-        if (turnDirection == EnemyWaypointLook.TurnDirection.CounterClockwise)
+        // -----------------------------------------------------
+        // COUNTER CLOCKWISE
+        // -----------------------------------------------------
+
+        if (turnDirection ==
+            EnemyWaypointLook.TurnDirection.CounterClockwise)
         {
             float counterClockwiseDistance =
-                Mathf.Repeat(targetAngle - currentAngle, 360f);
+                Mathf.Repeat(
+                    targetAngle - currentAngle,
+                    360f
+                );
 
             if (counterClockwiseDistance <= maxDelta)
+            {
                 return targetAngle;
+            }
 
-            return Mathf.Repeat(currentAngle + maxDelta, 360f);
+            return Mathf.Repeat(
+                currentAngle + maxDelta,
+                360f
+            );
         }
 
         return Mathf.MoveTowardsAngle(
@@ -346,27 +614,233 @@ public class EnemyMovement : MonoBehaviour
         );
     }
 
+    // =========================================================
+    // CHASE SYNCHRONIZATION
+    // =========================================================
+
+    private void UpdateChaseConeSynchronization()
+    {
+        if (!isChasing)
+        {
+            chaseMovementFactor = 1f;
+            return;
+        }
+
+        if (!AgentReady())
+        {
+            return;
+        }
+
+        // -----------------------------------------------------
+        // Synchronisation désactivée.
+        // -----------------------------------------------------
+
+        if (!synchronizeChaseWithCone)
+        {
+            chaseTurnLocked = false;
+            chaseMovementFactor = 1f;
+
+            if (agent.isStopped)
+            {
+                agent.isStopped = false;
+            }
+
+            agent.speed = chaseBaseSpeed;
+
+            return;
+        }
+
+        // -----------------------------------------------------
+        // Impossible de calculer l'orientation.
+        // -----------------------------------------------------
+
+        if (visionPivot == null ||
+            !hasTargetVisionAngle)
+        {
+            chaseTurnLocked = false;
+            chaseMovementFactor = 1f;
+
+            if (agent.isStopped)
+            {
+                agent.isStopped = false;
+            }
+
+            agent.speed = chaseBaseSpeed;
+
+            return;
+        }
+
+        float angleDifference =
+            Mathf.Abs(
+                Mathf.DeltaAngle(
+                    visionPivot.eulerAngles.z,
+                    targetVisionAngle
+                )
+            );
+
+        // -----------------------------------------------------
+        // L'ennemi est déjà arrêté pour un gros virage.
+        // -----------------------------------------------------
+
+        if (chaseTurnLocked)
+        {
+            chaseMovementFactor = 0f;
+
+            if (angleDifference >
+                chaseTurnUnlockAngle)
+            {
+                if (!agent.isStopped)
+                {
+                    agent.isStopped = true;
+                }
+
+                return;
+            }
+
+            // Le cône est suffisamment revenu.
+            chaseTurnLocked = false;
+
+            if (agent.isStopped)
+            {
+                agent.isStopped = false;
+            }
+        }
+
+        // -----------------------------------------------------
+        // Nouveau très gros virage.
+        // -----------------------------------------------------
+
+        if (angleDifference >=
+            chaseTurnLockAngle)
+        {
+            chaseTurnLocked = true;
+            chaseMovementFactor = 0f;
+
+            agent.isStopped = true;
+            agent.velocity = Vector3.zero;
+
+            return;
+        }
+
+        // -----------------------------------------------------
+        // Virage normal.
+        //
+        // Plus le cône est éloigné de la direction voulue,
+        // plus l'ennemi ralentit.
+        // -----------------------------------------------------
+
+        chaseMovementFactor =
+            1f -
+            Mathf.InverseLerp(
+                chaseFullSpeedAngle,
+                chaseTurnLockAngle,
+                angleDifference
+            );
+
+        chaseMovementFactor =
+            Mathf.Clamp01(
+                chaseMovementFactor
+            );
+
+        float effectiveMovementFactor =
+            Mathf.Max(
+                chaseMinimumMovementFactor,
+                chaseMovementFactor
+            );
+
+        if (agent.isStopped)
+        {
+            agent.isStopped = false;
+        }
+
+        agent.speed =
+            chaseBaseSpeed *
+            effectiveMovementFactor;
+    }
+
+    // =========================================================
+    // SPRITE DIRECTION
+    // =========================================================
+
+    private void UpdateSpriteDirection()
+    {
+        // -----------------------------------------------------
+        // En chase :
+        //
+        // le sprite suit le cône.
+        //
+        // Ainsi :
+        // sprite + cône = même orientation.
+        // -----------------------------------------------------
+
+        if (isChasing &&
+            visionPivot != null)
+        {
+            SyncIdleSpriteWithCurrentCone();
+            return;
+        }
+
+        // -----------------------------------------------------
+        // Hors chase :
+        //
+        // le sprite suit le mouvement réel.
+        // -----------------------------------------------------
+
+        if (IsMoving())
+        {
+            Vector2 movementDirection =
+                GetAgentMovementDirection();
+
+            if (movementDirection.sqrMagnitude >= 0.01f)
+            {
+                float movementAngle =
+                    DirectionToAngle(
+                        movementDirection
+                    );
+
+                visualDirection =
+                    AngleToCardinalDirection(
+                        movementAngle
+                    );
+            }
+
+            return;
+        }
+
+        SyncIdleSpriteWithCurrentCone();
+    }
+
     private void SyncIdleSpriteWithCurrentCone()
     {
         if (visionPivot == null)
+        {
             return;
+        }
 
-        float coneCurrentAngle = visionPivot.eulerAngles.z;
+        float coneCurrentAngle =
+            visionPivot.eulerAngles.z;
 
         float spriteAngle =
-            coneCurrentAngle - activeConeAngleOffset;
+            coneCurrentAngle -
+            activeConeAngleOffset;
 
         visualDirection =
-            AngleToCardinalDirection(spriteAngle);
+            AngleToCardinalDirection(
+                spriteAngle
+            );
     }
 
     private bool VisionReachedTargetAngle()
     {
         if (visionPivot == null)
+        {
             return true;
+        }
 
         if (!hasTargetVisionAngle)
+        {
             return true;
+        }
 
         float difference =
             Mathf.Abs(
@@ -376,122 +850,291 @@ public class EnemyMovement : MonoBehaviour
                 )
             );
 
-        return difference <= rotationTolerance;
+        return difference <=
+               rotationTolerance;
     }
 
-    private Vector2 AngleToCardinalDirection(float angle)
+    private Vector2 AngleToCardinalDirection(
+        float angle)
     {
-        angle = Mathf.Repeat(angle, 360f);
+        angle =
+            Mathf.Repeat(angle, 360f);
 
-        if (angle >= 45f && angle < 135f)
+        if (angle >= 45f &&
+            angle < 135f)
+        {
             return Vector2.up;
+        }
 
-        if (angle >= 135f && angle < 225f)
+        if (angle >= 135f &&
+            angle < 225f)
+        {
             return Vector2.left;
+        }
 
-        if (angle >= 225f && angle < 315f)
+        if (angle >= 225f &&
+            angle < 315f)
+        {
             return Vector2.down;
+        }
 
         return Vector2.right;
     }
 
+    // =========================================================
+    // ANIMATION
+    // =========================================================
+
     private void UpdateAnimation()
     {
         if (animator == null)
+        {
             return;
+        }
 
         bool moving = IsMoving();
 
-        animator.SetBool("IsMoving", moving);
+        animator.SetBool(
+            "IsMoving",
+            moving
+        );
 
         if (moving)
         {
-            animator.SetFloat("MoveX", visualDirection.x);
-            animator.SetFloat("MoveY", visualDirection.y);
+            animator.SetFloat(
+                "MoveX",
+                visualDirection.x
+            );
+
+            animator.SetFloat(
+                "MoveY",
+                visualDirection.y
+            );
         }
         else
         {
-            animator.SetFloat("MoveX", 0f);
-            animator.SetFloat("MoveY", 0f);
+            animator.SetFloat(
+                "MoveX",
+                0f
+            );
+
+            animator.SetFloat(
+                "MoveY",
+                0f
+            );
         }
 
-        animator.SetFloat("LastX", visualDirection.x);
-        animator.SetFloat("LastY", visualDirection.y);
+        animator.SetFloat(
+            "LastX",
+            visualDirection.x
+        );
+
+        animator.SetFloat(
+            "LastY",
+            visualDirection.y
+        );
     }
+
+    // =========================================================
+    // CHASE MODE
+    // =========================================================
+
+    private void EnterChaseMode()
+    {
+        if (isChasing)
+        {
+            return;
+        }
+
+        isChasing = true;
+
+        chaseTurnLocked = false;
+
+        chaseMovementFactor = 1f;
+
+        chaseBaseSpeed =
+            chaseStartSpeed;
+    }
+
+    private void ExitChaseMode()
+    {
+        isChasing = false;
+
+        chaseTurnLocked = false;
+
+        chaseMovementFactor = 1f;
+
+        if (AgentReady() &&
+            agent.isStopped)
+        {
+            agent.isStopped = false;
+        }
+    }
+
+    // =========================================================
+    // SPEED MODES
+    // =========================================================
 
     public void SetPatrolSpeed()
     {
+        ExitChaseMode();
+
         if (AgentReady())
+        {
             agent.speed = patrolSpeed;
+        }
 
         ResetChasePathMemory();
     }
 
+    public void SetChaseSpeed()
+    {
+        EnterChaseMode();
+
+        chaseBaseSpeed =
+            chaseSpeed;
+
+        if (AgentReady() &&
+            !chaseTurnLocked)
+        {
+            agent.speed =
+                chaseBaseSpeed;
+        }
+    }
+
     public void SetChaseRank(int rank)
     {
-        chaseRank = Mathf.Max(1, rank);
+        chaseRank =
+            Mathf.Max(1, rank);
     }
+
+    // =========================================================
+    // DESTINATION
+    // =========================================================
 
     public bool ReachedDestination()
     {
         if (!AgentReady())
+        {
             return false;
+        }
 
         if (agent.pathPending)
+        {
             return false;
+        }
 
-        return agent.remainingDistance <= agent.stoppingDistance + 0.1f;
+        return agent.remainingDistance <=
+               agent.stoppingDistance + 0.1f;
     }
 
     public void MoveTo(Vector3 target)
     {
         if (!AgentReady())
+        {
             return;
+        }
 
-        facingMode = FacingMode.Movement;
+        ExitChaseMode();
+
+        facingMode =
+            FacingMode.Movement;
+
         lookTarget = null;
 
-        activeConeAngleOffset = globalConeAngleOffset;
-        activeTurnDirection = EnemyWaypointLook.TurnDirection.Shortest;
+        activeConeAngleOffset =
+            globalConeAngleOffset;
+
+        activeTurnDirection =
+            EnemyWaypointLook.TurnDirection.Shortest;
 
         agent.isStopped = false;
+
         agent.SetDestination(target);
     }
 
-    public void MoveToAndFace(Vector3 targetPosition)
+    public void MoveToAndFace(
+        Vector3 targetPosition)
     {
         if (!AgentReady())
+        {
             return;
+        }
 
-        facingMode = FacingMode.LookAtPosition;
-        lookPosition = targetPosition;
+        ExitChaseMode();
+
+        facingMode =
+            FacingMode.LookAtPosition;
+
+        lookPosition =
+            targetPosition;
+
         lookTarget = null;
 
-        activeConeAngleOffset = globalConeAngleOffset;
-        activeTurnDirection = EnemyWaypointLook.TurnDirection.Shortest;
+        activeConeAngleOffset =
+            globalConeAngleOffset;
+
+        activeTurnDirection =
+            EnemyWaypointLook.TurnDirection.Shortest;
 
         agent.isStopped = false;
-        agent.SetDestination(targetPosition);
+
+        agent.SetDestination(
+            targetPosition
+        );
     }
+
+    // =========================================================
+    // CHASE
+    // =========================================================
 
     public void ChaseTarget(Transform target)
     {
         if (!AgentReady())
+        {
             return;
+        }
 
         if (target == null)
+        {
             return;
+        }
 
-        facingMode = FacingMode.Movement;
+        EnterChaseMode();
+
+        facingMode =
+            FacingMode.Movement;
+
         lookTarget = null;
 
-        activeConeAngleOffset = globalConeAngleOffset;
-        activeTurnDirection = EnemyWaypointLook.TurnDirection.Shortest;
+        activeConeAngleOffset =
+            globalConeAngleOffset;
 
-        agent.isStopped = false;
+        activeTurnDirection =
+            EnemyWaypointLook.TurnDirection.Shortest;
 
-        if (Time.time < nextChaseRepathTime)
+        // -----------------------------------------------------
+        // IMPORTANT :
+        //
+        // On ne redémarre pas l'agent si le système
+        // de rotation l'a volontairement arrêté.
+        // -----------------------------------------------------
+
+        if (!chaseTurnLocked &&
+            agent.isStopped)
+        {
+            agent.isStopped = false;
+        }
+
+        // -----------------------------------------------------
+        // Limitation des recalculs de destination.
+        // -----------------------------------------------------
+
+        if (Time.time <
+            nextChaseRepathTime)
+        {
             return;
+        }
 
         Vector3 chaseDestination =
             EnemyChaseCoordinator.GetChaseDestination(
@@ -501,130 +1144,408 @@ public class EnemyMovement : MonoBehaviour
                 leadPredictionTime
             );
 
+        // -----------------------------------------------------
+        // Ignore les changements trop petits.
+        // -----------------------------------------------------
+
         if (hasLastChaseDestination)
         {
             float sqrDistance =
-                (chaseDestination - lastChaseDestination).sqrMagnitude;
+                (
+                    chaseDestination -
+                    lastChaseDestination
+                ).sqrMagnitude;
 
-            if (sqrDistance < minDestinationChange * minDestinationChange)
+            if (sqrDistance <
+                minDestinationChange *
+                minDestinationChange)
+            {
+                nextChaseRepathTime =
+                    Time.time +
+                    chaseRepathInterval;
+
                 return;
+            }
         }
 
-        agent.SetDestination(chaseDestination);
+        // -----------------------------------------------------
+        // Nouvelle destination.
+        // -----------------------------------------------------
 
-        lastChaseDestination = chaseDestination;
+        agent.SetDestination(
+            chaseDestination
+        );
+
+        lastChaseDestination =
+            chaseDestination;
+
         hasLastChaseDestination = true;
-        nextChaseRepathTime = Time.time + chaseRepathInterval;
+
+        nextChaseRepathTime =
+            Time.time +
+            chaseRepathInterval;
     }
 
     private void ResetChasePathMemory()
     {
         nextChaseRepathTime = 0f;
+
         hasLastChaseDestination = false;
-        lastChaseDestination = Vector3.zero;
+
+        lastChaseDestination =
+            Vector3.zero;
     }
+
+    // =========================================================
+    // PATROL
+    // =========================================================
+
+    // public IEnumerator PatrolRoutine()
+    // {
+    //     SetPatrolSpeed();
+
+    //     facingMode =
+    //         FacingMode.Movement;
+
+    //     lookTarget = null;
+
+    //     if (waypoints == null ||
+    //         waypoints.Length < 2)
+    //     {
+    //         yield break;
+    //     }
+
+    //     if (patrolPathFeedback == null)
+    //     {
+    //         patrolPathFeedback =
+    //             GetComponent<PatrolPathFeedback>();
+    //     }
+
+    //     while (true)
+    //     {
+    //         int startWaypointIndex =
+    //             currentWaypoint;
+
+    //         int targetWaypointIndex =
+    //             currentWaypoint + 1;
+
+    //         if (targetWaypointIndex >=
+    //             waypoints.Length)
+    //         {
+    //             targetWaypointIndex = 0;
+    //         }
+
+    //         // -------------------------------------------------
+    //         // PATH FEEDBACK
+    //         // -------------------------------------------------
+
+    //         if (patrolPathFeedback != null)
+    //         {
+    //             patrolPathFeedback.StartSegment(
+    //                 startWaypointIndex,
+    //                 targetWaypointIndex
+    //             );
+    //         }
+
+    //         // -------------------------------------------------
+    //         // TOURNE VERS LE PROCHAIN WAYPOINT
+    //         // -------------------------------------------------
+
+    //         FaceNextWaypointFromCurrentWaypoint(
+    //             waypoints[startWaypointIndex],
+    //             waypoints[targetWaypointIndex].position
+    //         );
+
+    //         if (turnDelayBeforeMove > 0f)
+    //         {
+    //             yield return new WaitForSeconds(
+    //                 turnDelayBeforeMove
+    //             );
+    //         }
+
+    //         if (waitUntilRotatedBeforeMove)
+    //         {
+    //             while (!VisionReachedTargetAngle())
+    //             {
+    //                 yield return null;
+    //             }
+    //         }
+
+    //         // -------------------------------------------------
+    //         // DÉPLACEMENT
+    //         // -------------------------------------------------
+
+    //         facingMode =
+    //             FacingMode.Movement;
+
+    //         if (AgentReady())
+    //         {
+    //             agent.isStopped = false;
+
+    //             agent.SetDestination(
+    //                 waypoints[
+    //                     targetWaypointIndex
+    //                 ].position
+    //             );
+    //         }
+
+    //         while (
+    //             AgentReady() &&
+    //             (
+    //                 agent.pathPending ||
+    //                 agent.remainingDistance >
+    //                 agent.stoppingDistance + 0.05f
+    //             )
+    //         )
+    //         {
+    //             yield return null;
+    //         }
+
+    //         // -------------------------------------------------
+    //         // ARRÊT
+    //         // -------------------------------------------------
+
+    //         if (AgentReady())
+    //         {
+    //             agent.isStopped = true;
+
+    //             agent.ResetPath();
+
+    //             agent.velocity =
+    //                 Vector3.zero;
+    //         }
+
+    //         // -------------------------------------------------
+    //         // REGARD DU WAYPOINT
+    //         // -------------------------------------------------
+
+    //         SetLookDirectionFromWaypoint(
+    //             waypoints[targetWaypointIndex]
+    //         );
+
+    //         isWaiting = true;
+
+    //         if (waitUntilLookRotationFinishedAtWaypoint)
+    //         {
+    //             while (!VisionReachedTargetAngle())
+    //             {
+    //                 yield return null;
+    //             }
+    //         }
+
+    //         yield return new WaitForSeconds(
+    //             waitTime
+    //         );
+
+    //         isWaiting = false;
+
+    //         currentWaypoint =
+    //             targetWaypointIndex;
+    //     }
+    // }
+
+
 
     public IEnumerator PatrolRoutine()
+{
+    SetPatrolSpeed();
+
+    facingMode = FacingMode.Movement;
+    lookTarget = null;
+
+    if (waypoints == null || waypoints.Length == 0)
+        yield break;
+
+    if (patrolPathFeedback == null)
+        patrolPathFeedback = GetComponent<PatrolPathFeedback>();
+
+    // =====================================================
+    // CAS SPÉCIAL : UN SEUL WAYPOINT
+    // =====================================================
+
+    if (waypoints.Length == 1)
     {
-        SetPatrolSpeed();
+        Transform homeWaypoint = waypoints[0];
 
-        facingMode = FacingMode.Movement;
-        lookTarget = null;
-
-        if (waypoints == null || waypoints.Length < 2)
+        if (homeWaypoint == null)
             yield break;
 
-        if (patrolPathFeedback == null)
-            patrolPathFeedback = GetComponent<PatrolPathFeedback>();
+        // Tourne vers son poste.
+        FaceNextWaypointFromCurrentWaypoint(
+            null,
+            homeWaypoint.position
+        );
 
-        while (true)
+        if (turnDelayBeforeMove > 0f)
         {
-            int startWaypointIndex = currentWaypoint;
+            yield return new WaitForSeconds(
+                turnDelayBeforeMove
+            );
+        }
 
-            int targetWaypointIndex = currentWaypoint + 1;
+        if (waitUntilRotatedBeforeMove)
+        {
+            while (!VisionReachedTargetAngle())
+                yield return null;
+        }
 
-            if (targetWaypointIndex >= waypoints.Length)
-                targetWaypointIndex = 0;
+        // Retourne au waypoint.
+        facingMode = FacingMode.Movement;
 
-            if (patrolPathFeedback != null)
-            {
-                patrolPathFeedback.StartSegment(
-                    startWaypointIndex,
-                    targetWaypointIndex
-                );
-            }
+        if (AgentReady())
+        {
+            agent.isStopped = false;
 
-            FaceNextWaypointFromCurrentWaypoint(
-                waypoints[startWaypointIndex],
+            agent.SetDestination(
+                homeWaypoint.position
+            );
+        }
+
+        while (AgentReady() &&
+               (agent.pathPending ||
+                agent.remainingDistance >
+                agent.stoppingDistance + 0.05f))
+        {
+            yield return null;
+        }
+
+        // Une fois revenu, s'arrête.
+        if (AgentReady())
+        {
+            agent.isStopped = true;
+            agent.ResetPath();
+            agent.velocity = Vector3.zero;
+        }
+
+        // Reprend l'orientation définie par son unique waypoint.
+        SetLookDirectionFromWaypoint(
+            homeWaypoint
+        );
+
+        isWaiting = true;
+
+        if (waitUntilLookRotationFinishedAtWaypoint)
+        {
+            while (!VisionReachedTargetAngle())
+                yield return null;
+        }
+
+        // Il reste à son poste.
+        while (true)
+            yield return null;
+    }
+
+    // =====================================================
+    // CAS NORMAL : DEUX WAYPOINTS OU PLUS
+    // =====================================================
+
+    while (true)
+    {
+        int startWaypointIndex = currentWaypoint;
+
+        int targetWaypointIndex = currentWaypoint + 1;
+
+        if (targetWaypointIndex >= waypoints.Length)
+            targetWaypointIndex = 0;
+
+        if (patrolPathFeedback != null)
+        {
+            patrolPathFeedback.StartSegment(
+                startWaypointIndex,
+                targetWaypointIndex
+            );
+        }
+
+        FaceNextWaypointFromCurrentWaypoint(
+            waypoints[startWaypointIndex],
+            waypoints[targetWaypointIndex].position
+        );
+
+        if (turnDelayBeforeMove > 0f)
+        {
+            yield return new WaitForSeconds(
+                turnDelayBeforeMove
+            );
+        }
+
+        if (waitUntilRotatedBeforeMove)
+        {
+            while (!VisionReachedTargetAngle())
+                yield return null;
+        }
+
+        facingMode = FacingMode.Movement;
+
+        if (AgentReady())
+        {
+            agent.isStopped = false;
+
+            agent.SetDestination(
                 waypoints[targetWaypointIndex].position
             );
-
-            if (turnDelayBeforeMove > 0f)
-                yield return new WaitForSeconds(turnDelayBeforeMove);
-
-            if (waitUntilRotatedBeforeMove)
-            {
-                while (!VisionReachedTargetAngle())
-                    yield return null;
-            }
-
-            facingMode = FacingMode.Movement;
-
-            if (AgentReady())
-            {
-                agent.isStopped = false;
-                agent.SetDestination(waypoints[targetWaypointIndex].position);
-            }
-
-            while (AgentReady() &&
-                   (agent.pathPending ||
-                    agent.remainingDistance > agent.stoppingDistance + 0.05f))
-            {
-                yield return null;
-            }
-
-            if (AgentReady())
-            {
-                agent.isStopped = true;
-                agent.ResetPath();
-                agent.velocity = Vector3.zero;
-            }
-
-            SetLookDirectionFromWaypoint(waypoints[targetWaypointIndex]);
-
-            isWaiting = true;
-
-            if (waitUntilLookRotationFinishedAtWaypoint)
-            {
-                while (!VisionReachedTargetAngle())
-                    yield return null;
-            }
-
-            yield return new WaitForSeconds(waitTime);
-
-            isWaiting = false;
-
-            currentWaypoint = targetWaypointIndex;
         }
+
+        while (AgentReady() &&
+               (agent.pathPending ||
+                agent.remainingDistance >
+                agent.stoppingDistance + 0.05f))
+        {
+            yield return null;
+        }
+
+        if (AgentReady())
+        {
+            agent.isStopped = true;
+            agent.ResetPath();
+            agent.velocity = Vector3.zero;
+        }
+
+        SetLookDirectionFromWaypoint(
+            waypoints[targetWaypointIndex]
+        );
+
+        isWaiting = true;
+
+        if (waitUntilLookRotationFinishedAtWaypoint)
+        {
+            while (!VisionReachedTargetAngle())
+                yield return null;
+        }
+
+        yield return new WaitForSeconds(
+            waitTime
+        );
+
+        isWaiting = false;
+
+        currentWaypoint = targetWaypointIndex;
     }
+}
 
     private void FaceNextWaypointFromCurrentWaypoint(
         Transform currentWaypointTransform,
         Vector3 nextWaypointPosition)
     {
         Vector2 direction =
-            nextWaypointPosition - transform.position;
+            nextWaypointPosition -
+            transform.position;
 
         if (direction.sqrMagnitude < 0.01f)
+        {
             return;
+        }
 
-        activeConeAngleOffset = globalConeAngleOffset;
-        activeTurnDirection = EnemyWaypointLook.TurnDirection.Shortest;
+        activeConeAngleOffset =
+            globalConeAngleOffset;
+
+        activeTurnDirection =
+            EnemyWaypointLook.TurnDirection.Shortest;
 
         if (currentWaypointTransform != null)
         {
             EnemyWaypointLook waypointLook =
-                currentWaypointTransform.GetComponent<EnemyWaypointLook>();
+                currentWaypointTransform
+                    .GetComponent<EnemyWaypointLook>();
 
             if (waypointLook != null &&
                 waypointLook.OverrideExitTurnDirection())
@@ -634,44 +1555,72 @@ public class EnemyMovement : MonoBehaviour
             }
         }
 
-        facingMode = FacingMode.LookAtPosition;
-        lookPosition = nextWaypointPosition;
+        facingMode =
+            FacingMode.LookAtPosition;
+
+        lookPosition =
+            nextWaypointPosition;
+
         lookTarget = null;
 
-        SetTargetAngleFromDirection(direction);
+        SetTargetAngleFromDirection(
+            direction
+        );
 
         UpdateAnimation();
     }
 
-    private void SetLookDirectionFromWaypoint(Transform waypoint)
+    private void SetLookDirectionFromWaypoint(
+        Transform waypoint)
     {
         if (waypoint == null)
+        {
             return;
+        }
 
-        float waypointRawAngle = waypoint.eulerAngles.z;
+        float waypointRawAngle =
+            waypoint.eulerAngles.z;
+
         float waypointConeOffset = 0f;
 
-        EnemyWaypointLook.TurnDirection waypointTurnDirection =
-            EnemyWaypointLook.TurnDirection.Shortest;
+        EnemyWaypointLook.TurnDirection
+            waypointTurnDirection =
+                EnemyWaypointLook
+                    .TurnDirection
+                    .Shortest;
 
         EnemyWaypointLook waypointLook =
             waypoint.GetComponent<EnemyWaypointLook>();
 
         if (waypointLook != null)
         {
-            waypointRawAngle = waypointLook.GetLookAngle();
-            waypointConeOffset = waypointLook.GetWaypointConeAngleOffset();
-            waypointTurnDirection = waypointLook.GetTurnDirection();
+            waypointRawAngle =
+                waypointLook.GetLookAngle();
+
+            waypointConeOffset =
+                waypointLook
+                    .GetWaypointConeAngleOffset();
+
+            waypointTurnDirection =
+                waypointLook
+                    .GetTurnDirection();
         }
 
         activeConeAngleOffset =
-            globalConeAngleOffset + waypointConeOffset;
+            globalConeAngleOffset +
+            waypointConeOffset;
 
-        activeTurnDirection = waypointTurnDirection;
+        activeTurnDirection =
+            waypointTurnDirection;
 
-        SetTargetVisionAngle(waypointRawAngle, activeConeAngleOffset);
+        SetTargetVisionAngle(
+            waypointRawAngle,
+            activeConeAngleOffset
+        );
 
-        facingMode = FacingMode.WaypointIdle;
+        facingMode =
+            FacingMode.WaypointIdle;
+
         lookTarget = null;
 
         SyncIdleSpriteWithCurrentCone();
@@ -679,152 +1628,238 @@ public class EnemyMovement : MonoBehaviour
         UpdateAnimation();
     }
 
+    // =========================================================
+    // STOP
+    // =========================================================
+
     public void StopMovement()
     {
+        ExitChaseMode();
+
         if (!AgentReady())
+        {
             return;
+        }
 
         agent.isStopped = true;
+
         agent.ResetPath();
-        agent.velocity = Vector3.zero;
+
+        agent.velocity =
+            Vector3.zero;
     }
 
-    public void SetChaseSpeed()
-    {
-        if (AgentReady())
-            agent.speed = chaseSpeed;
-    }
+    // =========================================================
+    // FATIGUE
+    // =========================================================
 
     public void StartChaseFatigue()
     {
+        EnterChaseMode();
+
         chaseTimer = 0f;
+
         isTired = false;
 
+        chaseBaseSpeed =
+            chaseStartSpeed;
+
         if (tiredIcon != null)
+        {
             tiredIcon.SetActive(false);
+        }
 
         ResetChasePathMemory();
 
         if (AgentReady())
-            agent.speed = chaseStartSpeed;
+        {
+            agent.speed =
+                chaseBaseSpeed;
+        }
     }
 
     public void UpdateChaseFatigue()
     {
         if (!AgentReady())
+        {
             return;
+        }
 
         if (isTired)
+        {
             return;
+        }
 
-        chaseTimer += Time.deltaTime;
+        chaseTimer +=
+            Time.deltaTime;
 
-        agent.speed =
+        chaseBaseSpeed =
             Mathf.MoveTowards(
-                agent.speed,
+                chaseBaseSpeed,
                 chaseSpeed,
-                chaseSpeedRamp * Time.deltaTime
+                chaseSpeedRamp *
+                Time.deltaTime
             );
 
-        if (chaseTimer >= timeBeforeFatigue)
+        if (chaseTimer >=
+            timeBeforeFatigue)
+        {
             BecomeTired();
+        }
     }
 
     private void BecomeTired()
     {
         isTired = true;
 
-        if (AgentReady())
-            agent.speed = tiredChaseSpeed;
+        chaseBaseSpeed =
+            tiredChaseSpeed;
 
         if (tiredIcon != null)
+        {
             tiredIcon.SetActive(true);
+        }
     }
 
     public void ResetFatigue()
     {
         chaseTimer = 0f;
+
         isTired = false;
 
         if (tiredIcon != null)
+        {
             tiredIcon.SetActive(false);
+        }
 
         SetPatrolSpeed();
     }
 
-    public void FaceDirection(Vector2 direction)
+    // =========================================================
+    // MANUAL FACING
+    // =========================================================
+
+    public void FaceDirection(
+        Vector2 direction)
     {
         if (direction.sqrMagnitude < 0.01f)
+        {
             return;
+        }
 
-        facingMode = FacingMode.LookAtPosition;
-        lookPosition = transform.position + (Vector3)direction;
+        facingMode =
+            FacingMode.LookAtPosition;
+
+        lookPosition =
+            transform.position +
+            (Vector3)direction;
+
         lookTarget = null;
 
-        activeConeAngleOffset = globalConeAngleOffset;
-        activeTurnDirection = EnemyWaypointLook.TurnDirection.Shortest;
+        activeConeAngleOffset =
+            globalConeAngleOffset;
 
-        SetTargetAngleFromDirection(direction);
-
-        UpdateAnimation();
-    }
-
-    public void FacePosition(Vector3 targetPosition)
-    {
-        Vector2 direction =
-            targetPosition - transform.position;
-
-        if (direction.sqrMagnitude < 0.01f)
-            return;
-
-        facingMode = FacingMode.LookAtPosition;
-        lookPosition = targetPosition;
-        lookTarget = null;
-
-        activeConeAngleOffset = globalConeAngleOffset;
-        activeTurnDirection = EnemyWaypointLook.TurnDirection.Shortest;
-
-        SetTargetAngleFromDirection(direction);
-
-        UpdateAnimation();
-    }
-
-    public void FaceTarget(Transform target)
-    {
-        if (target == null)
-            return;
-
-        facingMode = FacingMode.LookAtTarget;
-        lookTarget = target;
-
-        activeConeAngleOffset = globalConeAngleOffset;
-        activeTurnDirection = EnemyWaypointLook.TurnDirection.Shortest;
+        activeTurnDirection =
+            EnemyWaypointLook.TurnDirection.Shortest;
 
         SetTargetAngleFromDirection(
-            target.position - transform.position
+            direction
         );
 
         UpdateAnimation();
     }
 
+    public void FacePosition(
+        Vector3 targetPosition)
+    {
+        Vector2 direction =
+            targetPosition -
+            transform.position;
+
+        if (direction.sqrMagnitude < 0.01f)
+        {
+            return;
+        }
+
+        facingMode =
+            FacingMode.LookAtPosition;
+
+        lookPosition =
+            targetPosition;
+
+        lookTarget = null;
+
+        activeConeAngleOffset =
+            globalConeAngleOffset;
+
+        activeTurnDirection =
+            EnemyWaypointLook.TurnDirection.Shortest;
+
+        SetTargetAngleFromDirection(
+            direction
+        );
+
+        UpdateAnimation();
+    }
+
+    public void FaceTarget(
+        Transform target)
+    {
+        if (target == null)
+        {
+            return;
+        }
+
+        facingMode =
+            FacingMode.LookAtTarget;
+
+        lookTarget = target;
+
+        activeConeAngleOffset =
+            globalConeAngleOffset;
+
+        activeTurnDirection =
+            EnemyWaypointLook.TurnDirection.Shortest;
+
+        SetTargetAngleFromDirection(
+            target.position -
+            transform.position
+        );
+
+        UpdateAnimation();
+    }
+
+    // =========================================================
+    // GIZMOS
+    // =========================================================
+
     private void OnDrawGizmos()
     {
-        if (waypoints == null || waypoints.Length == 0)
+        if (waypoints == null ||
+            waypoints.Length == 0)
+        {
             return;
+        }
 
         Gizmos.color = Color.black;
 
-        for (int i = 0; i < waypoints.Length; i++)
+        for (int i = 0;
+             i < waypoints.Length;
+             i++)
         {
             if (waypoints[i] == null)
+            {
                 continue;
+            }
 
             Gizmos.DrawSphere(
                 waypoints[i].position,
                 0.15f
             );
 
-            int nextIndex = (i + 1) % waypoints.Length;
+            int nextIndex =
+                (i + 1) %
+                waypoints.Length;
 
             if (waypoints[nextIndex] != null)
             {
