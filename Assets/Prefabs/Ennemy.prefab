@@ -433,7 +433,7 @@ MonoBehaviour:
   movement: {fileID: 4610386365676488285}
   feedback: {fileID: 4241033056238976159}
   coneVisual: {fileID: 1342172307730661271}
-  alertDuration: 2
+  alertDuration: 1
   loseSightDelay: 2
   searchPredictionDistance: 2
   searchLookDuration: 0.35
