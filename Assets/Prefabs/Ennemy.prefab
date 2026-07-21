@@ -506,8 +506,8 @@ MonoBehaviour:
   waitUntilLookRotationFinishedAtWaypoint: 1
   rotationTolerance: 1
   patrolSpeed: 2.6
-  chaseStartSpeed: 3.4
-  chaseSpeed: 4.6
+  chaseStartSpeed: 4
+  chaseSpeed: 6
   chaseSpeedRamp: 2.2
   timeBeforeFatigue: 4
   tiredChaseSpeed: 3.3
