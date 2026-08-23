@@ -10,7 +10,7 @@ public class ExitZone : MonoBehaviour
 
         if (!GameManager.Instance.HasObjective())
         {
-            Debug.Log("Il faut récupérer le trésor avant de sortir !");
+            Debug.Log("Il faut récupérer le coffret avant de sortir !");
             return;
         }
 
